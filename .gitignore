@@ -1,0 +1,21 @@
+# Build trees and shipped binaries
+/build*/
+/bin/
+/dist/
+*.dll
+*.exe
+*.pdb
+*.obj
+*.lib
+*.exp
+*.ilk
+
+# Visual Studio and local CMake state
+/.vs/
+CMakeUserPresets.json
+*.user
+*.suo
+
+# Logs and temporary files
+*.log
+*.tmp

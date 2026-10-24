@@ -1,0 +1,48 @@
+# Dishonored 2 — direct IGCS DOF connection
+
+## Implementation
+
+VoidCamera connects directly to the in-process ReShade addon. It enumerates
+loaded modules, resolves the addon's exported `connectFromCameraTools()` and
+`getDataFromCameraToolsBuffer()` functions, calls the first, and writes the
+IGCS `CameraToolsData` layout into the returned addon-owned buffer every camera
+frame. There is no relay DLL, named pipe, or shared-memory bridge.
+
+The data layout is checked at compile time: size 84 bytes; FOV at offset 4;
+position 8; quaternion 20; up/right/forward vectors 36/48/60; pitch/yaw/roll
+72/76/80. Values are sourced from VoidCamera's live pose; angles are radians,
+FOV degrees. Local movement semantics define forward as matrix row 0, right as
+the negative of row 1, and up as row 2.
+
+The Camera and Post-process tabs report whether the addon handshake has
+returned its data buffer.
+
+IGCS Connector also requires the camera-tools screenshot-session exports to
+consider a camera connected. DOF calls `IGCS_StartScreenshotSession` with
+`ScreenshotType::MultiShot` and then moves the camera for each aperture sample.
+VoidCamera now saves the starting pose, applies each sample in the same
+right/up basis it publishes to the Connector, locks out local camera input
+during sampling, and restores the starting pose on session end. Panorama
+stitching remains unavailable.
+
+## Runtime requirements and validation
+
+- ReShade 6.4+ with add-on support.
+- Official `Igcsconnector.addon64` installed beside `Dishonored2.exe`.
+- The official IGCS DOF shader and its textures installed under the matching
+  ReShade `reshade-shaders` folders; enable `IgcsDOF` in the Home tab.
+- Enable VoidCamera, then verify the Connector's camera data is live before
+  starting a DOF session.
+
+The local IGCS Connector source documents this function/buffer protocol.
+Working patterns in other workspace projects were compared: DXMD snapshots and
+restores its native camera matrix/position/FOV; Watch Dogs snapshots the camera,
+builds a right/up basis, and publishes every sample; Fallout 4 validates and
+restores its native free-camera state; Skyrim uses the same session lifecycle
+and logs sample movement. VoidCamera adapts that lifecycle to its owned `Pose`
+and direct Connector buffer. The user confirmed on 2026-10-24 that IGCS DOF
+works in game with this implementation.
+
+Sources: local `IGCSConnector/src/Main.cpp`, `CameraToolsData.h`, and
+`CameraToolsConnector.cpp`; official IGCS DOF guide:
+https://opm.fransbouma.com/igcsdof.htm
