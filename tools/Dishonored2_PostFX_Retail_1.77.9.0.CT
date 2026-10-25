@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Dishonored 2 retail 1.77.9.0 — PostFX controls"</Description>
+      <GroupHeader>1</GroupHeader>
+      <Options moHideChildren="0" moAllowManualCollapseAndExpand="1" />
+      <CheatEntries>
+        <CheatEntry>
+          <ID>2</ID>
+          <Description>"Bloom bypass: 0 = normal, 1 = skip bloom"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Dishonored2.exe+32F7F68</Address>
+          <ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3</ID>
+          <Description>"Bloom source mip (default 5; reconstruction range, not intensity)"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Dishonored2.exe+32F8768</Address>
+          <ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>4</ID>
+          <Description>"Bloom target mip (default 3; reconstruction range, not intensity)"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Dishonored2.exe+32F87E8</Address>
+          <ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>5</ID>
+          <Description>"Emissive glare bypass: 0 = normal, 1 = skip"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Dishonored2.exe+397AFF8</Address>
+          <ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>6</ID>
+          <Description>"Lens flare bypass: 0 = normal, 1 = skip lens flares"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Dishonored2.exe+32F7FE8</Address>
+          <ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>7</ID>
+          <Description>"Cheap lens flare distortion: 0 = off, 1 = on (visual effect unverified)"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Dishonored2.exe+32F8868</Address>
+          <ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"Instructions: attach Dishonored2.exe; edit the numeric value. The Lua handler syncs CVar text + integer + float fields and verifies each retail CVar name."</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols />
+  <LuaScript><![CDATA[
+local bindings = {
+  {description = "Bloom bypass: 0 = normal, 1 = skip bloom", name = "r_skipBloom", type = "flag"},
+  {description = "Bloom source mip (default 5; reconstruction range, not intensity)", name = "r_postProcessDebugBloomSourceMip", type = "mip"},
+  {description = "Bloom target mip (default 3; reconstruction range, not intensity)", name = "r_postProcessDebugBloomTargetMip", type = "mip"},
+  {description = "Emissive glare bypass: 0 = normal, 1 = skip", name = "r_skipEmissiveGlare", type = "flag"},
+  {description = "Lens flare bypass: 0 = normal, 1 = skip lens flares", name = "r_skipLensFlares", type = "flag"},
+  {description = "Cheap lens flare distortion: 0 = off, 1 = on (visual effect unverified)", name = "r_useCheapLensFlareDistortion", type = "flag"}
+}
+
+local function applyCvar(memrec, binding, newvalue)
+  local value = tonumber(tostring(newvalue):gsub(",", "."))
+  if not value or value ~= value or math.abs(value) > 100000 then
+    print("[DH2 PostFX] Invalid value for " .. binding.name)
+    return
+  end
+
+  if binding.type == "flag" then
+    value = value == 0 and 0 or 1
+  else
+    value = math.floor(value + 0.5)
+    if value < 0 or value > 12 then
+      print("[DH2 PostFX] Mip value must be between 0 and 12")
+      return
+    end
+  end
+
+  local cvarObject = memrec.CurrentAddress - 0x28
+  local namePointer = readPointer(cvarObject + 0x30)
+  local actualName = namePointer and readString(namePointer, 128, false) or nil
+  if actualName ~= binding.name then
+    print("[DH2 PostFX] Retail CVar check failed for " .. binding.name .. "; no linked fields changed")
+    return
+  end
+
+  local text = tostring(value)
+  local buffer = {}
+  for i = 1, 16 do buffer[i] = 0 end
+  if #text > 15 then
+    print("[DH2 PostFX] Text value is too long for " .. binding.name)
+    return
+  end
+  for i = 1, #text do buffer[i] = string.byte(text, i) end
+
+  if not writeBytes(cvarObject + 0x10, buffer) or
+     not writeInteger(cvarObject + 0x28, value) or
+     not writeFloat(cvarObject + 0x2C, value) then
+    print("[DH2 PostFX] Write failed for " .. binding.name)
+    return
+  end
+
+  print(string.format("[DH2 PostFX] %s = %s (text/int/float synchronized)", binding.name, text))
+end
+
+local addressList = getAddressList()
+for _, binding in ipairs(bindings) do
+  local currentBinding = binding
+  local memrec = addressList.getMemoryRecordByDescription(currentBinding.description)
+  if memrec then
+    memrec.OnValueChangedByUser = function(record, oldvalue, newvalue)
+      applyCvar(record, currentBinding, newvalue)
+    end
+  end
+end
+print("[DH2 PostFX] Table ready. Attach Dishonored2.exe, then edit a value; supported retail CVar names are checked before writes.")
+  ]]></LuaScript>
+</CheatTable>

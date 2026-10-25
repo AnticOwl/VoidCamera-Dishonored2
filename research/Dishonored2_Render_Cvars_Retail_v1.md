@@ -111,3 +111,24 @@ but the strings alone do not prove which are per-scene inputs, shader outputs,
 or writable live settings. They are new leads for tracing the retail render
 parameter path; do not expose them as controls until a live value is resolved
 and its visual effect is verified.
+
+Live resolution confirmed two additional retail CVars by matching their exact
+name pointers in the running game process (not from a debug CVar dump):
+
+| CVar | Object RVA | Live value | Default | Retail help |
+|---|---:|---:|---:|---|
+| `r_postProcessDebugBloomSourceMip` | `0x32F8740` | `5` | `5` | Selects the source mip for bloom upsampling; help associates 5 with 1/64 screen size. |
+| `r_postProcessDebugBloomTargetMip` | `0x32F87C0` | `3` | `3` | Selects the target mip for bloom upsampling; help associates 3 with 1/8 screen size. |
+| `r_skipEmissiveGlare` | `0x397AFD0` | `0` | `0` | Skips emissive-glare processing when enabled. |
+
+The source/target mip CVars are numeric bloom controls, but they choose the
+reconstruction range rather than directly setting bloom intensity. They were
+temporarily set to `2` and `1` in the running game; the user saw no visible
+change, so both were restored to their original values `5` and `3`. Do not treat
+them as usable bloom-strength controls based on this test. `r_skipEmissiveGlare`
+is a separate effect toggle and was not visually tested.
+
+`tools/Dishonored2_PostFX_Retail_1.77.9.0.CT` contains a Cheat Engine table for
+manual exploration of these mips, the bloom/emissive-glare/lens-flare bypasses,
+and the cheap lens-flare distortion toggle. Editing a numeric value synchronizes
+the CVar text, integer, and float fields after checking the live retail CVar name.
