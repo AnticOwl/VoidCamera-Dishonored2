@@ -97,3 +97,17 @@ CVar. The public 1.77.9.0 CVar dump also has no radial-blur entry. This is
 evidence only about CVar controls: it does not rule out per-scene post-process
 or environment-object parameters. Those require separate runtime attribution
 and cannot be exposed as numeric sliders from the CVar map alone.
+
+### Retail post-process parameter leads
+
+A separate raw-string scan of the same retail executable found parameter and
+shader names beyond the CVar interface: `env/bloom/lensDirt`,
+`PostFX/Bloom/upsample`, `PostFX/Bloom/enabled`, `PostFX/Bloom/dUV`,
+`PostFX/Bloom/texBloom`, `PostFX/LensDirt/UseDefault`,
+`PostFX/Bloom/lensDirt_From`, `PostFX/Bloom/lensDirt_To`,
+`PostFX/Bloom/lensDirt_BlendWeight`, and `PostFX_LensFlares_Threshold`.
+These confirm there are bloom/lens-dirt/flare parameters in the render pipeline,
+but the strings alone do not prove which are per-scene inputs, shader outputs,
+or writable live settings. They are new leads for tracing the retail render
+parameter path; do not expose them as controls until a live value is resolved
+and its visual effect is verified.
