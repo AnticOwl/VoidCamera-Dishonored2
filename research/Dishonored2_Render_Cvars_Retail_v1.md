@@ -67,9 +67,10 @@ Therefore these strings alone do not establish a retail light-spawn interface.
 The retail image also contains editor CVar strings and RTTI for `idEditEntities`,
 `idEditorLightInterface`, and game-editor interfaces. In a live test, setting
 `g_editEntityMode=1` and `g_showEditEntityInfo=1` in the CVar text and numeric
-caches produced no visible markers; both values were restored to zero. Void
-Camera 1.15 exposes verified area-light controls and renderer diagnostics;
-spawning/editing individual lights remains unimplemented until a native retail
+caches produced no visible markers; both values were restored to zero. The
+Lights tab was removed from Void Camera 1.16 at the user's request; area-light
+controls remain documented but are no longer exposed in the UI. Spawning/editing
+individual lights remains unimplemented until a native retail
 creation path is identified and validated.
 
 ## Limits
@@ -87,8 +88,7 @@ The verified retail controls available in the PP tab are: auto-exposure toggle,
 exposure-adaptation freeze, additive custom EV, bloom toggle, lens-flare toggle,
 color-grading toggle, DOF toggle plus focal distance/focus range/CoC, camera
 motion-blur toggle, and tone-mapping toggle. Environment controls separately
-expose fog, god rays, fog light scattering, sky, and area-light diffuse/specular
-factors.
+expose fog, god rays, fog light scattering and sky.
 
 The retail render-CVar name scan contains `r_skipBloom`, `r_skipLensFlares`,
 `r_skipEmissiveGlare`, and `r_useCheapLensFlareDistortion`; it contains no radial
@@ -132,3 +132,36 @@ is a separate effect toggle and was not visually tested.
 manual exploration of these mips, the bloom/emissive-glare/lens-flare bypasses,
 and the cheap lens-flare distortion toggle. Editing a numeric value synchronizes
 the CVar text, integer, and float fields after checking the live retail CVar name.
+
+## Additional live-registered render CVars for manual testing
+
+The following exact CVar names were also resolved in the live retail process.
+The CT points to each integer or float cache and validates the CVar name before
+writing all three runtime representations. Their visual effects and useful ranges
+have not yet been tested, so these entries are explicitly marked experimental.
+
+| CVar | Object RVA | Live value | Meaning from retail help / name |
+|---|---:|---:|---|
+| `r_atmGodRaysDepthSharpness` | `0x32EF900` | `0.00001` | God-rays bilateral blur radius/sharpness |
+| `r_fogBlurRadius` | `0x32EFB00` | `6.0` | Fog bilateral blur radius |
+| `r_skipFogBlur` | `0x32EFB80` | `0` | Skip fog blur |
+| `r_fogBlurGaussian` | `0x32EFC00` | `0` | Use cheaper Gaussian fog blur |
+| `r_fogNearestUpscale` | `0x32EFC80` | `1` | Nearest fog upscale |
+| `r_fogNearestThreshold` | `0x32EFD00` | `0.0002` | Fog nearest threshold; retail help text was stale/mismatched |
+| `r_skipFogUnderWater` | `0x32EF800` | `0` | Skip underwater fog |
+| `r_skipGodRaysUnderWater` | `0x32EF880` | `0` | Skip underwater god rays |
+| `r_forceInstantAutoExposureConvergence` | `0x32F7E40` | `0` | Force exposure convergence immediately; screenshot-oriented |
+| `r_postProcessExposureUseToneMappingWhiteLevel` | `0x32F8340` | `0` | Modify the auto-exposure window using tone-mapping white level |
+| `r_skipPostProcess` | `0x397B050` | `0` | Skip the complete post-processing path |
+| `r_gamma` | `0x39374E0` | `2.2` | Gamma correction |
+| `r_oitColorResistance` | `0x32F7230` | `3.0` | Transparent OIT color resistance |
+| `r_oitAdditiveColorResistance` | `0x32F7430` | `12.0` | Additive transparent OIT color resistance |
+| `r_oitAdditiveParticleColorStrength` | `0x32F75B0` | `0.0` | Additive particle color strength |
+| `r_oitParticleColorStrength` | `0x32F76B0` | `12.0` | Particle color strength |
+
+The table exposes these for manual exploration; it does not define safe ranges.
+Change one at a time and compare the same scene. OIT settings may affect multiple
+transparent surfaces and particle materials together. Gamma may overlap the
+game's display calibration. They are not yet camera UI controls. The bloom mip
+experiment remains negative: values 2/1 produced no visible change and were
+restored to 5/3.

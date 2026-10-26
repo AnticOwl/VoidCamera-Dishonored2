@@ -1,4 +1,4 @@
-# Void Camera 1.15 — Dishonored 2 camera, render controls and time stop
+# Void Camera 1.16 — Dishonored 2 camera, render controls and time stop
 
 Native x64 camera tool for Dishonored 2 retail 1.77.9.0.
 
@@ -7,7 +7,7 @@ Native x64 camera tool for Dishonored 2 retail 1.77.9.0.
 2. Run `VoidCameraInjector.exe` beside `VoidCamera.dll`; set shadow-buffer options before loading a save so the level can build them with the new values.
 3. Load a save.
 4. End shows/hides the in-game panel and mouse cursor. Insert enables/disables the camera. Delete hides/restores the HUD.
-5. Use the Post-process, Environment, Lights and LOD tabs to change render settings. The Lights tab adjusts existing area-light illumination and shadow response, with renderer diagnostics. It does not spawn individual lights. A control is enabled only after its retail CVar name is verified. Restore initial render settings returns exposed values to their state at injection.
+5. Use the Post-process, Environment and LOD tabs to change render settings. A control is enabled only after its retail CVar name is verified. Restore initial render settings returns exposed values to their state at injection.
 6. Hide the panel to use movement keys; enable Num Lock.
 7. Choose Keyboard or Gamepad in the panel before enabling the camera; the choice is saved in `%LOCALAPPDATA%\VoidCamera\settings.ini`. Press Home to lock/unlock camera input before switching focus or resizing.
 
@@ -47,10 +47,7 @@ The world-simulation effect was previously tested by the user in a loaded save.
 Post-process: auto exposure, exposure adaptation freeze, additive custom EV,
 bloom, lens flares, color grading, depth of field (focal distance, focus range,
 circle of confusion), camera motion blur and tone mapping. Environment: fog, god
-rays, fog light scattering and sky. Lights: area-light diffuse/specular factors,
-area-light shadow thresholds, area-light pool visualization and light-volume
-diagnostics. These controls affect or inspect lights that already exist in the scene;
-they do not spawn a movable light. Render CVar names are checked against the
+rays, fog light scattering and sky. Render CVar names are checked against the
 supported retail image at runtime. Current values are saved at injection, can be
 adjusted live, and can be restored with the tab button.
 
@@ -92,9 +89,11 @@ cmake -S . -B build -A x64 -T "v143,version=14.44.35207"
 cmake --build build --config Release
 ```
 
-Output: `bin/v1.15/Release`. Distribution: `dist/VoidCamera_1.15`.
+Output: `bin/v1.16/Release`. Distribution: `dist/VoidCamera_1.16`.
 
 ## Sources
 Camera baseline supplied by the user: `research/Dishonored2_Camera_v0.6.lua`.
 `tools/prepare.py` translates its hook syntax to MASM; game offsets are preserved.
+For additional, experimental retail render variables to explore in Cheat Engine,
+see `tools/Dishonored2_PostFX_Retail_1.77.9.0.CT` and the notes in `research/`.
 Dear ImGui and MinHook are included under their respective license files.

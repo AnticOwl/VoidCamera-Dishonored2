@@ -3,7 +3,7 @@
   <CheatEntries>
     <CheatEntry>
       <ID>1</ID>
-      <Description>"Dishonored 2 retail 1.77.9.0 — PostFX controls"</Description>
+      <Description>"Dishonored 2 retail 1.77.9.0 — PostFX / fog controls (experimental values need visual testing)"</Description>
       <GroupHeader>1</GroupHeader>
       <Options moHideChildren="0" moAllowManualCollapseAndExpand="1" />
       <CheatEntries>
@@ -49,11 +49,75 @@
           <Address>Dishonored2.exe+32F8868</Address>
           <ShowAsSigned>0</ShowAsSigned>
         </CheatEntry>
+        <CheatEntry>
+          <ID>9</ID><Description>"Fog blur radius (default 6; visual effect unverified)"</Description>
+          <VariableType>Float</VariableType><Address>Dishonored2.exe+32EFB2C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10</ID><Description>"God-rays depth sharpness (default 0.00001; visual effect unverified)"</Description>
+          <VariableType>Float</VariableType><Address>Dishonored2.exe+32EF92C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>11</ID><Description>"Fog Gaussian blur: 0 = off, 1 = on (visual effect unverified)"</Description>
+          <VariableType>4 Bytes</VariableType><Address>Dishonored2.exe+32EFC28</Address><ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>12</ID><Description>"Fog nearest upscale: 0 = off, 1 = on (visual effect unverified)"</Description>
+          <VariableType>4 Bytes</VariableType><Address>Dishonored2.exe+32EFCA8</Address><ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>13</ID><Description>"Fog nearest threshold (default 0.0002; visual effect unverified)"</Description>
+          <VariableType>Float</VariableType><Address>Dishonored2.exe+32EFD2C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14</ID><Description>"Skip fog blur: 0 = normal, 1 = skip (visual effect unverified)"</Description>
+          <VariableType>4 Bytes</VariableType><Address>Dishonored2.exe+32EFBA8</Address><ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>15</ID><Description>"Gamma (retail value 2.2; visual effect unverified)"</Description>
+          <VariableType>Float</VariableType><Address>Dishonored2.exe+393750C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>16</ID><Description>"OIT color resistance (default 3; transparency effect unverified)"</Description>
+          <VariableType>Float</VariableType><Address>Dishonored2.exe+32F725C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>17</ID><Description>"OIT additive color resistance (default 12; effect unverified)"</Description>
+          <VariableType>Float</VariableType><Address>Dishonored2.exe+32F745C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>18</ID><Description>"OIT particle color strength (retail value 12; effect unverified)"</Description>
+          <VariableType>Float</VariableType><Address>Dishonored2.exe+32F76DC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>19</ID><Description>"OIT additive particle color strength (retail value 0; effect unverified)"</Description>
+          <VariableType>Float</VariableType><Address>Dishonored2.exe+32F75DC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>20</ID><Description>"Force instant auto-exposure convergence: 0 = off, 1 = on (screenshot-oriented)"</Description>
+          <VariableType>4 Bytes</VariableType><Address>Dishonored2.exe+32F7E68</Address><ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>21</ID><Description>"Skip fog underwater: 0 = normal, 1 = skip"</Description>
+          <VariableType>4 Bytes</VariableType><Address>Dishonored2.exe+32EF828</Address><ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>22</ID><Description>"Skip god rays underwater: 0 = normal, 1 = skip"</Description>
+          <VariableType>4 Bytes</VariableType><Address>Dishonored2.exe+32EF8A8</Address><ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>23</ID><Description>"Exposure uses tone-mapping white level: 0 = off, 1 = on (effect unverified)"</Description>
+          <VariableType>4 Bytes</VariableType><Address>Dishonored2.exe+32F8368</Address><ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>24</ID><Description>"Global post-process bypass: 0 = normal, 1 = skip all post-process"</Description>
+          <VariableType>4 Bytes</VariableType><Address>Dishonored2.exe+397B078</Address><ShowAsSigned>0</ShowAsSigned>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
       <ID>8</ID>
-      <Description>"Instructions: attach Dishonored2.exe; edit the numeric value. The Lua handler syncs CVar text + integer + float fields and verifies each retail CVar name."</Description>
+      <Description>"Instructions: attach Dishonored2.exe; edit numeric values. These extra retail CVars are experimental; effect ranges are not established. Lua syncs text/int/float and verifies the retail CVar name before writing."</Description>
       <GroupHeader>1</GroupHeader>
     </CheatEntry>
   </CheatEntries>
@@ -65,7 +129,23 @@ local bindings = {
   {description = "Bloom target mip (default 3; reconstruction range, not intensity)", name = "r_postProcessDebugBloomTargetMip", type = "mip"},
   {description = "Emissive glare bypass: 0 = normal, 1 = skip", name = "r_skipEmissiveGlare", type = "flag"},
   {description = "Lens flare bypass: 0 = normal, 1 = skip lens flares", name = "r_skipLensFlares", type = "flag"},
-  {description = "Cheap lens flare distortion: 0 = off, 1 = on (visual effect unverified)", name = "r_useCheapLensFlareDistortion", type = "flag"}
+  {description = "Cheap lens flare distortion: 0 = off, 1 = on (visual effect unverified)", name = "r_useCheapLensFlareDistortion", type = "flag"},
+  {description = "Fog blur radius (default 6; visual effect unverified)", name = "r_fogBlurRadius", type = "float"},
+  {description = "God-rays depth sharpness (default 0.00001; visual effect unverified)", name = "r_atmGodRaysDepthSharpness", type = "float"},
+  {description = "Fog Gaussian blur: 0 = off, 1 = on (visual effect unverified)", name = "r_fogBlurGaussian", type = "flag"},
+  {description = "Fog nearest upscale: 0 = off, 1 = on (visual effect unverified)", name = "r_fogNearestUpscale", type = "flag"},
+  {description = "Fog nearest threshold (default 0.0002; visual effect unverified)", name = "r_fogNearestThreshold", type = "float"},
+  {description = "Skip fog blur: 0 = normal, 1 = skip (visual effect unverified)", name = "r_skipFogBlur", type = "flag"},
+  {description = "Gamma (retail value 2.2; visual effect unverified)", name = "r_gamma", type = "float"},
+  {description = "OIT color resistance (default 3; transparency effect unverified)", name = "r_oitColorResistance", type = "float"},
+  {description = "OIT additive color resistance (default 12; effect unverified)", name = "r_oitAdditiveColorResistance", type = "float"},
+  {description = "OIT particle color strength (retail value 12; effect unverified)", name = "r_oitParticleColorStrength", type = "float"},
+  {description = "OIT additive particle color strength (retail value 0; effect unverified)", name = "r_oitAdditiveParticleColorStrength", type = "float"},
+  {description = "Force instant auto-exposure convergence: 0 = off, 1 = on (screenshot-oriented)", name = "r_forceInstantAutoExposureConvergence", type = "flag"},
+  {description = "Skip fog underwater: 0 = normal, 1 = skip", name = "r_skipFogUnderWater", type = "flag"},
+  {description = "Skip god rays underwater: 0 = normal, 1 = skip", name = "r_skipGodRaysUnderWater", type = "flag"},
+  {description = "Exposure uses tone-mapping white level: 0 = off, 1 = on (effect unverified)", name = "r_postProcessExposureUseToneMappingWhiteLevel", type = "flag"},
+  {description = "Global post-process bypass: 0 = normal, 1 = skip all post-process", name = "r_skipPostProcess", type = "flag"}
 }
 
 local function applyCvar(memrec, binding, newvalue)
@@ -77,7 +157,7 @@ local function applyCvar(memrec, binding, newvalue)
 
   if binding.type == "flag" then
     value = value == 0 and 0 or 1
-  else
+  elseif binding.type == "mip" then
     value = math.floor(value + 0.5)
     if value < 0 or value > 12 then
       print("[DH2 PostFX] Mip value must be between 0 and 12")
@@ -85,7 +165,8 @@ local function applyCvar(memrec, binding, newvalue)
     end
   end
 
-  local cvarObject = memrec.CurrentAddress - 0x28
+  local fieldOffset = binding.type == "float" and 0x2C or 0x28
+  local cvarObject = memrec.CurrentAddress - fieldOffset
   local namePointer = readPointer(cvarObject + 0x30)
   local actualName = namePointer and readString(namePointer, 128, false) or nil
   if actualName ~= binding.name then
@@ -93,7 +174,7 @@ local function applyCvar(memrec, binding, newvalue)
     return
   end
 
-  local text = tostring(value)
+  local text = binding.type == "float" and string.format("%.7g", value) or tostring(value)
   local buffer = {}
   for i = 1, 16 do buffer[i] = 0 end
   if #text > 15 then
@@ -102,8 +183,9 @@ local function applyCvar(memrec, binding, newvalue)
   end
   for i = 1, #text do buffer[i] = string.byte(text, i) end
 
+  local integerValue = binding.type == "float" and (value < 0 and math.ceil(value) or math.floor(value)) or value
   if not writeBytes(cvarObject + 0x10, buffer) or
-     not writeInteger(cvarObject + 0x28, value) or
+     not writeInteger(cvarObject + 0x28, integerValue) or
      not writeFloat(cvarObject + 0x2C, value) then
     print("[DH2 PostFX] Write failed for " .. binding.name)
     return
@@ -122,6 +204,6 @@ for _, binding in ipairs(bindings) do
     end
   end
 end
-print("[DH2 PostFX] Table ready. Attach Dishonored2.exe, then edit a value; supported retail CVar names are checked before writes.")
+print("[DH2 PostFX] Table ready. Attach Dishonored2.exe, then edit a value; every write checks the supported retail CVar name. Experimental effect ranges are not established.")
   ]]></LuaScript>
 </CheatTable>

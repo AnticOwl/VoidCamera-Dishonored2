@@ -30,7 +30,6 @@ LRESULT CALLBACK proc(HWND h,UINT m,WPARAM w,LPARAM l){
 void helpMarker(const char* text){ImGui::SameLine();ImGui::TextDisabled("(?)");if(ImGui::IsItemHovered()){ImGui::BeginTooltip();ImGui::PushTextWrapPos(ImGui::GetFontSize()*35.f);ImGui::TextUnformatted(text);ImGui::PopTextWrapPos();ImGui::EndTooltip();}}
 void renderToggle(const char* label,RenderControl id,const char* help){bool ready=renderControlReady(id);ImGui::BeginDisabled(!ready);bool value=renderControlEnabled(id);if(ImGui::Checkbox(label,&value))renderControlSetEnabled(id,value);ImGui::EndDisabled();helpMarker(help);}
 void renderFloat(const char* label,RenderControl id,float speed,float min,float max,const char* format,const char* help){bool ready=renderControlReady(id);ImGui::BeginDisabled(!ready);float value=renderControlValue(id);ImGui::SetNextItemWidth(ImGui::GetContentRegionAvail().x*.55f);if(ImGui::DragFloat(label,&value,speed,min,max,format))renderControlSetValue(id,std::clamp(value,min,max));ImGui::EndDisabled();helpMarker(help);}
-void renderLightVolumeMode(){auto id=RenderControl::DebugLightVolumes;bool ready=renderControlReady(id);ImGui::BeginDisabled(!ready);int value=std::clamp(static_cast<int>(renderControlValue(id)),0,3);ImGui::SetNextItemWidth(260);if(ImGui::Combo("Light volume debug",&value,"Off\0Count and highlight\0Draw planes\0Draw edges\0"))renderControlSetValue(id,static_cast<float>(value));ImGui::EndDisabled();helpMarker("Retail CVar r_showLights. Off disables the view; the higher modes show the number of light volumes covering the view, then their planes, then their edges. Diagnostic overlay only; it does not create lights.");}
 void cameraTab(){
  ImGui::TextUnformatted("CAMERA");ImGui::Separator();
  ImGui::TextDisabled("Hover (?) beside a control for its effect and limitations.");
@@ -74,19 +73,6 @@ void environmentTab(){
  ImGui::SeparatorText("Atmosphere effects");renderToggle("Fog",RenderControl::Fog,"Enables or disables scene fog. It changes atmospheric depth and visibility; it does not control object draw distance.");renderToggle("God rays",RenderControl::GodRays,"Enables or disables screen-space light shafts. This does not control fog density or shadow distance.");renderToggle("Fog light scattering",RenderControl::LightScattering,"Enables or disables light scattering inside fog. It can alter how lit or colored the fog appears.");renderToggle("Sky",RenderControl::Sky,"Enables or disables the sky rendering effect. Disabling it can expose the background or skybox behavior of the current scene.");
  ImGui::Spacing();if(ImGui::Button("Restore initial render settings"))renderControlRestore();helpMarker("Restores render and environment CVar values captured when the tool was injected.");
 }
-void lightsTab(){
- ImGui::TextUnformatted("LIGHTS");ImGui::Separator();
- ImGui::TextWrapped("Adjust existing area lights and inspect light-volume diagnostics. Each control is checked against the supported retail game at injection.");
- ImGui::SeparatorText("Existing area lights");
- renderFloat("Diffuse factor",RenderControl::AreaDiffuse,.02f,0,20,"%.3f","Retail CVar r_areaLights_FactorDiffuse. Scales diffuse illumination from existing area lights globally. Higher values brighten broad matte lighting.");
- renderFloat("Specular factor",RenderControl::AreaSpecular,.005f,0,2,"%.3f","Retail CVar r_areaLights_FactorSpecular. Scales shiny highlights from existing area lights globally.");
- renderFloat("Shadow minimum",RenderControl::AreaShadowMin,.001f,0,1,"%.3f","Retail CVar r_areaLights_ShadowMin. Lower shadow bound that the renderer treats as fully shadowed. This changes area-light shadow response, not shadow draw distance.");
- renderFloat("Shadow maximum",RenderControl::AreaShadowMax,.001f,0,1,"%.3f","Retail CVar r_areaLights_ShadowMax. Upper shadow bound that the renderer treats as fully lit. This changes area-light shadow response, not shadow draw distance.");
- ImGui::SeparatorText("Diagnostics");
- renderToggle("Show area lights in pool",RenderControl::DebugAreaLights,"Retail CVar r_postProcessDebugAreaLights. Shows area lights currently held in the renderer's pool. Diagnostic view only; it does not add or modify individual lights.");
- renderLightVolumeMode();
- ImGui::Spacing();if(ImGui::Button("Restore initial render settings"))renderControlRestore();helpMarker("Restores all exposed render, environment and light CVar values to the values captured when the tool was injected.");
-}
 void lodTab(){
  ImGui::TextUnformatted("LEVEL OF DETAIL");ImGui::Separator();
  ImGui::TextWrapped("These controls target world mesh detail and shadow visibility. Change one setting at a time so its effect is easy to compare.");
@@ -99,12 +85,11 @@ void lodTab(){
 }
 void panel(){std::lock_guard<std::recursive_mutex> g(cameraMutex);
  ImGui::SetNextWindowSize(ImVec2(620,530),ImGuiCond_FirstUseEver);
- ImGui::Begin("Dishonored 2 | Void Camera 1.15 | End to hide");
+ ImGui::Begin("Dishonored 2 | Void Camera 1.16 | End to hide");
  if(ImGui::BeginTabBar("VoidCameraTabs")){
   if(ImGui::BeginTabItem("Camera")){ImGui::BeginChild("CameraTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);cameraTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("Post-process")){ImGui::BeginChild("PostProcessTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);postProcessTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("Environment")){ImGui::BeginChild("EnvironmentTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);environmentTab();ImGui::EndChild();ImGui::EndTabItem();}
-  if(ImGui::BeginTabItem("Lights")){ImGui::BeginChild("LightsTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);lightsTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("LOD")){ImGui::BeginChild("LodTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);lodTab();ImGui::EndChild();ImGui::EndTabItem();}
   ImGui::EndTabBar();
  }

@@ -144,3 +144,25 @@ Les messages de l'ancien assistant constituent des recherches à vérifier, pas 
   diagnostics. VoidCamera 1.14 is already loaded in that game process, so the
   new UI/effects have not been visually tested; restart before injecting 1.15.
 
+## Native 1.16 — render controls and PP Cheat Engine table
+
+- Removed the Lights tab from the in-game UI at the user's request. Area-light
+  CVar research remains documented, but those controls are no longer surfaced.
+- Expanded `tools/Dishonored2_PostFX_Retail_1.77.9.0.CT` with live-registered
+  fog blur, god-rays blur, gamma, transparency/particle, exposure convergence,
+  and underwater fog/god-rays CVars. Each entry is annotated as experimental
+  where its visual effect or useful range has not been tested; writes validate
+  the exact retail CVar name and synchronize text, integer, and float fields.
+- FOV reminder: Numpad `+`/`-` adjusts vertical FOV while free camera is enabled
+  and the panel is hidden. Horizontal FOV is derived from live aspect ratio.
+- User clarified the new visual issue concerns LOD relative to FOV, not changing
+  the camera FOV itself. The live retail binary has no separate `lodAtFov` CVar
+  string; `r_lodZoomMultiplicator` is the documented static-world LOD zoom
+  multiplier and is the likely setting to revisit alongside the reported chair
+  appearance. Do not claim that relationship is confirmed without visual testing.
+- The attached 2026-10-25 video was not readable from its protected temporary
+  recording path in this session; chair visibility/pop-in still needs visual
+  attribution before changing the camera or culling behavior.
+- Release build succeeded with Visual Studio 2022/MSVC 14.44.35207 in
+  `build-v16-vs17`; package: `bin/v1.16/Release`, `dist/VoidCamera_1.16.zip`.
+
