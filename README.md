@@ -1,4 +1,4 @@
-# Void Camera 1.49 — Dishonored 2 camera, render controls and time stop
+# Void Camera 1.50 — Dishonored 2 camera, render controls and time stop
 
 Native x64 camera tool for Dishonored 2 retail 1.77.9.0.
 
@@ -76,14 +76,17 @@ then install the official Connector addon, shader, and its required textures usi
 the [IGCS DOF installation guide](https://opm.fransbouma.com/igcsdof.htm).
 Keep the Connector addon beside `Dishonored2.exe`. Install the files from its
 `Shaders` and `Textures` folders into ReShade's matching folders, and enable
-the `IgcsDOF` technique in ReShade's Home tab. Enable VoidCamera before
-starting a DOF session.
+the `IgcsDOF` technique in ReShade's Home tab. For rolled shots, replace
+`reshade-shaders/Shaders/IgcsDof.fx` with the `IgcsDof.fx` included in this
+package; it rotates IGCS Focus delta by the camera roll. Enable VoidCamera
+before starting a DOF session.
 
 VoidCamera implements the Connector camera-data bridge and IGCS multi-shot
 sessions used by DOF. Start a session with the camera enabled; the camera pose
 is saved, each sample moves within the original camera plane, and the pose is
-restored when the session ends. Panorama stitching remains unavailable. The
-IGCS DOF workflow was confirmed working in game on 2026-10-24.
+restored when the session ends. Aperture sample movement keeps the stable
+camera-control frame while the included shader rotates focus alignment with
+the camera roll. Panorama stitching remains unavailable.
 
 The injector checks the exact executable SHA256. The DLL also checks PE identity
 and the three original camera signatures before installing its hook.
@@ -97,7 +100,7 @@ cmake -S . -B build -A x64 -T "v143,version=14.44.35207"
 cmake --build build --config Release
 ```
 
-Output: `bin/v1.49/Release`. Distribution: `dist/VoidCamera_1.49`.
+Output: `bin/v1.50/Release`. Distribution: `dist/VoidCamera_1.50`.
 
 ## Sources
 Camera baseline supplied by the user: `research/Dishonored2_Camera_v0.6.lua`.

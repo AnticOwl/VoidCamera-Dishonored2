@@ -304,8 +304,8 @@ extern "C" __declspec(dllexport) void __cdecl IGCS_MoveCameraMultishot(float ste
  Q baseOrientation=fromStartPosition?igcsSessionStartOrientation:q;
  float rotation[9];native(baseOrientation,rotation);
  // Use the same roll-independent camera movement frame as the live controls.
- // This keeps IGCS aperture X/Y samples aligned with the DOF's screen axes
- // when the camera is rolled, instead of rotating the bokeh sample pattern.
+ // This keeps IGCS aperture X/Y samples aligned with the DOF's stable camera
+ // movement axes. The shader separately rotates focus alignment by camera roll.
  Q sampleOrientation=norm(mul(axis(2,rad(basePose.pyr[1])),axis(1,rad(basePose.pyr[0]))));
  native(sampleOrientation,rotation);
  for(int i=0;i<3;++i)
