@@ -156,7 +156,7 @@ void lodTab(){
 }
 void panel(){std::lock_guard<std::recursive_mutex> g(cameraMutex);
  ImGui::SetNextWindowSize(ImVec2(620,530),ImGuiCond_FirstUseEver);
- ImGui::Begin("Dishonored 2 | Void Camera 1.49 | F10 to hide");
+ ImGui::Begin("Dishonored 2 | Void Camera 1.48 | F10 to hide");
  if(ImGui::BeginTabBar("VoidCameraTabs")){
   if(ImGui::BeginTabItem("Camera")){ImGui::BeginChild("CameraTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);cameraTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("Post-process")){ImGui::BeginChild("PostProcessTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);postProcessTab();ImGui::EndChild();ImGui::EndTabItem();}
