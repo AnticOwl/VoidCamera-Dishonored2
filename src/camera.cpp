@@ -24,6 +24,7 @@ int controlMode=0; // 0: Keyboard, 1: Gamepad
 int rotationSpeed=950; // PYR angular speed in degrees per second
 bool cameraNeedsNeutralInput=false;
 bool cameraNeutralInputFrameSeen=false;
+bool sampledKeyDown[256]{};
 Status* status=nullptr;
 namespace {
 uintptr_t base;
@@ -332,7 +333,11 @@ void writeLodDiagnosticSample(uint64_t now,bool focused,const Capture& s){
 }
 void publish(bool seed){float f[14];f[1]=rad(pose.fov);f[0]=2*atanf(tanf(f[1]/2)*aspect);memcpy(f+2,pose.xyz,12);native(q,f+5);InterlockedIncrement(reinterpret_cast<LONG*>(cameraData+4));for(int i=0;i<14;++i)write<float>(0x80+i*4,f[i]);MemoryBarrier();InterlockedIncrement(reinterpret_cast<LONG*>(cameraData+4));if(seed)memcpy(cameraData+0x200,f,sizeof f);}
 void disable(){write<unsigned>(0,0);MemoryBarrier();write<uint64_t>(8,0);cameraEnabled=false;cameraNeedsNeutralInput=false;cameraNeutralInputFrameSeen=false;}
-bool key(int k){return (GetAsyncKeyState(k)&0x8000)!=0;}
+void sampleKeyboardState(){
+ constexpr int controls[]={VK_INSERT,VK_DELETE,VK_NUMPAD0,VK_HOME,VK_UP,VK_DOWN,VK_LEFT,VK_RIGHT,VK_NUMPAD1,VK_NUMPAD2,VK_NUMPAD3,VK_NUMPAD4,VK_NUMPAD5,VK_NUMPAD6,VK_NUMPAD7,VK_NUMPAD8,VK_NUMPAD9,VK_ADD,VK_SUBTRACT,VK_MENU,VK_CONTROL,VK_SHIFT,'Z','W'};
+ for(int control:controls)sampledKeyDown[control]=(GetAsyncKeyState(control)&0x8000)!=0;
+}
+bool key(int k){return k>=0&&k<256&&sampledKeyDown[k];}
 bool edge(int k){static bool down[256]{};bool d=key(k),r=d&&!down[k];down[k]=d;return r;}
 float stick(SHORT value,SHORT deadzone){float v=float(value)/32767.f;float a=fabsf(v);return a<=float(deadzone)/32767.f?0.f:std::copysign((a-float(deadzone)/32767.f)/(1.f-float(deadzone)/32767.f),v);}
 bool cameraControlsNeutral(const XINPUT_STATE& gamepadState){
@@ -393,7 +398,7 @@ bool lodTestForceEntityLod0(){std::lock_guard<std::recursive_mutex> g(cameraMute
 bool lodDiagnosticLogActive(){std::lock_guard<std::recursive_mutex> g(cameraMutex);return lodLogFile!=nullptr;}
 bool lodDiagnosticLogToggle(){std::lock_guard<std::recursive_mutex> g(cameraMutex);if(lodLogFile){fprintf(lodLogFile,"# session stopped at %llu ms\n",static_cast<unsigned long long>(GetTickCount64()));fclose(lodLogFile);lodLogFile=nullptr;return false;}wchar_t path[MAX_PATH]{};DWORD n=GetEnvironmentVariableW(L"LOCALAPPDATA",path,MAX_PATH);if(!n||n>=MAX_PATH-48)return false;wcscat_s(path,L"\\VoidCamera");CreateDirectoryW(path,nullptr);wcscpy_s(lodLogPath,path);wcscat_s(lodLogPath,L"\\lod-mesh-test.csv");if(_wfopen_s(&lodLogFile,lodLogPath,L"w")!=0||!lodLogFile){lodLogFile=nullptr;return false;}fprintf(lodLogFile,"tick_ms,local_time,game_focused,zoom_key_Z,move_key_W,gamepad_connected,gamepad_buttons_hex,right_thumb_click,right_stick_x,right_stick_y,left_trigger,right_trigger,view_ptr,view_width,view_height,render_aspect,camera_x,camera_y,camera_z,vertical_fov,r_lodZoomMultiplicator,lod_forcevisibledistance,lod_dist_level0,lod_dist_level1,lod_dist_level2,lod_dist_level3,lod_dist_far,lod_ready_mask,r_viewDistPreset,r_zfar,mesh_event\n# session started at %llu ms\n",static_cast<unsigned long long>(GetTickCount64()));fflush(lodLogFile);lodLastSample=0;lodPendingMeshMark=0;return true;}
 void lodDiagnosticLogMark(bool visible){std::lock_guard<std::recursive_mutex> g(cameraMutex);if(lodLogFile)InterlockedExchange(reinterpret_cast<volatile LONG*>(&lodPendingMeshMark),visible?2:1);}
-void cameraFrame(){std::lock_guard<std::recursive_mutex> g(cameraMutex);static uint64_t last=GetTickCount64();uint64_t now=GetTickCount64();float dt=std::min((now-last)*.001f,.05f);last=now;DWORD fg=0;GetWindowThreadProcessId(GetForegroundWindow(),&fg);bool focused=fg==GetCurrentProcessId();bool ins=edge(VK_INSERT),del=edge(VK_DELETE),pause=edge(VK_NUMPAD0),home=edge(VK_HOME);if(focused&&ins&&!igcsSessionActive)cameraToggle();if(focused&&del)hudToggle();if(focused&&pause)timeStopToggle();if(focused&&home)cameraLocked=!cameraLocked;XINPUT_STATE gamepadState{};gamepadConnected=controlMode==1&&XInputGetState(0,&gamepadState)==ERROR_SUCCESS;
+void cameraFrame(){std::lock_guard<std::recursive_mutex> g(cameraMutex);sampleKeyboardState();static uint64_t last=GetTickCount64();uint64_t now=GetTickCount64();float dt=std::min((now-last)*.001f,.05f);last=now;DWORD fg=0;GetWindowThreadProcessId(GetForegroundWindow(),&fg);bool focused=fg==GetCurrentProcessId();bool ins=edge(VK_INSERT),del=edge(VK_DELETE),pause=edge(VK_NUMPAD0),home=edge(VK_HOME);if(focused&&ins&&!igcsSessionActive)cameraToggle();if(focused&&del)hudToggle();if(focused&&pause)timeStopToggle();if(focused&&home)cameraLocked=!cameraLocked;XINPUT_STATE gamepadState{};gamepadConnected=controlMode==1&&XInputGetState(0,&gamepadState)==ERROR_SUCCESS;
  Capture s{};cameraReady=snapshot(s);if(cameraReady){if(!renderAspectReady)aspect=float(s.w)/s.h;if(!cameraEnabled){memcpy(pose.xyz,s.f+2,12);eulers(s.f+5);q=fromEuler();pose.fov=deg(s.f[1]);}}
  if(cameraEnabled){unsigned hits=read<unsigned>(0x24);if(hits!=lastHits||!focused){lastHitTime=now;lastHits=hits;}if(*(volatile unsigned char*)(base+0x39a529c)||(!igcsSessionActive&&!timeStopped&&now-lastHitTime>3000))disable();}
  if(cameraEnabled){if(cameraNeedsNeutralInput&&focused){if(!cameraControlsNeutral(gamepadState))cameraNeutralInputFrameSeen=false;else if(cameraNeutralInputFrameSeen){cameraNeedsNeutralInput=false;cameraNeutralInputFrameSeen=false;}else cameraNeutralInputFrameSeen=true;}if(focused&&!status->overlay&&!cameraLocked&&!igcsSessionActive&&!cameraNeedsNeutralInput){float factor=key(VK_MENU)?.01f:key(VK_CONTROL)?.1f:key(VK_SHIFT)?5.f:1.f;float a=rad(rotationSpeed*dt*factor);float p=0,y=0,r=0,f=0,right=0,up=0,fov=0;
