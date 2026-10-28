@@ -28,11 +28,7 @@ the view is rolled. DOF samples use this same roll-independent frame: IGCS's
 focus delta and aperture X/Y are screen-axis parameters, and applying the full
 roll to camera offsets rotated the bokeh sampling axis in rolled views. The
 Connector continues to receive the full look quaternion and rolled basis for
-camera metadata. The bundled `extras/IgcsDof.fx` reads
-`IGCS_cameraRotationRoll` and rotates the focus-alignment vector separately,
-so Focus delta follows the rolled camera even though aperture sample movement
-uses the stable control frame. Replace the installed `IgcsDof.fx` with this
-version for rolled shots. Panorama stitching remains unavailable.
+camera metadata. Panorama stitching remains unavailable.
 
 ## Runtime requirements and validation
 
