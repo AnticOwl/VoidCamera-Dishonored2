@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 $project = Split-Path -Parent $PSScriptRoot
-$version = '1.46'
+$version = '1.47'
 $destination = Join-Path $project "dist\VoidCamera_$version"
 New-Item -ItemType Directory -Force -Path $destination | Out-Null
 Copy-Item -LiteralPath (Join-Path $project "bin\v$version\Release\VoidCamera.dll") -Destination $destination

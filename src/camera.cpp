@@ -23,6 +23,7 @@ bool gamepadConnected=false;
 int controlMode=0; // 0: Keyboard, 1: Gamepad
 int rotationSpeed=950; // PYR angular speed in degrees per second
 bool cameraNeedsNeutralInput=false;
+bool cameraNeutralInputFrameSeen=false;
 Status* status=nullptr;
 namespace {
 uintptr_t base;
@@ -330,7 +331,7 @@ void writeLodDiagnosticSample(uint64_t now,bool focused,const Capture& s){
  fflush(lodLogFile);
 }
 void publish(bool seed){float f[14];f[1]=rad(pose.fov);f[0]=2*atanf(tanf(f[1]/2)*aspect);memcpy(f+2,pose.xyz,12);native(q,f+5);InterlockedIncrement(reinterpret_cast<LONG*>(cameraData+4));for(int i=0;i<14;++i)write<float>(0x80+i*4,f[i]);MemoryBarrier();InterlockedIncrement(reinterpret_cast<LONG*>(cameraData+4));if(seed)memcpy(cameraData+0x200,f,sizeof f);}
-void disable(){write<unsigned>(0,0);MemoryBarrier();write<uint64_t>(8,0);cameraEnabled=false;cameraNeedsNeutralInput=false;}
+void disable(){write<unsigned>(0,0);MemoryBarrier();write<uint64_t>(8,0);cameraEnabled=false;cameraNeedsNeutralInput=false;cameraNeutralInputFrameSeen=false;}
 bool key(int k){return (GetAsyncKeyState(k)&0x8000)!=0;}
 bool edge(int k){static bool down[256]{};bool d=key(k),r=d&&!down[k];down[k]=d;return r;}
 float stick(SHORT value,SHORT deadzone){float v=float(value)/32767.f;float a=fabsf(v);return a<=float(deadzone)/32767.f?0.f:std::copysign((a-float(deadzone)/32767.f)/(1.f-float(deadzone)/32767.f),v);}
@@ -341,7 +342,7 @@ bool cameraControlsNeutral(const XINPUT_STATE& gamepadState){
   constexpr WORD activeButtons=XINPUT_GAMEPAD_DPAD_UP|XINPUT_GAMEPAD_DPAD_DOWN|XINPUT_GAMEPAD_DPAD_LEFT|XINPUT_GAMEPAD_DPAD_RIGHT|XINPUT_GAMEPAD_A|XINPUT_GAMEPAD_B|XINPUT_GAMEPAD_X;
   return stick(g.sThumbLX,XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE)==0.f&&stick(g.sThumbLY,XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE)==0.f&&stick(g.sThumbRX,XINPUT_GAMEPAD_RIGHT_THUMB_DEADZONE)==0.f&&stick(g.sThumbRY,XINPUT_GAMEPAD_RIGHT_THUMB_DEADZONE)==0.f&&g.bLeftTrigger<5&&g.bRightTrigger<5&&(g.wButtons&activeButtons)==0;
  }
- constexpr int controls[]={VK_UP,VK_DOWN,VK_LEFT,VK_RIGHT,VK_NUMPAD1,VK_NUMPAD2,VK_NUMPAD3,VK_NUMPAD4,VK_NUMPAD5,VK_NUMPAD6,VK_NUMPAD7,VK_NUMPAD8,VK_NUMPAD9,VK_ADD,VK_SUBTRACT};
+ constexpr int controls[]={VK_INSERT,VK_UP,VK_DOWN,VK_LEFT,VK_RIGHT,VK_NUMPAD1,VK_NUMPAD2,VK_NUMPAD3,VK_NUMPAD4,VK_NUMPAD5,VK_NUMPAD6,VK_NUMPAD7,VK_NUMPAD8,VK_NUMPAD9,VK_ADD,VK_SUBTRACT};
  for(int control:controls)if(key(control))return false;
  return true;
 }
@@ -381,7 +382,7 @@ DWORD WINAPI run(void*){wchar_t name[80];swprintf_s(name,L"Local\\VoidCamera_%lu
 }
 void saveControlMode(){saveControlModeInternal();}
 void saveRotationSpeed(){std::lock_guard<std::recursive_mutex> g(cameraMutex);rotationSpeed=std::clamp(rotationSpeed,45,1800);saveRotationSpeedInternal();}
-void cameraToggle(){std::lock_guard<std::recursive_mutex> g(cameraMutex);if(cameraEnabled){disable();return;}Capture s;if(read<unsigned>(0x2c)||*(volatile unsigned char*)(base+0x39a529c)||!snapshot(s))return;target=s.ptr;if(!renderAspectReady)aspect=float(s.w)/s.h;memcpy(pose.xyz,s.f+2,12);eulers(s.f+5);q=fromEuler();pose.fov=std::clamp(deg(s.f[1]),5.f,150.f);publish(true);write<uint64_t>(8,target);MemoryBarrier();write<unsigned>(0,1);cameraEnabled=true;cameraNeedsNeutralInput=true;lastHitTime=GetTickCount64();}
+void cameraToggle(){std::lock_guard<std::recursive_mutex> g(cameraMutex);if(cameraEnabled){disable();return;}Capture s;if(read<unsigned>(0x2c)||*(volatile unsigned char*)(base+0x39a529c)||!snapshot(s))return;target=s.ptr;if(!renderAspectReady)aspect=float(s.w)/s.h;memcpy(pose.xyz,s.f+2,12);eulers(s.f+5);q=fromEuler();pose.fov=std::clamp(deg(s.f[1]),5.f,150.f);publish(true);write<uint64_t>(8,target);MemoryBarrier();write<unsigned>(0,1);cameraEnabled=true;cameraNeedsNeutralInput=true;cameraNeutralInputFrameSeen=false;lastHitTime=GetTickCount64();}
 void timeStopToggle(){std::lock_guard<std::recursive_mutex> g(cameraMutex);if(!timeStopReady)return;if(!timeStopped){originalStopTime=*stopTimeValue;originalFreezeTime=*freezeTimeValue;InterlockedExchange(stopTimeValue,1);InterlockedExchange(freezeTimeValue,1);timeStopped=true;}else{InterlockedExchange(stopTimeValue,originalStopTime);InterlockedExchange(freezeTimeValue,originalFreezeTime);timeStopped=false;}}
 void hudToggle(){std::lock_guard<std::recursive_mutex> g(cameraMutex);if(!hudReady)return;if(!hudHidden){for(auto& c:hudCvars){c.originalInteger=*c.integer;c.originalReal=*c.real;for(int i=0;i<16;++i)c.originalText[i]=c.text[i];c.text[0]='0';for(int i=1;i<16;++i)c.text[i]=0;MemoryBarrier();InterlockedExchange(c.integer,0);*c.real=0;}hudHidden=true;}else{for(auto& c:hudCvars){for(int i=0;i<16;++i)c.text[i]=c.originalText[i];MemoryBarrier();InterlockedExchange(c.integer,c.originalInteger);*c.real=c.originalReal;}hudHidden=false;}}
 void focusLossToggle(){std::lock_guard<std::recursive_mutex> g(cameraMutex);if(!focusLossReady)return;if(!focusLossEnabled){InterlockedExchange8(reinterpret_cast<volatile char*>(pauseOnFocusLossValue),0);focusLossEnabled=true;}else{InterlockedExchange8(reinterpret_cast<volatile char*>(pauseOnFocusLossValue),static_cast<char>(originalPauseOnFocusLoss));focusLossEnabled=false;}}
@@ -395,7 +396,7 @@ void lodDiagnosticLogMark(bool visible){std::lock_guard<std::recursive_mutex> g(
 void cameraFrame(){std::lock_guard<std::recursive_mutex> g(cameraMutex);static uint64_t last=GetTickCount64();uint64_t now=GetTickCount64();float dt=std::min((now-last)*.001f,.05f);last=now;DWORD fg=0;GetWindowThreadProcessId(GetForegroundWindow(),&fg);bool focused=fg==GetCurrentProcessId();bool ins=edge(VK_INSERT),del=edge(VK_DELETE),pause=edge(VK_NUMPAD0),home=edge(VK_HOME);if(focused&&ins&&!igcsSessionActive)cameraToggle();if(focused&&del)hudToggle();if(focused&&pause)timeStopToggle();if(focused&&home)cameraLocked=!cameraLocked;XINPUT_STATE gamepadState{};gamepadConnected=controlMode==1&&XInputGetState(0,&gamepadState)==ERROR_SUCCESS;
  Capture s{};cameraReady=snapshot(s);if(cameraReady){if(!renderAspectReady)aspect=float(s.w)/s.h;if(!cameraEnabled){memcpy(pose.xyz,s.f+2,12);eulers(s.f+5);q=fromEuler();pose.fov=deg(s.f[1]);}}
  if(cameraEnabled){unsigned hits=read<unsigned>(0x24);if(hits!=lastHits||!focused){lastHitTime=now;lastHits=hits;}if(*(volatile unsigned char*)(base+0x39a529c)||(!igcsSessionActive&&!timeStopped&&now-lastHitTime>3000))disable();}
- if(cameraEnabled){if(cameraNeedsNeutralInput&&focused&&cameraControlsNeutral(gamepadState))cameraNeedsNeutralInput=false;if(focused&&!status->overlay&&!cameraLocked&&!igcsSessionActive&&!cameraNeedsNeutralInput){float factor=key(VK_MENU)?.01f:key(VK_CONTROL)?.1f:key(VK_SHIFT)?5.f:1.f;float a=rad(rotationSpeed*dt*factor);float p=0,y=0,r=0,f=0,right=0,up=0,fov=0;
+ if(cameraEnabled){if(cameraNeedsNeutralInput&&focused){if(!cameraControlsNeutral(gamepadState))cameraNeutralInputFrameSeen=false;else if(cameraNeutralInputFrameSeen){cameraNeedsNeutralInput=false;cameraNeutralInputFrameSeen=false;}else cameraNeutralInputFrameSeen=true;}if(focused&&!status->overlay&&!cameraLocked&&!igcsSessionActive&&!cameraNeedsNeutralInput){float factor=key(VK_MENU)?.01f:key(VK_CONTROL)?.1f:key(VK_SHIFT)?5.f:1.f;float a=rad(rotationSpeed*dt*factor);float p=0,y=0,r=0,f=0,right=0,up=0,fov=0;
   if(controlMode==1){if(gamepadConnected){auto& gpad=gamepadState.Gamepad;p=-stick(gpad.sThumbRY,XINPUT_GAMEPAD_RIGHT_THUMB_DEADZONE);y=stick(gpad.sThumbRX,XINPUT_GAMEPAD_RIGHT_THUMB_DEADZONE);f=stick(gpad.sThumbLY,XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE);right=stick(gpad.sThumbLX,XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE);up=(float(gpad.bLeftTrigger)-float(gpad.bRightTrigger))/255.f;factor*=gpad.wButtons&XINPUT_GAMEPAD_A?5.f:gpad.wButtons&XINPUT_GAMEPAD_X?.1f:1.f;fov=(gpad.wButtons&XINPUT_GAMEPAD_DPAD_DOWN?1.f:0.f)-(gpad.wButtons&XINPUT_GAMEPAD_DPAD_UP?1.f:0.f);r=(gpad.wButtons&XINPUT_GAMEPAD_DPAD_RIGHT?1.f:0.f)-(gpad.wButtons&XINPUT_GAMEPAD_DPAD_LEFT?1.f:0.f);if(gpad.wButtons&XINPUT_GAMEPAD_B)pose.fov=60.f;}}
   else{p=float(key(VK_DOWN))-key(VK_UP);y=float(key(VK_RIGHT))-key(VK_LEFT);r=float(key(VK_NUMPAD1))-key(VK_NUMPAD3);f=float(key(VK_NUMPAD8))-key(VK_NUMPAD5);right=float(key(VK_NUMPAD6))-key(VK_NUMPAD4);up=float(key(VK_NUMPAD9))-key(VK_NUMPAD7);fov=float(key(VK_ADD))-key(VK_SUBTRACT);if(key(VK_NUMPAD2)){pose.pyr[2]=0;q=fromEuler();}}
   // Keep pitch and yaw as independent pose angles; local roll must not swap them.
