@@ -21,9 +21,14 @@ IGCS Connector also requires the camera-tools screenshot-session exports to
 consider a camera connected. DOF calls `IGCS_StartScreenshotSession` with
 `ScreenshotType::MultiShot` and then moves the camera for each aperture sample.
 VoidCamera now saves the starting pose, applies each sample in the same
-right/up basis it publishes to the Connector, locks out local camera input
-during sampling, and restores the starting pose on session end. Panorama
-stitching remains unavailable.
+right/up basis it uses for live movement, locks out local camera input during
+sampling, and restores the starting pose on session end. The live movement
+frame intentionally excludes roll so control directions do not rotate when
+the view is rolled. DOF samples use this same roll-independent frame: IGCS's
+focus delta and aperture X/Y are screen-axis parameters, and applying the full
+roll to camera offsets rotated the bokeh sampling axis in rolled views. The
+Connector continues to receive the full look quaternion and rolled basis for
+camera metadata. Panorama stitching remains unavailable.
 
 ## Runtime requirements and validation
 

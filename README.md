@@ -1,4 +1,4 @@
-# Void Camera 1.48 — Dishonored 2 camera, render controls and time stop
+# Void Camera 1.49 — Dishonored 2 camera, render controls and time stop
 
 Native x64 camera tool for Dishonored 2 retail 1.77.9.0.
 
@@ -97,7 +97,7 @@ cmake -S . -B build -A x64 -T "v143,version=14.44.35207"
 cmake --build build --config Release
 ```
 
-Output: `bin/v1.48/Release`. Distribution: `dist/VoidCamera_1.48`.
+Output: `bin/v1.49/Release`. Distribution: `dist/VoidCamera_1.49`.
 
 ## Sources
 Camera baseline supplied by the user: `research/Dishonored2_Camera_v0.6.lua`.

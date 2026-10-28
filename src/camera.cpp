@@ -269,6 +269,9 @@ void updateIgcsConnector(bool enabled, bool locked, const Pose& cameraPose, Q or
  memcpy(connectorData->rotationMatrixUpVector.values,rotation+6,sizeof(float)*3);
  connectorData->pitch=rad(cameraPose.pyr[0]);connectorData->yaw=rad(cameraPose.pyr[1]);connectorData->roll=rad(cameraPose.pyr[2]);
 }
+Q mul(Q a,Q b);
+Q norm(Q a);
+Q axis(int i,float a);
 extern "C" __declspec(dllexport) int __cdecl IGCS_StartScreenshotSession(unsigned char type){
  std::lock_guard<std::recursive_mutex> g(cameraMutex);
  constexpr int allOk=0,errorCameraNotEnabled=1,errorAlreadyActive=3,errorFeatureUnavailable=4;
@@ -300,7 +303,11 @@ extern "C" __declspec(dllexport) void __cdecl IGCS_MoveCameraMultishot(float ste
  Pose basePose=fromStartPosition?igcsSessionStart:pose;
  Q baseOrientation=fromStartPosition?igcsSessionStartOrientation:q;
  float rotation[9];native(baseOrientation,rotation);
- // Match the IGCS camera-data basis published above: right=-row 1, up=row 2.
+ // Use the same roll-independent camera movement frame as the live controls.
+ // This keeps IGCS aperture X/Y samples aligned with the DOF's screen axes
+ // when the camera is rolled, instead of rotating the bokeh sample pattern.
+ Q sampleOrientation=norm(mul(axis(2,rad(basePose.pyr[1])),axis(1,rad(basePose.pyr[0]))));
+ native(sampleOrientation,rotation);
  for(int i=0;i<3;++i)
   pose.xyz[i]=basePose.xyz[i]-rotation[3+i]*stepLeftRight+rotation[6+i]*stepUpDown;
  pose.pyr[0]=basePose.pyr[0];pose.pyr[1]=basePose.pyr[1];pose.pyr[2]=basePose.pyr[2];
