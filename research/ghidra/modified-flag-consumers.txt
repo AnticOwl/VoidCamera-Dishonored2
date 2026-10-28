@@ -1,0 +1,85 @@
+INFO  Using log config file: jar:file:/F:/CE%20Projects/OutlawsLab/tooling/ghidra-12.1.4/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: F:\CE Projects\VoidCamera\research\ghidra\userhome\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: F:\CE Projects\VoidCamera\research\ghidra\userhome\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1249 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (8548 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    F:\CE Projects\VoidCamera\research\ghidra (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: F:\CE Projects\VoidCamera\research\ghidra\projects\D2Retail (HeadlessAnalyzer)  
+INFO  Opening project: F:\CE Projects\VoidCamera\research\ghidra\projects\D2Retail (HeadlessProject)  
+INFO  REPORT: Processing project file: /Dishonored2.exe (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: FindCvarModifiedFlagConsumers.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: F:\CE Projects\VoidCamera\research\ghidra\FindCvarModifiedFlagConsumers.java (HeadlessAnalyzer)  
+INFO  FindCvarModifiedFlagConsumers.java> CVAR_REGISTRY_USERS=4 (GhidraScript)  
+INFO  FindCvarModifiedFlagConsumers.java> 
+FUNCTION 140102320 FUN_140102320 SIZE=223
+
+void FUN_140102320(undefined8 param_1,uint param_2)
+
+{
+  undefined8 uVar1;
+  longlong lVar2;
+  int iVar3;
+  longlong *plVar4;
+  
+  lVar2 = DAT_1431c04b0;
+  do {
+    if (lVar2 == 0) {
+      return;
+    }
+    if ((*(uint *)(lVar2 + 0x48) & param_2) != 0) {
+      uVar1 = *(undefined8 *)(lVar2 + 0x38);
+      iVar3 = FUN_1401435f0(lVar2,uVar1);
+      if (iVar3 != 0) {
+        plVar4 = (longlong *)FUN_1401548e0();
+        (**(code **)(*plVar4 + 0x48))(plVar4,0);
+        FUN_14013ff40(lVar2,uVar1);
+        plVar4 = (longlong *)FUN_1401548e0();
+        (**(code **)(*plVar4 + 0x50))(plVar4,0);
+        FUN_140102cb0(lVar2);
+        (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))
+                  (PTR_DAT_14228bae8,*(undefined4 *)(lVar2 + 0x48));
+        *(uint *)(lVar2 + 0x48) = *(uint *)(lVar2 + 0x48) | 0x80000;
+        if (((*(uint *)(lVar2 + 0x48) & 0x20000) != 0) && (DAT_1432c7ed4 == 3)) {
+                    /* WARNING: Subroutine does not return */
+          FUN_140166830("Archived CVar \'%s\' in production mode",*(undefined8 *)(lVar2 + 0x30));
+        }
+                    /* WARNING: Subroutine does not return */
+        FUN_140166830("Resetting cheat cvar: %s\n",*(undefined8 *)(lVar2 + 0x30));
+      }
+    }
+    lVar2 = *(longlong *)(lVar2 + 0x78);
+  } while( true );
+}
+
+ (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /Dishonored2.exe (HeadlessAnalyzer)  

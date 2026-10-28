@@ -1,0 +1,2033 @@
+INFO  Using log config file: jar:file:/F:/CE%20Projects/OutlawsLab/tooling/ghidra-12.1.4/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: F:\CE Projects\VoidCamera\research\ghidra\userhome\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: F:\CE Projects\VoidCamera\research\ghidra\userhome\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1247 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (8376 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    F:\CE Projects\VoidCamera\research\ghidra (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: F:\CE Projects\VoidCamera\research\ghidra\projects\D2Retail (HeadlessAnalyzer)  
+INFO  Opening project: F:\CE Projects\VoidCamera\research\ghidra\projects\D2Retail (HeadlessProject)  
+INFO  REPORT: Processing project file: /Dishonored2.exe (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: TracePresetCallbacks.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: F:\CE Projects\VoidCamera\research\ghidra\TracePresetCallbacks.java (HeadlessAnalyzer)  
+INFO  TracePresetCallbacks.java> TARGET 143982ee0 (GhidraScript)  
+INFO  TracePresetCallbacks.java> TARGET 143982ee8 (GhidraScript)  
+INFO  TracePresetCallbacks.java> TARGET 140100840 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 143ed07a8 none (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14208e294 none (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413532be 141353270 FUN_141353270 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141353beb 141353ba0 FUN_141353ba0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141353fab 141353f60 FUN_141353f60 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413542e0 141354290 FUN_141354290 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141354d0b 141354cc0 FUN_141354cc0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141354dbb 141354d70 FUN_141354d70 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141354e1b 141354dd0 FUN_141354dd0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141354fc0 141354f70 FUN_141354f70 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14135511b 1413550d0 FUN_1413550d0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141356880 141356830 FUN_141356830 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141357e3b 141357df0 FUN_141357df0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141357fab 141357f60 FUN_141357f60 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14135800b 141357fc0 FUN_141357fc0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14135806b 141358020 FUN_141358020 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413580cb 141358080 FUN_141358080 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14135812b 1413580e0 FUN_1413580e0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413583d3 141358380 FUN_141358380 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141358cd0 141358c80 FUN_141358c80 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14135cd8e 14135cd40 FUN_14135cd40 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14135d7ce 14135d780 FUN_14135d780 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141363600 1413635b0 FUN_1413635b0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14136662b 1413665e0 FUN_1413665e0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141366690 141366640 FUN_141366640 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413685cb 141368580 FUN_141368580 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141369cb0 141369c60 FUN_141369c60 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14136ab00 14136aab0 FUN_14136aab0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141371ba0 141371b50 FUN_141371b50 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141372f50 141372f00 FUN_141372f00 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137305b 141373010 FUN_141373010 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137315b 141373110 FUN_141373110 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137452b 1413744e0 FUN_1413744e0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137467b 141374630 FUN_141374630 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413746e0 141374690 FUN_141374690 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137575b 141375710 FUN_141375710 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141375a40 1413759f0 FUN_1413759f0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413760a0 141376050 FUN_141376050 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413761c0 141376170 FUN_141376170 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413765f0 1413765a0 FUN_1413765a0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413768de 141376890 FUN_141376890 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141376d5e 141376d10 FUN_141376d10 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141376dcb 141376d80 FUN_141376d80 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141376ecb 141376e80 FUN_141376e80 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141376f30 141376ee0 FUN_141376ee0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141376ffb 141376fb0 FUN_141376fb0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141377780 141377730 FUN_141377730 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413777f0 1413777a0 FUN_1413777a0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141377860 141377810 FUN_141377810 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413778d0 141377880 FUN_141377880 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141377940 1413778f0 FUN_1413778f0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413779b0 141377960 FUN_141377960 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141377a70 141377a20 FUN_141377a20 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141377ae0 141377a90 FUN_141377a90 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141377fb3 141377f60 FUN_141377f60 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413793e0 141379390 FUN_141379390 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137988b 141379840 FUN_141379840 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413798eb 1413798a0 FUN_1413798a0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137994b 141379900 FUN_141379900 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413799ab 141379960 FUN_141379960 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137c72b 14137c6e0 FUN_14137c6e0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137d82b 14137d7e0 FUN_14137d7e0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137d88b 14137d840 FUN_14137d840 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137d98b 14137d940 FUN_14137d940 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137d9eb 14137d9a0 FUN_14137d9a0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137da4b 14137da00 FUN_14137da00 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137daab 14137da60 FUN_14137da60 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137db5b 14137db10 FUN_14137db10 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14137dbbb 14137db70 FUN_14137db70 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141384ddb 141384d90 FUN_141384d90 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138707b 141387030 FUN_141387030 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138792e 1413878e0 FUN_1413878e0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138835b 141388310 FUN_141388310 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138add0 14138ad80 FUN_14138ad80 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138ae40 14138adf0 FUN_14138adf0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138aeb0 14138ae60 FUN_14138ae60 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138b38b 14138b340 FUN_14138b340 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138d34b 14138d300 FUN_14138d300 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138d3ab 14138d360 FUN_14138d360 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138d40b 14138d3c0 FUN_14138d3c0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138d46b 14138d420 FUN_14138d420 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138d4cb 14138d480 FUN_14138d480 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138d740 14138d6f0 FUN_14138d6f0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138d7b0 14138d760 FUN_14138d760 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138d820 14138d7d0 FUN_14138d7d0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138d890 14138d840 FUN_14138d840 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14138ed0b 14138ecc0 FUN_14138ecc0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14139057e 141390530 FUN_141390530 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141390c7e 141390c30 FUN_141390c30 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141391f10 141391ec0 FUN_141391ec0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141391fd0 141391f80 FUN_141391f80 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141392040 141391ff0 FUN_141391ff0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413920fb 1413920b0 FUN_1413920b0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141392480 141392430 FUN_141392430 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141392540 1413924f0 FUN_1413924f0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413925b0 141392560 FUN_141392560 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141392670 141392620 FUN_141392620 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14139272b 1413926e0 FUN_1413926e0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 141392b60 141392b10 FUN_141392b10 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413930d0 141393080 FUN_141393080 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14139329b 141393250 FUN_141393250 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1413932fb 1413932b0 FUN_1413932b0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14139335b 141393310 FUN_141393310 (GhidraScript)  
+INFO  TracePresetCallbacks.java> TARGET 140102cb0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 143ed0a3c none (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14208e394 none (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1401024cd 140102400 FUN_140102400 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 14010106f 140100f20 FUN_140100f20 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 140102391 140102320 FUN_140102320 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 140102811 140102700 FUN_140102700 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 1401022ea 1401022d0 FUN_1401022d0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 140101754 140101640 FUN_140101640 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 140102315 1401022f0 FUN_1401022f0 (GhidraScript)  
+INFO  TracePresetCallbacks.java>  REF 140103762 140103710 FUN_140103710 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 140100840 FUN_140100840 SIZE=161 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+undefined8
+FUN_140100840(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined4 param_4,
+             undefined8 param_5,undefined4 param_6,undefined4 param_7,undefined8 param_8)
+
+{
+  undefined8 uVar1;
+  
+  uVar1 = 0xfffffffffffffffe;
+  FUN_14013fb30();
+  FUN_140101640(param_1,param_2,param_3,param_4,param_5,param_6,param_7,0,param_8,0,uVar1);
+  return param_1;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141353270 FUN_141353270 SIZE=99 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141353270(void)
+
+{
+  FUN_140100840(&DAT_1425ae190,"com_logFile",&DAT_141abe970,2,
+                "1 = buffer log, 2 = flush after each print",0,DAT_141ab3b20,FUN_14003c3f0);
+  atexit((_func_5014 *)&LAB_141a59fa0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141353ba0 FUN_141353ba0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141353ba0(void)
+
+{
+  FUN_140100840(&DAT_1425aea10,"com_speeds",&DAT_141abe970,0x20002,
+                "show engine timings. 1 = print on console, 2 = print on screen, 3 = also show graph"
+                ,0,DAT_141abc544,0);
+  atexit((_func_5014 *)&LAB_141a5a190);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141353f60 FUN_141353f60 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141353f60(void)
+
+{
+  FUN_140100840(&DAT_1425b1980,"com_drawThreadSpeeds",&DAT_141abe970,0x12,
+                "1 = dynamic draw, 2 = static draw, 3 = dynamic draw until stall",0,DAT_141abc544,0)
+  ;
+  atexit((_func_5014 *)&LAB_141a5a230);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141354290 FUN_141354290 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141354290(void)
+
+{
+  FUN_140100840(&DAT_1425b1e00,"com_timeScaler",&DAT_141ac1264,0x10004,"scales the time",
+                DAT_141ab3b0c,DAT_141abf158,0);
+  atexit((_func_5014 *)&LAB_141a5a2d0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141354cc0 FUN_141354cc0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141354cc0(void)
+
+{
+  FUN_140100840(&DAT_1425b2dd0,"com_showFPS",&DAT_141abe970,0x20002,
+                "show frames rendered per second",0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5a4e0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141354d70 FUN_141354d70 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141354d70(void)
+
+{
+  FUN_140100840(&DAT_1425b32d0,"com_showMemoryUsage",&DAT_141abe970,0x20002,
+                "show memory usage. 0 = disabled, 1 = basic, 2 = with heap details.",0,DAT_141ab3b20
+                ,0);
+  atexit((_func_5014 *)&LAB_141a5a500);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141354dd0 FUN_141354dd0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141354dd0(void)
+
+{
+  FUN_140100840(&DAT_1425b3150,"com_showPos",&DAT_141abe970,0x20002,"show camera position",0,
+                DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5a510);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141354f70 FUN_141354f70 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141354f70(void)
+
+{
+  FUN_140100840(&DAT_142bc28f0,"con_fraction",&DAT_141ac8814,4,
+                "override console fraction, -1.f means no override",DAT_141ab3b34,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5a560);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413550d0 FUN_1413550d0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413550d0(void)
+
+{
+  FUN_140100840(&DAT_142bc2870,"con_opacity",&DAT_141abefb8,4,"console background opacity",0,
+                DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5a5a0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141356830 FUN_141356830 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141356830(void)
+
+{
+  FUN_140100840(&DAT_142bf7d50,"fc_maxCacheMemoryMB",&DAT_141abefb8,2,
+                "Maximum cache size in megabytes",DAT_141f697b0,DAT_141ac8ff8,0);
+  atexit((_func_5014 *)&LAB_141a5ab70);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141357df0 FUN_141357df0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141357df0(void)
+
+{
+  FUN_140100840(&DAT_142bfa940,"s_environmentalDetailLevel",&DAT_141ac1284,0x10002,
+                "scalable environmental detail level ",0,DAT_141ac8fdc,0);
+  atexit((_func_5014 *)&LAB_141a5b1f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141357f60 FUN_141357f60 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141357f60(void)
+
+{
+  FUN_140100840(&DAT_142bfaa50,"s_MasterBus_Gain","100.0",0x10004,"Master Bus Gain",0,DAT_141ac8ffc,
+                0);
+  atexit((_func_5014 *)&LAB_141a5b240);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141357fc0 FUN_141357fc0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141357fc0(void)
+
+{
+  FUN_140100840(&DAT_142bfaad0,"s_Music_Gain","100.0",0x10004,"Music Bus Gain",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a5b250);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141358020 FUN_141358020 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141358020(void)
+
+{
+  FUN_140100840(&DAT_142bfab50,"s_SFX_Gain","100.0",0x10004,"Sound Effects Bus Gain",0,DAT_141ac8ffc
+                ,0);
+  atexit((_func_5014 *)&LAB_141a5b260);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141358080 FUN_141358080 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141358080(void)
+
+{
+  FUN_140100840(&DAT_142bfac50,"s_Video_Gain","100.0",0x10004,"Video Bus Gain",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a5b270);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413580e0 FUN_1413580e0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413580e0(void)
+
+{
+  FUN_140100840(&DAT_142bfabd0,"s_Voices_Gain","100.0",0x10004,"Voices Bus Gain",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a5b280);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141358380 FUN_141358380 SIZE=104 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141358380(void)
+
+{
+  FUN_140100840(&DAT_143130c40,"g_mouseSmooth",&DAT_141abefb8,0x10004,
+                "number of samples blended for mouse viewing",DAT_141f697b0,DAT_141abf15c,
+                FUN_1400d0e30);
+  atexit((_func_5014 *)&LAB_141a5b350);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141358c80 FUN_141358c80 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141358c80(void)
+
+{
+  FUN_140100840(&DAT_143133580,"net_numPorts",&DAT_141ac12c4,2,
+                "Number of ports to try to open or broadcast for non-platform backend mode",
+                DAT_141f697b0,DAT_141ac8fe4,0);
+  atexit((_func_5014 *)&LAB_141a5b630);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14135cd40 FUN_14135cd40 SIZE=99 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14135cd40(void)
+
+{
+  FUN_140100840(&DAT_1432c70f0,"fs_debug",&DAT_141abe970,2,&DAT_141ab2848,0,DAT_141ab3b20,
+                FUN_14003c3f0);
+  atexit((_func_5014 *)&LAB_141a5c590);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14135d780 FUN_14135d780 SIZE=99 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14135d780(void)
+
+{
+  FUN_140100840(&DAT_1432ccfa0,"com_timeStampPrints",&DAT_141abe970,2,
+                "print time with each console print, 1 = sec, 2 = msec, 3 = MM:SS:sss",0,
+                DAT_141abc544,FUN_1401667b0);
+  atexit((_func_5014 *)&LAB_141a5c7c0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413635b0 FUN_1413635b0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413635b0(void)
+
+{
+  FUN_140100840(&DAT_1432cf8d0,"r_maxDynamicDecals",&DAT_141afc0c8,0x12,
+                "Maximum number of dynamic decals",DAT_141ac8fdc,DAT_141ab3b24,0);
+  atexit((_func_5014 *)&LAB_141a5cd50);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413665e0 FUN_1413665e0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413665e0(void)
+
+{
+  FUN_140100840(&DAT_1432d52d0,"r_schedulerThreadingMode",&DAT_141ac1264,2,
+                "0: single threaded (one worker enabled), 1: cpu-only tasks multithreaded, 2: fully multithreaded (cpu & gpu tasks - available only if deferred contexts are enabled !)"
+                ,0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5d770);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141366640 FUN_141366640 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141366640(void)
+
+{
+  FUN_140100840(&DAT_1432d5350,"r_schedulerUseDeferredCtx",&DAT_141abefb8,0x4002,
+                "scheduler context pool is deferred. -1: auto (depends on driver caps), 0: always disabled, 1: always enabled"
+                ,DAT_141ab3b34,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5d780);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141368580 FUN_141368580 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141368580(void)
+
+{
+  FUN_140100840(&DAT_1432e8b60,"r_useUniformArrays",&DAT_141abefb8,0x4002,
+                "0: use individual uniforms, 1: use uniform array",0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5d8c0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141369c60 FUN_141369c60 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141369c60(void)
+
+{
+  FUN_140100840(&DAT_1432ea800,"tlf_TileDim",&DAT_141acdfa4,0x4002,
+                "give the tile dimension for tiled culling",DAT_141ab3b20,DAT_141ab3b58,0);
+  atexit((_func_5014 *)&LAB_141a5dce0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14136aab0 FUN_14136aab0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_14136aab0(void)
+
+{
+  FUN_140100840(&DAT_1432ef6a0,"r_oceanGeometricDetails","4096.0f",0x14,"geometric details",
+                _DAT_141b2083c,DAT_141ab3b28,0);
+  atexit((_func_5014 *)&LAB_141a5dd10);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141371b50 FUN_141371b50 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141371b50(void)
+
+{
+  FUN_140100840(&DAT_1432f88c0,"r_TAAAmount",&DAT_141ad8eac,0x10002,"set the sharpness of TXAA",
+                DAT_141f697b0,DAT_141abf160,0);
+  atexit((_func_5014 *)&LAB_141a5e580);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141372f00 FUN_141372f00 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141372f00(void)
+
+{
+  FUN_140100840(&DAT_1432f8970,"r_shadowCullDistance","25.0f",4,
+                "Max distance to display shadow for models",DAT_141f697b0,DAT_141abf120,0);
+  atexit((_func_5014 *)&LAB_141a5e7c0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141373010 FUN_141373010 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141373010(void)
+
+{
+  FUN_140100840(&DAT_1432f89f0,"r_shadowParallelResolutionDividerLevel",&DAT_141abe970,2,
+                "the shadow resolution divider factor - 0: keep highest quality, 1: div by 2, 2: div by 4"
+                ,0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5e7f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141373110 FUN_141373110 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141373110(void)
+
+{
+  FUN_140100840(&DAT_1432f8f00,"r_shadowSpotAndOmniPartialUpdateDynaThreshold",&DAT_141b2a9a4,4,
+                "enable update of dynamic only if light shadow priority (screen cover) is above the threshold, to save performances"
+                ,0,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5e820);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413744e0 FUN_1413744e0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413744e0(void)
+
+{
+  FUN_140100840(&DAT_1432fb150,"r_displayRefresh",&DAT_141abe970,2,
+                "optional display refresh rate option for vid mode",0,DAT_141ac9018,0);
+  atexit((_func_5014 *)&LAB_141a5ec40);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141374630 FUN_141374630 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141374630(void)
+
+{
+  FUN_140100840(&DAT_1432fafd0,"r_multiSamples",&DAT_141abe970,0x20002,
+                "number of anti-aliasing samples (0 = no multi-sampled FBO)",0,DAT_141ac8fec,0);
+  atexit((_func_5014 *)&LAB_141a5ec80);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141374690 FUN_141374690 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141374690(void)
+
+{
+  FUN_140100840(&DAT_1432fb450,"r_renderQualityPresets",&DAT_141ad541c,0x10002,
+                "swap through rendering quality options (low, medium, high, ultra)",DAT_141ab3b34,
+                DAT_141ae3f28,0);
+  atexit((_func_5014 *)&LAB_141a5ec90);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141375710 FUN_141375710 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141375710(void)
+
+{
+  FUN_140100840(&DAT_1432fb6a0,"r_SsaoType",&DAT_141abefb8,2,"(0)SSAO (1)DWAO",0,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5efb0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413759f0 FUN_1413759f0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413759f0(void)
+
+{
+  FUN_140100840(&DAT_1432fbf20,"r_lodZoomMultiplicator",&DAT_141b2e634,0x14,
+                "Zoom multiplicator for static LODs",DAT_141acd7c8,DAT_141abdad4,0);
+  atexit((_func_5014 *)&LAB_141a5f040);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141376050 FUN_141376050 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141376050(void)
+
+{
+  FUN_140100840(&DAT_1432fc4f0,"r_logLevel",&DAT_141ac1264,2,"1 = blocks only, 2 = everything",
+                DAT_141f697b0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5f0a0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141376170 FUN_141376170 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141376170(void)
+
+{
+  FUN_140100840(&DAT_143937560,"r_brightness",&DAT_141ad8f48,0x20004,"changes gamma correction",
+                DAT_141ab3764,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5f0c0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413765a0 FUN_1413765a0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413765a0(void)
+
+{
+  FUN_140100840(&DAT_1439374e0,"r_gamma",&DAT_141b31ba4,0x10004,"Changes gamma correction",
+                DAT_141ab3764,DAT_141ac8fdc,0);
+  atexit((_func_5014 *)&LAB_141a5f190);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141376890 FUN_141376890 SIZE=99 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141376890(void)
+
+{
+  FUN_140100840(&DAT_143937e60,"r_showLights",&DAT_141abe970,2,
+                "1 = just print volumes numbers, highlighting ones covering the view, 2 = also draw planes of each volume, 3 = also draw edges of each volume"
+                ,0,DAT_141abc544,FUN_1401667b0);
+  atexit((_func_5014 *)&LAB_141a5f220);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141376d10 FUN_141376d10 SIZE=99 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141376d10(void)
+
+{
+  FUN_140100840(&DAT_143937260,"r_swapInterval",&DAT_141abefb8,0x10002,
+                "changes Present syncInterval. 0 = off, 1 = vsync freqMonitor Hz, 2 = vsync freqMonitor / 2 Hz, 3 = vsync freqMonitor / 3 Hz, 4 = vsync freqMonitor / 4 Hz"
+                ,0,DAT_141ac8fdc,FUN_140359e90);
+  atexit((_func_5014 *)&LAB_141a5f300);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141376d80 FUN_141376d80 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141376d80(void)
+
+{
+  FUN_140100840(&DAT_143937960,"r_testGamma",&DAT_141abe970,4,
+                "if > 0 draw a grid pattern to test gamma levels",0,DAT_141ac9014,0);
+  atexit((_func_5014 *)&LAB_141a5f310);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141376e80 FUN_141376e80 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141376e80(void)
+
+{
+  FUN_140100840(&DAT_143937460,"r_zfar",&DAT_141b31b78,4,"far Z clip plane distance, 0 = infinity",0
+                ,DAT_141b32c60,0);
+  atexit((_func_5014 *)&LAB_141a5f340);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141376ee0 FUN_141376ee0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141376ee0(void)
+
+{
+  FUN_140100840(&DAT_1439373e0,"r_znear",&DAT_141b149a8,4,"near Z clip plane distance",DAT_141ab3b04
+                ,DAT_141b32c58,0);
+  atexit((_func_5014 *)&LAB_141a5f350);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141376fb0 FUN_141376fb0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141376fb0(void)
+
+{
+  FUN_140100840(&DAT_143979de0,"binkVolumeLinearFloat","0.40f",4,"Bink track volume percentage",0,
+                DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5f380);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141377730 FUN_141377730 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141377730(void)
+
+{
+  FUN_140100840(&DAT_14397a4d0,"r_shadowAtlasSliceCnt",&DAT_141ac12c4,2,
+                "Number of slices in the shadow map atlas( used for omni & spot shadows )",
+                DAT_141f697b0,DAT_141ab3b58,0);
+  atexit((_func_5014 *)&LAB_141a5f3f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413777a0 FUN_1413777a0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413777a0(void)
+
+{
+  FUN_140100840(&DAT_14397a3d0,"r_shadowAtlasSliceHeight",&DAT_141b2a8fc,2,
+                "Dimensions of one slice of the shadow map atlas( used for omni & spot shadows )",
+                DAT_141ac9020,DAT_141ab3b28,0);
+  atexit((_func_5014 *)&LAB_141a5f400);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141377810 FUN_141377810 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141377810(void)
+
+{
+  FUN_140100840(&DAT_14397a450,"r_shadowAtlasSliceWidth",&DAT_141b2a8fc,2,
+                "Dimensions of one slice of the shadow map atlas( used for omni & spot shadows )",
+                DAT_141ac9020,DAT_141ab3b28,0);
+  atexit((_func_5014 *)&LAB_141a5f410);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141377880 FUN_141377880 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141377880(void)
+
+{
+  FUN_140100840(&DAT_14397a650,"r_shadowCacheSliceCnt",&DAT_141af3a2c,2,
+                "Number of slices in the shadow map cache( used for omni & spot shadows )",
+                DAT_141f697b0,DAT_141ad038c,0);
+  atexit((_func_5014 *)&LAB_141a5f420);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413778f0 FUN_1413778f0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413778f0(void)
+
+{
+  FUN_140100840(&DAT_14397a550,"r_shadowCacheSliceHeight",&DAT_141b2a8fc,2,
+                "Dimensions of one slice of the shadow map cache( used for omni & spot shadows )",
+                DAT_141ac9020,DAT_141ab3b28,0);
+  atexit((_func_5014 *)&LAB_141a5f430);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141377960 FUN_141377960 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141377960(void)
+
+{
+  FUN_140100840(&DAT_14397a5d0,"r_shadowCacheSliceWidth",&DAT_141b2a8fc,2,
+                "Dimensions of one slice of the shadow map cache( used for omni & spot shadows )",
+                DAT_141ac9020,DAT_141ab3b28,0);
+  atexit((_func_5014 *)&LAB_141a5f440);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141377a20 FUN_141377a20 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141377a20(void)
+
+{
+  FUN_140100840(&DAT_14397a2d0,"r_shadowParallelSliceCnt",&DAT_141ac1284,2,
+                "current parallel shadow slice count",DAT_141f697b0,DAT_141ac8fdc,0);
+  atexit((_func_5014 *)&LAB_141a5f460);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141377a90 FUN_141377a90 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141377a90(void)
+
+{
+  FUN_140100840(&DAT_14397a250,"r_shadowParallelSliceSize",&DAT_141b2a8fc,0x4002,
+                "Dimensions of one slice of directional shadow buffer",DAT_141ac9020,DAT_141ab3b28,0
+               );
+  atexit((_func_5014 *)&LAB_141a5f470);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141377f60 FUN_141377f60 SIZE=104 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141377f60(void)
+
+{
+  FUN_140100840(&DAT_14397b2d0,"r_showTris",&DAT_141abe970,2,
+                "Enables wireframe rendering of the world. 0 = Disabled, 1 = Only draw visible ones, 2 = Draw all front facing, 3 = Draw all, 4 = Only visible ones with blended lines. Negative values will draw the world in solid color"
+                ,DAT_141b36be0,DAT_141ac8fdc,FUN_1403738c0);
+  atexit((_func_5014 *)&LAB_141a5f540);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141379390 FUN_141379390 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141379390(void)
+
+{
+  FUN_140100840(&DAT_14397c9d0,"umbra_queryJobNum",&DAT_141af3a2c,2,
+                "number of umbra jobs to trigger for a visibity query",DAT_141f697b0,DAT_141ab3b58,0
+               );
+  atexit((_func_5014 *)&LAB_141a5f9a0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141379840 FUN_141379840 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141379840(void)
+
+{
+  FUN_140100840(&DAT_14397d7b0,"ark_player_autoaim_model_mouse",&DAT_141abe970,0x10002,
+                "0: off - 1: snap - 2: friction",0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5fa60);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413798a0 FUN_1413798a0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413798a0(void)
+
+{
+  FUN_140100840(&DAT_14397d6b0,"ark_player_autoaim_model_pad",&DAT_141abefb8,0x10002,
+                "0: off - 1: snap - 2: friction",0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5fa70);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141379900 FUN_141379900 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141379900(void)
+
+{
+  FUN_140100840(&DAT_14397d830,"ark_player_autoaim_strength_mouse",&DAT_141b2e634,0x10004,
+                "the strength of the auto aim. The more it is the more it attract the crosshair from far"
+                ,0,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5fa80);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141379960 FUN_141379960 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141379960(void)
+
+{
+  FUN_140100840(&DAT_14397d730,"ark_player_autoaim_strength_pad",&DAT_141b2e634,0x10004,
+                "the strength of the auto aim. The more it is the more it attract the crosshair from far"
+                ,0,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5fa90);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14137c6e0 FUN_14137c6e0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14137c6e0(void)
+
+{
+  FUN_140100840(&DAT_1439809f0,"r_umbraGateVisibilityRatio",&DAT_141ad8f48,0x14,
+                "Visibility factor for umbra gates",0,DAT_141abf158,0);
+  atexit((_func_5014 *)&LAB_141a5ffd0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14137d7e0 FUN_14137d7e0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14137d7e0(void)
+
+{
+  FUN_140100840(&DAT_143982ef0,"r_AntiAliasingPreset",&DAT_141ac1274,0x10002,
+                "Anti-Aliasing preset : 0 Disabled 1 FXAA Low 2 FXAA High 3 Temporal AA",0,
+                DAT_141abc544,0);
+  atexit((_func_5014 *)&LAB_141a602a0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14137d840 FUN_14137d840 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14137d840(void)
+
+{
+  FUN_140100840(&DAT_1439830f0,"r_downsampleQualityPreset",&DAT_141abefb8,0x10002,
+                "Fog blur radius preset : 0 Low 1 High",0,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a602b0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14137d940 FUN_14137d940 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14137d940(void)
+
+{
+  FUN_140100840(&DAT_143982ff0,"r_maxDynamicDecalsPreset",&DAT_141ac1274,0x10002,
+                "Decals details preset : 0 Very Low 1 Low 2 Medium 3 High 4 Very High 5 Ultra",0,
+                DAT_141abf154,0);
+  atexit((_func_5014 *)&LAB_141a602e0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14137d9a0 FUN_14137d9a0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14137d9a0(void)
+
+{
+  FUN_140100840(&DAT_143982df0,"r_modelsQualityPreset",&DAT_141ac1274,0x10002,
+                "Models quality preset : 0 Very Low 1 Low 2 Medium 3 High 4 Very High 5 Ultra",0,
+                DAT_141abf154,0);
+  atexit((_func_5014 *)&LAB_141a602f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14137da00 FUN_14137da00 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14137da00(void)
+
+{
+  FUN_140100840(&DAT_143982d70,"r_oceanQualityPreset",&DAT_141ac1274,0x10002,
+                "Ocean quality preset : 0 Very Low 1 Low 2 Medium 3 High 4 Very High 5 Ultra",0,
+                DAT_141abf154,0);
+  atexit((_func_5014 *)&LAB_141a60300);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14137da60 FUN_14137da60 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14137da60(void)
+
+{
+  FUN_140100840(&DAT_143982cf0,"r_shadowQualityPreset",&DAT_141ac1274,0x10002,
+                "Shadow quality preset : 0 Very Low 1 Low 2 Medium 3 High 4 Very High 5 Ultra",0,
+                DAT_141abf154,0);
+  atexit((_func_5014 *)&LAB_141a60310);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14137db10 FUN_14137db10 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14137db10(void)
+
+{
+  FUN_140100840(&DAT_143982f70,"r_textureDetailsPreset",&DAT_141ac1274,0x10002,
+                "Texture details preset : 0 Very Low 1 Low 2 Medium 3 High 4 Very High 5 Ultra",0,
+                DAT_141abf154,0);
+  atexit((_func_5014 *)&LAB_141a60330);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14137db70 FUN_14137db70 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14137db70(void)
+
+{
+  FUN_140100840(&DAT_143982e70,"r_viewDistPreset",&DAT_141ac1274,0x10002,
+                "View distance preset : 0 Very Low 1 Low 2 Medium 3 High 4 Very High 5 Ultra",0,
+                DAT_141abf154,0);
+  atexit((_func_5014 *)&LAB_141a60340);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141384d90 FUN_141384d90 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141384d90(void)
+
+{
+  FUN_140100840(&DAT_1439859b0,"r_useAnimBlendJobs",&DAT_141abefb8,2,"0 = off, 1 = threaded",0,
+                DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a604e0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141387030 FUN_141387030 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141387030(void)
+
+{
+  FUN_140100840(&DAT_143988250,"ark_killcam_chance_setting",&DAT_141abefb8,0x10002,
+                "Set the killcam appearance chance.",0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a60b70);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413878e0 FUN_1413878e0 SIZE=99 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413878e0(void)
+
+{
+  FUN_140100840(&DAT_143989030,"ark_input_set_gamepad_preset",&DAT_141abe970,0x10002,
+                "The selected gamepad configuration",0,DAT_141abc544,FUN_1401667b0);
+  atexit((_func_5014 *)&LAB_141a60d70);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141388310 FUN_141388310 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141388310(void)
+
+{
+  FUN_140100840(&DAT_14398a000,"ark_ui_crosshair_opacity",&DAT_141ad8f48,0x10004,
+                "Crosshair opacity: 0.0 = fully transparent (invisible) => 1.0 = fully opaque",0,
+                DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a60ef0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138ad80 FUN_14138ad80 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138ad80(void)
+
+{
+  FUN_140100840(&DAT_14398dd90,"g_playerDebugCameraDistance",&DAT_141b12020,4,
+                "Distance to the player. Best increment is abs(0.1).",DAT_141ab3b0c,DAT_141abf160,0)
+  ;
+  atexit((_func_5014 *)&LAB_141a61440);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138adf0 FUN_14138adf0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138adf0(void)
+
+{
+  FUN_140100840(&DAT_14398dd10,"g_playerDebugCameraPitchAngle","10.0f",4,
+                "Player debug camPitch angle (in degree) from behind the player.",DAT_141ae8ab4,
+                DAT_141ae8ab0,0);
+  atexit((_func_5014 *)&LAB_141a61450);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138ae60 FUN_14138ae60 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138ae60(void)
+
+{
+  FUN_140100840(&DAT_14398de10,"g_playerDebugCameraYawAngle",&DAT_141b23b98,4,
+                "Yaw angle from behind the player in degree.",DAT_141ae8b0c,DAT_141ac9010,0);
+  atexit((_func_5014 *)&LAB_141a61460);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138b340 FUN_14138b340 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138b340(void)
+
+{
+  FUN_140100840(&DAT_14398e200,"ark_playerBobAmount",&DAT_141ad8f48,0x10004,"bob amount.",0,
+                DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a614e0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138d300 FUN_14138d300 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138d300(void)
+
+{
+  FUN_140100840(&DAT_143991a90,"cam_freecam_movespeed",&DAT_141c71e6c,0x20004,
+                "freecam linear move speed",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a61b10);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138d360 FUN_14138d360 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138d360(void)
+
+{
+  FUN_140100840(&DAT_143991b10,"cam_freecam_movespeedz",&DAT_141c71ec0,0x20004,
+                "freecam linear move speed when going up/down",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a61b20);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138d3c0 FUN_14138d3c0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138d3c0(void)
+
+{
+  FUN_140100840(&DAT_143991c10,"cam_freecam_runspeed",&DAT_141c71f5c,0x20004,
+                "freecam linear move speed when run button is down",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a61b30);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138d420 FUN_14138d420 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138d420(void)
+
+{
+  FUN_140100840(&DAT_143991b90,"cam_freecam_runspeedz",&DAT_141c71ec0,0x20004,
+                "freecam linear move speed running up/down",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a61b40);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138d480 FUN_14138d480 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138d480(void)
+
+{
+  FUN_140100840(&DAT_143991c90,"cam_freecam_turnspeed","300.0f",0x20004,
+                "freecam angular move speed (in deg/s)",0,DAT_141c575a4,0);
+  atexit((_func_5014 *)&LAB_141a61b50);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138d6f0 FUN_14138d6f0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138d6f0(void)
+
+{
+  FUN_140100840(&DAT_143991f30,"g_lookStickSensitivityX",&DAT_141b2e634,0x10004,
+                "look stick X sensitivity ratio",DAT_141accf9c,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a61bb0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138d760 FUN_14138d760 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138d760(void)
+
+{
+  FUN_140100840(&DAT_143991fb0,"g_lookStickSensitivityY",&DAT_141b2e634,0x10004,
+                "look stick Y sensitivity ratio",DAT_141accf9c,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a61bc0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138d7d0 FUN_14138d7d0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138d7d0(void)
+
+{
+  FUN_140100840(&DAT_143991e30,"g_mouseClamp","360.0f",0x10004,
+                "clamper for mouse movements normalization",DAT_141f697b0,DAT_141ae8924,0);
+  atexit((_func_5014 *)&LAB_141a61bd0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138d840 FUN_14138d840 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138d840(void)
+
+{
+  FUN_140100840(&DAT_143991eb0,"g_mouseSensitivity",&DAT_141b2e634,0x10004,"mouse sensitivity ratio"
+                ,DAT_141ab3b0c,DAT_141ae3f28,0);
+  atexit((_func_5014 *)&LAB_141a61be0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 14138ecc0 FUN_14138ecc0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_14138ecc0(void)
+
+{
+  FUN_140100840(&DAT_143994930,"ark_phys_ContactMinImpulseForEvent",&DAT_141b149a8,4,
+                "Min contact impulse to trigger contact on contact system.",0,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a61ee0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141390530 FUN_141390530 SIZE=99 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141390530(void)
+
+{
+  FUN_140100840(&DAT_1439a1890,"ai_showObstacleAvoidance",&DAT_141abe970,2,
+                "draws obstacle avoidance information. 2,4 = draw obstacles for player, 3,4 = top-down view"
+                ,0,DAT_141ac8fdc,FUN_140359e90);
+  atexit((_func_5014 *)&LAB_141a62290);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141390c30 FUN_141390c30 SIZE=99 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141390c30(void)
+
+{
+  FUN_140100840(&DAT_1439a1a90,"g_editEntityMode",&DAT_141abe970,2,
+                "0 = off\n1 = lights\n2 = sounds\n3 = articulated figures\n4 = particle systems\n5 = monsters\n6 = entity names\n7 = entity models\n8 = fx\n9 = entity properties"
+                ,0,DAT_141ae3f2c,FUN_140887d10);
+  atexit((_func_5014 *)&LAB_141a623f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141391ec0 FUN_141391ec0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141391ec0(void)
+
+{
+  FUN_140100840(&DAT_1439a2590,"pm_sprintAngle","100.0",0x2004,
+                "the angle the player has to stay in with their forward movement",DAT_141f697b0,
+                DAT_141ac9010,0);
+  atexit((_func_5014 *)&LAB_141a627a0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141391f80 FUN_141391f80 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141391f80(void)
+
+{
+  FUN_140100840(&DAT_1439a2510,"pm_sprintChargeTime",&DAT_141c8c4c0,0x2004,
+                "how many ms to fully recharge sprint",DAT_141f697b0,DAT_141ae8a70,0);
+  atexit((_func_5014 *)&LAB_141a627c0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141391ff0 FUN_141391ff0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141391ff0(void)
+
+{
+  FUN_140100840(&DAT_1439a2490,"pm_sprintMaxTime",&DAT_141c8c474,0x2004,
+                "how many ms the player can sprint",DAT_141f697b0,DAT_141ae8a70,0);
+  atexit((_func_5014 *)&LAB_141a627d0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413920b0 FUN_1413920b0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413920b0(void)
+
+{
+  FUN_140100840(&DAT_1439a2610,"pm_sprintStickDeadZone","100.0f",0x2002,
+                "how far the movement stick has to be pressed forward before we allow sprint to kick in max is 120 because full stick max is 127"
+                ,0,DAT_141ac9c28,0);
+  atexit((_func_5014 *)&LAB_141a627f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141392430 FUN_141392430 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141392430(void)
+
+{
+  FUN_140100840(&DAT_1439a2c10,"pm_thrusterSprintAngle","45.0f",0x2004,
+                "the angle the player has to stay in with their forward movement",DAT_141f697b0,
+                DAT_141ac9010,0);
+  atexit((_func_5014 *)&LAB_141a628a0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413924f0 FUN_1413924f0 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413924f0(void)
+
+{
+  FUN_140100840(&DAT_1439a2b10,"pm_thrusterSprintChargeTime",&DAT_141c8c83c,0x2004,
+                "how many ms to fully recharge thruster sprint",DAT_141f697b0,DAT_141ae8a70,0);
+  atexit((_func_5014 *)&LAB_141a628c0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141392560 FUN_141392560 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141392560(void)
+
+{
+  FUN_140100840(&DAT_1439a2a90,"pm_thrusterSprintDelayTime",&DAT_141c8c83c,0x2004,
+                "how many ms to delay before sprinting is possible again",DAT_141f697b0,
+                DAT_141ae8a70,0);
+  atexit((_func_5014 *)&LAB_141a628d0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141392620 FUN_141392620 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141392620(void)
+
+{
+  FUN_140100840(&DAT_1439a2a10,"pm_thrusterSprintMaxTime",&DAT_141c8c83c,0x2004,
+                "how many ms the player can thruster sprint",DAT_141f697b0,DAT_141ae8a70,0);
+  atexit((_func_5014 *)&LAB_141a628f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413926e0 FUN_1413926e0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413926e0(void)
+
+{
+  FUN_140100840(&DAT_1439a2c90,"pm_thrusterSprintStickDeadZone","100.0f",0x2002,
+                "how far the movement stick has to be pressed forward before we allow thruster sprint to kick in max is 120 because full stick max is 127"
+                ,0,DAT_141ac9c28,0);
+  atexit((_func_5014 *)&LAB_141a62910);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141392b10 FUN_141392b10 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141392b10(void)
+
+{
+  FUN_140100840(&DAT_1439a40a0,"ark_fieldOfView",&DAT_141c8de48,0x10004,
+                "horizontal field of view in degree, (this value is silently modified by the system to fit aspect ratio)"
+                ,DAT_141c8e8a4,DAT_141c8e8a8,0);
+  atexit((_func_5014 *)&LAB_141a629d0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141393080 FUN_141393080 SIZE=101 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141393080(void)
+
+{
+  FUN_140100840(&DAT_1439a42a0,"r_water_ScreenSpaceMaxStepsCount",&DAT_141adea78,2,
+                "max authorized ocean SSR steps number",DAT_141f697b0,DAT_141ac9020,0);
+  atexit((_func_5014 *)&LAB_141a62a00);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141393250 FUN_141393250 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141393250(void)
+
+{
+  FUN_140100840(&DAT_1439a4fe0,"devgui",&DAT_141abe970,2,
+                "0 = disable DevGUI, 1 = enable DevGUI, 2 = enable DevGUI with key legend",0,
+                DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a62a30);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1413932b0 FUN_1413932b0 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1413932b0(void)
+
+{
+  FUN_140100840(&DAT_1439a5060,"devgui_currentSyncMeleeAINum",&DAT_141abe970,2,
+                "0 = disable, 1 - 6, show a different AI and its various sync styles.",0,
+                DAT_141ae3f28,0);
+  atexit((_func_5014 *)&LAB_141a62a40);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 141393310 FUN_141393310 SIZE=96 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_141393310(void)
+
+{
+  FUN_140100840(&DAT_1439a50e0,"devgui_currentSyncMeleeNum",&DAT_141abe970,2,
+                "0 = disable, 1 - n, show a different AI sync melee interaction.",0,DAT_141abf164,0)
+  ;
+  atexit((_func_5014 *)&LAB_141a62a50);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 140102cb0 FUN_140102cb0 SIZE=775 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_140102cb0(longlong param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)
+
+{
+  ulonglong uVar1;
+  float fVar2;
+  float fVar3;
+  uint uVar4;
+  longlong *plVar5;
+  undefined8 *puVar6;
+  char cVar7;
+  int iVar8;
+  int iVar9;
+  undefined8 uVar10;
+  longlong lVar11;
+  longlong lVar12;
+  ulonglong uVar13;
+  ulonglong uVar14;
+  double dVar15;
+  float fVar16;
+  undefined8 uVar17;
+  undefined1 local_30 [40];
+  
+  uVar17 = 0xfffffffffffffffe;
+  *(uint *)(param_1 + 0x48) = *(uint *)(param_1 + 0x48) | 0x40000;
+  uVar10 = FUN_1401d9090();
+  uVar4 = *(uint *)(param_1 + 0x48);
+  if ((uVar4 & 0x40) != 0) goto LAB_140102f8c;
+  if ((uVar4 & 1) != 0) {
+    iVar8 = FUN_1411ada38(uVar10);
+    *(uint *)(param_1 + 0x28) = (uint)(iVar8 != 0);
+    *(float *)(param_1 + 0x2c) = (float)(iVar8 != 0);
+    iVar8 = FUN_140143650(uVar10,&DAT_141abe970);
+    if ((iVar8 != 0) && (iVar8 = FUN_140143650(uVar10,&DAT_141abefb8), iVar8 != 0)) {
+      uVar10 = FUN_14013fc60(local_30,*(int *)(param_1 + 0x28) != 0);
+      FUN_14013fd70(param_1,uVar10);
+      FUN_14013fd10(local_30);
+      FUN_1401d9090(param_1);
+    }
+    goto LAB_140102f8c;
+  }
+  if ((uVar4 & 2) == 0) {
+    if ((uVar4 & 4) != 0) {
+      dVar15 = (double)FUN_1411b578c(uVar10);
+      fVar16 = (float)dVar15;
+      *(float *)(param_1 + 0x2c) = fVar16;
+      fVar2 = *(float *)(param_1 + 0x4c);
+      fVar3 = *(float *)(param_1 + 0x50);
+      if (fVar3 <= fVar2) {
+LAB_140102e2d:
+        cVar7 = FUN_140143c70(uVar10,fVar2,fVar16,param_4,uVar17);
+        if (cVar7 == '\0') goto LAB_140102e39;
+      }
+      else {
+        if (fVar2 <= fVar16) {
+          if (fVar16 <= fVar3) goto LAB_140102e2d;
+          *(float *)(param_1 + 0x2c) = fVar3;
+        }
+        else {
+          *(float *)(param_1 + 0x2c) = fVar2;
+        }
+LAB_140102e39:
+        uVar10 = FUN_14013f8a0(local_30,*(undefined4 *)(param_1 + 0x2c));
+        FUN_14013fd70(param_1,uVar10);
+        FUN_14013fd10(local_30);
+        FUN_1401d9090(param_1);
+      }
+      *(int *)(param_1 + 0x28) = (int)*(float *)(param_1 + 0x2c);
+      goto LAB_140102f8c;
+    }
+    puVar6 = *(undefined8 **)(param_1 + 0x60);
+    if (puVar6 == (undefined8 *)0x0) {
+      plVar5 = *(longlong **)(param_1 + 0x58);
+      if ((plVar5 == (longlong *)0x0) || (*plVar5 == 0)) goto LAB_140102f5c;
+      uVar13 = 0;
+      *(undefined4 *)(param_1 + 0x28) = 0;
+      lVar12 = *plVar5;
+      uVar1 = uVar13;
+      uVar14 = uVar13;
+      while (lVar12 != 0) {
+        iVar8 = FUN_1401435f0(param_1,*(undefined8 *)(uVar1 + *(longlong *)(param_1 + 0x58)));
+        if (iVar8 == 0) {
+          *(int *)(param_1 + 0x28) = (int)uVar14;
+          break;
+        }
+        uVar14 = (ulonglong)((int)uVar14 + 1);
+        uVar13 = uVar13 + 1;
+        uVar1 = uVar13 * 8;
+        lVar12 = *(longlong *)(uVar1 + *(longlong *)(param_1 + 0x58));
+      }
+      lVar12 = *(longlong *)(param_1 + 0x58);
+    }
+    else {
+      if (*(char *)*puVar6 == '\0') {
+LAB_140102f5c:
+        iVar8 = FUN_140143ff0(param_1);
+        if (iVar8 < 0x20) {
+          dVar15 = (double)FUN_1411b578c(uVar10);
+          *(int *)(param_1 + 0x28) = (int)dVar15;
+          *(float *)(param_1 + 0x2c) = (float)dVar15;
+        }
+        else {
+          *(undefined8 *)(param_1 + 0x28) = 0;
+        }
+        goto LAB_140102f8c;
+      }
+      iVar8 = 0;
+      *(undefined4 *)(param_1 + 0x28) = 0;
+      lVar12 = 0;
+      if (*(char *)*puVar6 != '\0') {
+        lVar11 = 0;
+        do {
+          iVar9 = FUN_1401435f0(param_1,*(undefined8 *)(lVar11 + *(longlong *)(param_1 + 0x60)));
+          if (iVar9 == 0) {
+            *(int *)(param_1 + 0x28) = iVar8;
+            break;
+          }
+          iVar8 = iVar8 + 1;
+          lVar12 = lVar12 + 1;
+          lVar11 = lVar12 * 8;
+        } while (**(char **)(lVar11 + *(longlong *)(param_1 + 0x60)) != '\0');
+      }
+      lVar12 = *(longlong *)(param_1 + 0x60);
+    }
+    FUN_14013ff40(param_1,*(undefined8 *)(lVar12 + (longlong)*(int *)(param_1 + 0x28) * 8));
+LAB_140102f45:
+    FUN_1401d9090(param_1);
+  }
+  else {
+    iVar8 = FUN_1411ada38(uVar10);
+    *(int *)(param_1 + 0x28) = iVar8;
+    fVar2 = *(float *)(param_1 + 0x4c);
+    fVar3 = *(float *)(param_1 + 0x50);
+    if (fVar2 < fVar3) {
+      if (fVar2 <= (float)iVar8) {
+        if ((float)iVar8 <= fVar3) goto LAB_140102db1;
+        *(int *)(param_1 + 0x28) = (int)fVar3;
+      }
+      else {
+        *(int *)(param_1 + 0x28) = (int)fVar2;
+      }
+LAB_140102dc1:
+      uVar10 = FUN_14013f7c0(local_30,*(undefined4 *)(param_1 + 0x28));
+      FUN_14013fd70(param_1,uVar10);
+      FUN_14013fd10(local_30);
+      goto LAB_140102f45;
+    }
+LAB_140102db1:
+    cVar7 = FUN_140143c70(uVar10);
+    if (cVar7 == '\0') goto LAB_140102dc1;
+  }
+  *(float *)(param_1 + 0x2c) = (float)*(int *)(param_1 + 0x28);
+LAB_140102f8c:
+  for (puVar6 = *(undefined8 **)(param_1 + 0x70); puVar6 != (undefined8 *)0x0;
+      puVar6 = (undefined8 *)puVar6[1]) {
+    (**(code **)(*(longlong *)*puVar6 + 0x10))();
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 140102400 FUN_140102400 SIZE=257 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+undefined8 FUN_140102400(longlong param_1,longlong param_2,char param_3)
+
+{
+  uint uVar1;
+  int iVar2;
+  longlong *plVar3;
+  
+  if (param_3 == '\0') {
+    uVar1 = *(uint *)(param_1 + 0x48);
+    if ((uVar1 >> 0xe & 1) != 0) {
+                    /* WARNING: Subroutine does not return */
+      FUN_140166830("%s can only be set on the command line\n",*(undefined8 *)(param_1 + 0x30));
+    }
+    if ((uVar1 >> 0xf & 1) != 0) {
+                    /* WARNING: Subroutine does not return */
+      FUN_140166830("%s is read only\n",*(undefined8 *)(param_1 + 0x30));
+    }
+    if ((DAT_1432cd1c8 == 0) && ((uVar1 & 0x10) == 0)) {
+                    /* WARNING: Subroutine does not return */
+      FUN_140166830("%s CANNOT be set in retail!\n",*(undefined8 *)(param_1 + 0x30));
+    }
+  }
+  if (param_2 == 0) {
+    param_2 = *(longlong *)(param_1 + 0x38);
+  }
+  iVar2 = FUN_1401435f0(param_1,param_2);
+  if (iVar2 != 0) {
+    plVar3 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar3 + 0x48))(plVar3,0);
+    FUN_14013ff40(param_1,param_2);
+    plVar3 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar3 + 0x50))(plVar3,0);
+    FUN_140102cb0(param_1);
+    (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))
+              (PTR_DAT_14228bae8,*(undefined4 *)(param_1 + 0x48));
+    *(uint *)(param_1 + 0x48) = *(uint *)(param_1 + 0x48) | 0x80000;
+    if (((*(uint *)(param_1 + 0x48) & 0x20000) != 0) && (DAT_1432c7ed4 == 3)) {
+                    /* WARNING: Subroutine does not return */
+      FUN_140166830("Archived CVar \'%s\' in production mode",*(undefined8 *)(param_1 + 0x30));
+    }
+    return 1;
+  }
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 140100f20 FUN_140100f20 SIZE=341 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+undefined8 FUN_140100f20(longlong *param_1,int *param_2)
+
+{
+  uint uVar1;
+  int iVar2;
+  longlong lVar3;
+  undefined8 uVar4;
+  longlong lVar5;
+  longlong *plVar6;
+  char *pcVar7;
+  undefined1 *puVar8;
+  
+  if (*param_2 < 1) {
+    puVar8 = &DAT_141ab2848;
+  }
+  else {
+    puVar8 = *(undefined1 **)(param_2 + 2);
+  }
+  lVar3 = (**(code **)(*param_1 + 0x20))(param_1,puVar8);
+  if (lVar3 == 0) {
+    return 0;
+  }
+  if (*param_2 == 1) {
+    uVar4 = FUN_1401d9090(lVar3);
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("\"%s\" is:\"%s\"^7 default:\"%s\"\n",*(undefined8 *)(lVar3 + 0x30),uVar4,
+                  *(undefined8 *)(lVar3 + 0x38));
+  }
+  lVar5 = FUN_140132470(param_2,1,0xffffffff,0,0);
+  uVar1 = *(uint *)(lVar3 + 0x48);
+  if ((uVar1 >> 0xe & 1) != 0) {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("%s can only be set on the command line\n",*(undefined8 *)(lVar3 + 0x30));
+  }
+  if ((uVar1 >> 0xf & 1) != 0) {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("%s is read only\n",*(undefined8 *)(lVar3 + 0x30));
+  }
+  if ((DAT_1432cd1c8 == 0) && ((uVar1 & 0x10) == 0)) {
+    pcVar7 = "%s CANNOT be set in retail!\n";
+LAB_1401010a7:
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830(pcVar7,*(undefined8 *)(lVar3 + 0x30));
+  }
+  if (lVar5 == 0) {
+    lVar5 = *(longlong *)(lVar3 + 0x38);
+  }
+  iVar2 = FUN_1401435f0(lVar3,lVar5);
+  if (iVar2 != 0) {
+    plVar6 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar6 + 0x48))(plVar6,0);
+    FUN_14013ff40(lVar3,lVar5);
+    plVar6 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar6 + 0x50))(plVar6,0);
+    FUN_140102cb0(lVar3);
+    (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))
+              (PTR_DAT_14228bae8,*(undefined4 *)(lVar3 + 0x48));
+    *(uint *)(lVar3 + 0x48) = *(uint *)(lVar3 + 0x48) | 0x80000;
+    if (((*(uint *)(lVar3 + 0x48) & 0x20000) != 0) && (DAT_1432c7ed4 == 3)) {
+      pcVar7 = "Archived CVar \'%s\' in production mode";
+      goto LAB_1401010a7;
+    }
+  }
+  return 1;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 140102320 FUN_140102320 SIZE=223 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_140102320(undefined8 param_1,uint param_2)
+
+{
+  undefined8 uVar1;
+  longlong lVar2;
+  int iVar3;
+  longlong *plVar4;
+  
+  lVar2 = DAT_1431c04b0;
+  do {
+    if (lVar2 == 0) {
+      return;
+    }
+    if ((*(uint *)(lVar2 + 0x48) & param_2) != 0) {
+      uVar1 = *(undefined8 *)(lVar2 + 0x38);
+      iVar3 = FUN_1401435f0(lVar2,uVar1);
+      if (iVar3 != 0) {
+        plVar4 = (longlong *)FUN_1401548e0();
+        (**(code **)(*plVar4 + 0x48))(plVar4,0);
+        FUN_14013ff40(lVar2,uVar1);
+        plVar4 = (longlong *)FUN_1401548e0();
+        (**(code **)(*plVar4 + 0x50))(plVar4,0);
+        FUN_140102cb0(lVar2);
+        (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))
+                  (PTR_DAT_14228bae8,*(undefined4 *)(lVar2 + 0x48));
+        *(uint *)(lVar2 + 0x48) = *(uint *)(lVar2 + 0x48) | 0x80000;
+        if (((*(uint *)(lVar2 + 0x48) & 0x20000) != 0) && (DAT_1432c7ed4 == 3)) {
+                    /* WARNING: Subroutine does not return */
+          FUN_140166830("Archived CVar \'%s\' in production mode",*(undefined8 *)(lVar2 + 0x30));
+        }
+                    /* WARNING: Subroutine does not return */
+        FUN_140166830("Resetting cheat cvar: %s\n",*(undefined8 *)(lVar2 + 0x30));
+      }
+    }
+    lVar2 = *(longlong *)(lVar2 + 0x78);
+  } while( true );
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 140102700 FUN_140102700 SIZE=373 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_140102700(longlong *param_1,longlong *param_2)
+
+{
+  uint uVar1;
+  int iVar2;
+  undefined8 uVar3;
+  longlong lVar4;
+  longlong *plVar5;
+  char *pcVar6;
+  int iVar7;
+  longlong lVar8;
+  
+  iVar7 = 0;
+  uVar1 = *(uint *)(param_2 + 1) & 0xffffff;
+  if (uVar1 != 0) {
+    do {
+      if ((iVar7 < 0) || ((int)uVar1 <= iVar7)) {
+        lVar8 = 0;
+      }
+      else {
+        lVar8 = (longlong)iVar7 * 0x50 + *param_2;
+      }
+      lVar4 = *param_1;
+      uVar3 = FUN_1401d9090(lVar8);
+      lVar4 = (**(code **)(lVar4 + 0x20))(param_1,uVar3);
+      if (lVar4 != 0) {
+        lVar8 = FUN_1401d9090(lVar8 + 0x28);
+        uVar1 = *(uint *)(lVar4 + 0x48);
+        if ((uVar1 >> 0xe & 1) != 0) {
+                    /* WARNING: Subroutine does not return */
+          FUN_140166830("%s can only be set on the command line\n",*(undefined8 *)(lVar4 + 0x30));
+        }
+        if ((uVar1 >> 0xf & 1) != 0) {
+                    /* WARNING: Subroutine does not return */
+          FUN_140166830("%s is read only\n",*(undefined8 *)(lVar4 + 0x30));
+        }
+        if ((DAT_1432cd1c8 == 0) && ((uVar1 & 0x10) == 0)) {
+          pcVar6 = "%s CANNOT be set in retail!\n";
+LAB_140102849:
+                    /* WARNING: Subroutine does not return */
+          FUN_140166830(pcVar6,*(undefined8 *)(lVar4 + 0x30));
+        }
+        if (lVar8 == 0) {
+          lVar8 = *(longlong *)(lVar4 + 0x38);
+        }
+        iVar2 = FUN_1401435f0(lVar4,lVar8);
+        if (iVar2 != 0) {
+          plVar5 = (longlong *)FUN_1401548e0();
+          (**(code **)(*plVar5 + 0x48))(plVar5,0);
+          FUN_14013ff40(lVar4,lVar8);
+          plVar5 = (longlong *)FUN_1401548e0();
+          (**(code **)(*plVar5 + 0x50))(plVar5,0);
+          FUN_140102cb0(lVar4);
+          (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))
+                    (PTR_DAT_14228bae8,*(undefined4 *)(lVar4 + 0x48));
+          *(uint *)(lVar4 + 0x48) = *(uint *)(lVar4 + 0x48) | 0x80000;
+          if (((*(uint *)(lVar4 + 0x48) & 0x20000) != 0) && (DAT_1432c7ed4 == 3)) {
+            pcVar6 = "Archived CVar \'%s\' in production mode";
+            goto LAB_140102849;
+          }
+        }
+      }
+      iVar7 = iVar7 + 1;
+      uVar1 = *(uint *)(param_2 + 1) & 0xffffff;
+    } while (iVar7 < (int)uVar1);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1401022d0 FUN_1401022d0 SIZE=31 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1401022d0(longlong param_1)
+
+{
+  FUN_14013ff40(param_1,*(undefined8 *)(param_1 + 0x38));
+  FUN_140102cb0(param_1);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 140101640 FUN_140101640 SIZE=296 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_140101640(longlong param_1,undefined8 param_2,undefined8 param_3,uint param_4,
+                  undefined8 param_5,undefined4 param_6,undefined4 param_7,undefined8 param_8,
+                  undefined8 param_9,undefined8 param_10)
+
+{
+  undefined8 uVar1;
+  
+  if (DAT_1431c04b8 == '\0') {
+    *(undefined8 *)(param_1 + 0x30) = param_2;
+    *(undefined8 *)(param_1 + 0x38) = param_3;
+    *(undefined8 *)(param_1 + 0x40) = param_5;
+    *(undefined8 *)(param_1 + 0x58) = param_8;
+    *(undefined8 *)(param_1 + 0x68) = param_9;
+    *(undefined8 *)(param_1 + 0x60) = param_10;
+  }
+  else {
+    uVar1 = FUN_140141990(param_2,0x27);
+    *(undefined8 *)(param_1 + 0x30) = uVar1;
+    uVar1 = FUN_140141990(param_3,0x27);
+    *(undefined8 *)(param_1 + 0x58) = 0;
+    *(undefined8 *)(param_1 + 0x38) = uVar1;
+    *(undefined8 *)(param_1 + 0x68) = 0;
+    *(undefined1 **)(param_1 + 0x40) = &DAT_141ab2848;
+    *(undefined8 *)(param_1 + 0x60) = 0;
+  }
+  if (*(longlong *)(param_1 + 0x38) != 0) {
+    if ((param_4 & 8) != 0) {
+      param_4 = param_4 | 0x20;
+    }
+    if ((param_4 & 0x3c010) == 0) {
+      param_4 = param_4 | 8;
+    }
+    else {
+      param_4 = param_4 & 0xfffffff7 | 0x10;
+    }
+    FUN_14013ff40(param_1,param_3);
+    *(uint *)(param_1 + 0x48) = param_4;
+    *(undefined8 *)(param_1 + 0x28) = 0;
+    *(undefined4 *)(param_1 + 0x4c) = param_6;
+    *(undefined4 *)(param_1 + 0x50) = param_7;
+    *(longlong *)(param_1 + 0x78) = DAT_1431c04b0;
+    *(undefined8 *)(param_1 + 0x70) = 0;
+    DAT_1431c04b0 = param_1;
+    FUN_140102cb0(param_1);
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  FUN_140166830("Invalid Reset String for Cvar %s",param_2);
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 1401022f0 FUN_1401022f0 SIZE=42 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_1401022f0(longlong param_1,int param_2)
+
+{
+  longlong lVar1;
+  
+  lVar1 = *(longlong *)(*(longlong *)(param_1 + 8) + (longlong)param_2 * 8);
+  FUN_14013ff40(lVar1,*(undefined8 *)(lVar1 + 0x38));
+  FUN_140102cb0(lVar1);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+FUNCTION 140103710 FUN_140103710 SIZE=97 (GhidraScript)  
+INFO  TracePresetCallbacks.java> 
+void FUN_140103710(int *param_1)
+
+{
+  longlong lVar1;
+  
+  if (*param_1 != 2) {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("usage: reset <variable>\n");
+  }
+  lVar1 = (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x20))
+                    (PTR_DAT_14228bae8,*(undefined8 *)(param_1 + 4));
+  if (lVar1 != 0) {
+    FUN_14013ff40(lVar1,*(undefined8 *)(lVar1 + 0x38));
+    FUN_140102cb0(lVar1);
+    return;
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /Dishonored2.exe (HeadlessAnalyzer)  

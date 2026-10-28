@@ -33,3 +33,29 @@ These are runtime correspondences resolved from CVar name pointers in the live p
 The screenshot with the fixed HUD hidden still showed floating objective and awareness markers. The injected 0.8 process had `ark_show_ui=0`, but the Arkane marker CVar values remained enabled. Version 0.9 resolves the table above by exact name, saves each integer/float value, sets the relevant UI visibility values to zero, and restores the saved values when the toggle is released. `ark_ui_show_master_hud` has runtime value 2, so the zero/restore behavior still needs visual confirmation for that entry.
 
 Other retail strings under `ark_ui_*` were found but did not resolve to a live static CVar object in this scan, or are debug/update settings rather than visibility controls. They are not written by the tool.
+
+## Hide-marker regression review, 2026-10-26
+
+The user reports that Void Camera 1.17 leaves floating world markers visible
+while `Hide game UI + markers` is checked. Source comparison found no HUD logic
+change between the 1.16 release and the 1.17 working tree; 1.17 only changed
+the LOD slider minimum/help text and version labels. The current `hudToggle()`
+zeros the CVar integer and float caches, but unlike the render CVar writer it
+does not update each CVar's inline current-value string at object `+0x10`.
+Because the render controls required updating this string to affect the game's
+effective value, this is the likely reason marker visibility is not reliably
+being suppressed. The working fix now saves, writes `"0"` to, and restores the
+inline string alongside both numeric caches. Visual confirmation in the game
+is still required; the user's screenshot shows the failure but cannot establish
+whether the game rewrites those CVars after the initial toggle.
+
+## Cutscene skip prompt report, 2026-10-28
+
+The user reports that the cutscene `Skip` prompt remains visible after the HUD
+toggle. The extracted retail CVar registration text and the runtime-verified UI
+CVar table contain no verified cutscene/skip-specific visibility CVar. The
+current toggle covers `g_showHud`, `g_showGuis`, `ark_show_ui`, and the verified
+`ark_ui_show_*` variables, but that set is not sufficient for the cutscene
+prompt. Do not add a guessed CVar or claim this fixed. Capture the relevant CVar
+and UI changes while entering a cutscene, or trace the cutscene UI render path,
+before extending the toggle.

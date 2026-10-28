@@ -1,0 +1,2852 @@
+INFO  Using log config file: jar:file:/F:/CE%20Projects/OutlawsLab/tooling/ghidra-12.1.4/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: F:\CE Projects\VoidCamera\research\ghidra\userhome\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: F:\CE Projects\VoidCamera\research\ghidra\userhome\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1304 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (8474 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    F:\CE Projects\VoidCamera\research\ghidra (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: F:\CE Projects\VoidCamera\research\ghidra\projects\D2Retail (HeadlessAnalyzer)  
+INFO  Opening project: F:\CE Projects\VoidCamera\research\ghidra\projects\D2Retail (HeadlessProject)  
+INFO  REPORT: Processing project file: /Dishonored2.exe (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: InspectCvarRegistration.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: F:\CE Projects\VoidCamera\research\ghidra\InspectCvarRegistration.java (HeadlessAnalyzer)  
+INFO  InspectCvarRegistration.java> TARGET 140101640 140101640 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 143ed08b0 none (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1401008c2 140100840 FUN_140100840 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140100984 1401008f0 FUN_1401008f0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140100a3a 1401009b0 FUN_1401009b0 (GhidraScript)  
+INFO  InspectCvarRegistration.java> TARGET 140100840 140100840 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 143ed07a8 none (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14208e294 none (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413532be 141353270 FUN_141353270 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141353beb 141353ba0 FUN_141353ba0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141353fab 141353f60 FUN_141353f60 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413542e0 141354290 FUN_141354290 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141354d0b 141354cc0 FUN_141354cc0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141354dbb 141354d70 FUN_141354d70 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141354e1b 141354dd0 FUN_141354dd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141354fc0 141354f70 FUN_141354f70 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14135511b 1413550d0 FUN_1413550d0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141356880 141356830 FUN_141356830 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141357e3b 141357df0 FUN_141357df0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141357fab 141357f60 FUN_141357f60 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14135800b 141357fc0 FUN_141357fc0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14135806b 141358020 FUN_141358020 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413580cb 141358080 FUN_141358080 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14135812b 1413580e0 FUN_1413580e0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413583d3 141358380 FUN_141358380 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141358cd0 141358c80 FUN_141358c80 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14135cd8e 14135cd40 FUN_14135cd40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14135d7ce 14135d780 FUN_14135d780 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141363600 1413635b0 FUN_1413635b0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14136662b 1413665e0 FUN_1413665e0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141366690 141366640 FUN_141366640 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413685cb 141368580 FUN_141368580 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141369cb0 141369c60 FUN_141369c60 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14136ab00 14136aab0 FUN_14136aab0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141371ba0 141371b50 FUN_141371b50 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141372f50 141372f00 FUN_141372f00 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137305b 141373010 FUN_141373010 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137315b 141373110 FUN_141373110 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137452b 1413744e0 FUN_1413744e0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137467b 141374630 FUN_141374630 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413746e0 141374690 FUN_141374690 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137575b 141375710 FUN_141375710 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141375a40 1413759f0 FUN_1413759f0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413760a0 141376050 FUN_141376050 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413761c0 141376170 FUN_141376170 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413765f0 1413765a0 FUN_1413765a0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413768de 141376890 FUN_141376890 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141376d5e 141376d10 FUN_141376d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141376dcb 141376d80 FUN_141376d80 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141376ecb 141376e80 FUN_141376e80 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141376f30 141376ee0 FUN_141376ee0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141376ffb 141376fb0 FUN_141376fb0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141377780 141377730 FUN_141377730 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413777f0 1413777a0 FUN_1413777a0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141377860 141377810 FUN_141377810 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413778d0 141377880 FUN_141377880 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141377940 1413778f0 FUN_1413778f0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413779b0 141377960 FUN_141377960 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141377a70 141377a20 FUN_141377a20 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141377ae0 141377a90 FUN_141377a90 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141377fb3 141377f60 FUN_141377f60 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413793e0 141379390 FUN_141379390 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137988b 141379840 FUN_141379840 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413798eb 1413798a0 FUN_1413798a0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137994b 141379900 FUN_141379900 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413799ab 141379960 FUN_141379960 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137c72b 14137c6e0 FUN_14137c6e0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137d82b 14137d7e0 FUN_14137d7e0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137d88b 14137d840 FUN_14137d840 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137d98b 14137d940 FUN_14137d940 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137d9eb 14137d9a0 FUN_14137d9a0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137da4b 14137da00 FUN_14137da00 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137daab 14137da60 FUN_14137da60 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137db5b 14137db10 FUN_14137db10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14137dbbb 14137db70 FUN_14137db70 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141384ddb 141384d90 FUN_141384d90 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138707b 141387030 FUN_141387030 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138792e 1413878e0 FUN_1413878e0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138835b 141388310 FUN_141388310 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138add0 14138ad80 FUN_14138ad80 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138ae40 14138adf0 FUN_14138adf0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138aeb0 14138ae60 FUN_14138ae60 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138b38b 14138b340 FUN_14138b340 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138d34b 14138d300 FUN_14138d300 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138d3ab 14138d360 FUN_14138d360 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138d40b 14138d3c0 FUN_14138d3c0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138d46b 14138d420 FUN_14138d420 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138d4cb 14138d480 FUN_14138d480 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138d740 14138d6f0 FUN_14138d6f0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138d7b0 14138d760 FUN_14138d760 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138d820 14138d7d0 FUN_14138d7d0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138d890 14138d840 FUN_14138d840 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14138ed0b 14138ecc0 FUN_14138ecc0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14139057e 141390530 FUN_141390530 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141390c7e 141390c30 FUN_141390c30 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141391f10 141391ec0 FUN_141391ec0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141391fd0 141391f80 FUN_141391f80 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141392040 141391ff0 FUN_141391ff0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413920fb 1413920b0 FUN_1413920b0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141392480 141392430 FUN_141392430 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141392540 1413924f0 FUN_1413924f0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413925b0 141392560 FUN_141392560 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141392670 141392620 FUN_141392620 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14139272b 1413926e0 FUN_1413926e0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141392b60 141392b10 FUN_141392b10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413930d0 141393080 FUN_141393080 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14139329b 141393250 FUN_141393250 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1413932fb 1413932b0 FUN_1413932b0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14139335b 141393310 FUN_141393310 (GhidraScript)  
+INFO  InspectCvarRegistration.java> TARGET 140101770 140101770 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 143ed08bc none (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14208e640 none (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141ae6b90 none (GhidraScript)  
+INFO  InspectCvarRegistration.java> TARGET 1401010c0 1401010c0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 143ed082c none (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14208e4ec none (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141ae6b38 none (GhidraScript)  
+INFO  InspectCvarRegistration.java> TARGET 1401022d0 1401022d0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 143ed094c none (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1405051ab 1405051a0 FUN_1405051a0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1405051b7 1405051a0 FUN_1405051a0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1405051c3 1405051a0 FUN_1405051a0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1405051cf 1405051a0 FUN_1405051a0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1405051db 1405051a0 FUN_1405051a0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1405051e7 1405051a0 FUN_1405051a0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506d3c 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506d48 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506d54 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506d60 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506d6c 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506d78 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506d84 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506d90 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506d9c 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506da8 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506db4 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506dc0 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506dcc 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140506dd8 140506d10 FUN_140506d10 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508f50 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508f5c 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508f68 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508f74 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508f80 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508f8c 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508f98 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508fa4 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508fb0 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508fbc 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508fc8 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508fd4 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508fe0 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508fec 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140508ff8 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140509004 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140509010 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050901c 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140509028 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140509034 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140509040 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050904c 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140509058 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140509064 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140509070 140508f40 FUN_140508f40 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f8ad 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f8dc 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f8e8 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f8f4 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f915 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f921 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f92d 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f939 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f956 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f962 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f96e 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f98e 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f99a 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f9b5 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14050f9c1 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fbdb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fbe7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fbf3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fbff 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc0b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc17 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc23 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc2f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc3b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc47 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc53 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc5f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc6b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc77 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc83 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc8f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fc9b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fca7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fcb3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fcbf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fccb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fcd7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fce3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fcef 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fcfb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd07 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd13 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd1f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd2b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd37 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd43 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd4f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd5b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd67 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd73 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd7f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd8b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fd97 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fda3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fdaf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fdbb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fdc7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fdd3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fddf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fdeb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fdf7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe03 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe0f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe1b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe27 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe33 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe3f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe4b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe57 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe63 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe6f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe7b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe87 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe93 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fe9f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093feab 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093feb7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fec3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fecf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fedb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fee7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fef3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093feff 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff0b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff17 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff23 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff2f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff3b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff47 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff53 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff5f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff6b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff77 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff83 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff8f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ff9b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ffa7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ffb3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ffbf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ffcb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ffd7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ffe3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093ffef 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14093fffb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940007 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940013 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094001f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094002b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940037 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940043 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094004f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094005b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940067 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940073 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094007f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094008b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940097 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409400a3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409400af 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409400bb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409400c7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409400d3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409400df 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409400eb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409400f7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940103 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094010f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094011b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940127 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940133 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094013f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094014b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940157 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940163 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094016f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094017b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940187 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940193 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094019f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409401ab 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409401b7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409401c3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409401cf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409401db 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409401e7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409401f3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409401ff 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094020b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940217 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940223 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094022f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094023b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940247 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940253 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094025f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094026b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940277 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940283 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094028f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094029b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409402a7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409402b3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409402bf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409402cb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409402d7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409402e3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409402ef 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409402fb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940307 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940313 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094031f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094032b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940337 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940343 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094034f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094035b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940367 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940373 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094037f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094038b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940397 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409403a3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409403af 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409403bb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409403c7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409403d3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409403df 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409403eb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409403f7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940403 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094040f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094041b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940427 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940433 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094043f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094044b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940457 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940463 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094046f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094047b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940487 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940493 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094049f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409404ab 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409404b7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409404c3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409404cf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409404db 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409404e7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409404f3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409404ff 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094050b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940517 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940523 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094052f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094053b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940547 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940553 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094055f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094056b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940577 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940583 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094058f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094059b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409405a7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409405b3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409405bf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409405cb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409405d7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409405e3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409405ef 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409405fb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940607 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940613 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094061f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094062b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940637 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940643 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094064f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094065b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940667 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940673 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094067f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094068b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940697 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409406a3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409406af 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409406bb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409406c7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409406d3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409406df 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409406eb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409406f7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940703 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094070f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094071b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940727 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940733 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094073f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094074b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940757 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940763 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094076f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094077b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940787 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940793 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094079f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409407ab 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409407b7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409407c3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409407cf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409407db 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409407e7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409407f3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409407ff 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094080b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940817 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940823 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094082f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094083b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940847 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940853 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094085f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094086b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940877 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940883 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094088f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094089b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409408a7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409408b3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409408bf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409408cb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409408d7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409408e3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409408ef 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409408fb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940907 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940913 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094091f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094092b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940937 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940943 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094094f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094095b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940967 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940973 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094097f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 14094098b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940997 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409409a3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409409af 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409409bb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409409c7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409409d3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409409df 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409409eb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 1409409f7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a03 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a0f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a1b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a27 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a33 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a3f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a4b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a57 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a63 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a6f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a7b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a87 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a93 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940a9f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940aab 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940ab7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940ac3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940acf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940adb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940ae7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940af3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940aff 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b0b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b17 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b23 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b2f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b3b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b47 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b53 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b5f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b6b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b77 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b83 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b8f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940b9b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940ba7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940bb3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940bbf 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940bcb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940bd7 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940be3 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940bef 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940bfb 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940c07 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940c13 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940c1f 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940c2b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 140940c3b 14093fbd0 FUN_14093fbd0 (GhidraScript)  
+INFO  InspectCvarRegistration.java> TARGET 1401022f0 1401022f0 (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 143ed0958 none (GhidraScript)  
+INFO  InspectCvarRegistration.java>  REF 141ae6ad0 none (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 140101640 FUN_140101640 SIZE=296 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_140101640(longlong param_1,undefined8 param_2,undefined8 param_3,uint param_4,
+                  undefined8 param_5,undefined4 param_6,undefined4 param_7,undefined8 param_8,
+                  undefined8 param_9,undefined8 param_10)
+
+{
+  undefined8 uVar1;
+  
+  if (DAT_1431c04b8 == '\0') {
+    *(undefined8 *)(param_1 + 0x30) = param_2;
+    *(undefined8 *)(param_1 + 0x38) = param_3;
+    *(undefined8 *)(param_1 + 0x40) = param_5;
+    *(undefined8 *)(param_1 + 0x58) = param_8;
+    *(undefined8 *)(param_1 + 0x68) = param_9;
+    *(undefined8 *)(param_1 + 0x60) = param_10;
+  }
+  else {
+    uVar1 = FUN_140141990(param_2,0x27);
+    *(undefined8 *)(param_1 + 0x30) = uVar1;
+    uVar1 = FUN_140141990(param_3,0x27);
+    *(undefined8 *)(param_1 + 0x58) = 0;
+    *(undefined8 *)(param_1 + 0x38) = uVar1;
+    *(undefined8 *)(param_1 + 0x68) = 0;
+    *(undefined1 **)(param_1 + 0x40) = &DAT_141ab2848;
+    *(undefined8 *)(param_1 + 0x60) = 0;
+  }
+  if (*(longlong *)(param_1 + 0x38) != 0) {
+    if ((param_4 & 8) != 0) {
+      param_4 = param_4 | 0x20;
+    }
+    if ((param_4 & 0x3c010) == 0) {
+      param_4 = param_4 | 8;
+    }
+    else {
+      param_4 = param_4 & 0xfffffff7 | 0x10;
+    }
+    FUN_14013ff40(param_1,param_3);
+    *(uint *)(param_1 + 0x48) = param_4;
+    *(undefined8 *)(param_1 + 0x28) = 0;
+    *(undefined4 *)(param_1 + 0x4c) = param_6;
+    *(undefined4 *)(param_1 + 0x50) = param_7;
+    *(longlong *)(param_1 + 0x78) = DAT_1431c04b0;
+    *(undefined8 *)(param_1 + 0x70) = 0;
+    DAT_1431c04b0 = param_1;
+    FUN_140102cb0(param_1);
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  FUN_140166830("Invalid Reset String for Cvar %s",param_2);
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 140100840 FUN_140100840 SIZE=161 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+undefined8
+FUN_140100840(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined4 param_4,
+             undefined8 param_5,undefined4 param_6,undefined4 param_7,undefined8 param_8)
+
+{
+  undefined8 uVar1;
+  
+  uVar1 = 0xfffffffffffffffe;
+  FUN_14013fb30();
+  FUN_140101640(param_1,param_2,param_3,param_4,param_5,param_6,param_7,0,param_8,0,uVar1);
+  return param_1;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1401008f0 FUN_1401008f0 SIZE=179 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+undefined8
+FUN_1401008f0(undefined8 param_1,undefined8 param_2,undefined8 param_3,uint param_4,
+             undefined8 param_5,code *param_6)
+
+{
+  undefined8 uVar1;
+  
+  uVar1 = 0xfffffffffffffffe;
+  FUN_14013fb30();
+  if ((param_6 == (code *)0x0) && ((param_4 & 1) != 0)) {
+    param_6 = FUN_140100b90;
+  }
+  FUN_140101640(param_1,param_2,param_3,param_4,param_5,DAT_141f697b0,DAT_141ab3b34,0,param_6,0,
+                uVar1);
+  return param_1;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1401009b0 FUN_1401009b0 SIZE=169 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+undefined8
+FUN_1401009b0(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined4 param_4,
+             undefined8 param_5,undefined8 param_6,undefined8 param_7)
+
+{
+  undefined8 uVar1;
+  
+  uVar1 = 0xfffffffffffffffe;
+  FUN_14013fb30();
+  FUN_140101640(param_1,param_2,param_3,param_4,param_5,DAT_141f697b0,DAT_141ab3b34,param_6,param_7,
+                0,uVar1);
+  return param_1;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141353270 FUN_141353270 SIZE=99 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141353270(void)
+
+{
+  FUN_140100840(&DAT_1425ae190,"com_logFile",&DAT_141abe970,2,
+                "1 = buffer log, 2 = flush after each print",0,DAT_141ab3b20,FUN_14003c3f0);
+  atexit((_func_5014 *)&LAB_141a59fa0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141353ba0 FUN_141353ba0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141353ba0(void)
+
+{
+  FUN_140100840(&DAT_1425aea10,"com_speeds",&DAT_141abe970,0x20002,
+                "show engine timings. 1 = print on console, 2 = print on screen, 3 = also show graph"
+                ,0,DAT_141abc544,0);
+  atexit((_func_5014 *)&LAB_141a5a190);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141353f60 FUN_141353f60 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141353f60(void)
+
+{
+  FUN_140100840(&DAT_1425b1980,"com_drawThreadSpeeds",&DAT_141abe970,0x12,
+                "1 = dynamic draw, 2 = static draw, 3 = dynamic draw until stall",0,DAT_141abc544,0)
+  ;
+  atexit((_func_5014 *)&LAB_141a5a230);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141354290 FUN_141354290 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141354290(void)
+
+{
+  FUN_140100840(&DAT_1425b1e00,"com_timeScaler",&DAT_141ac1264,0x10004,"scales the time",
+                DAT_141ab3b0c,DAT_141abf158,0);
+  atexit((_func_5014 *)&LAB_141a5a2d0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141354cc0 FUN_141354cc0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141354cc0(void)
+
+{
+  FUN_140100840(&DAT_1425b2dd0,"com_showFPS",&DAT_141abe970,0x20002,
+                "show frames rendered per second",0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5a4e0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141354d70 FUN_141354d70 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141354d70(void)
+
+{
+  FUN_140100840(&DAT_1425b32d0,"com_showMemoryUsage",&DAT_141abe970,0x20002,
+                "show memory usage. 0 = disabled, 1 = basic, 2 = with heap details.",0,DAT_141ab3b20
+                ,0);
+  atexit((_func_5014 *)&LAB_141a5a500);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141354dd0 FUN_141354dd0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141354dd0(void)
+
+{
+  FUN_140100840(&DAT_1425b3150,"com_showPos",&DAT_141abe970,0x20002,"show camera position",0,
+                DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5a510);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141354f70 FUN_141354f70 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141354f70(void)
+
+{
+  FUN_140100840(&DAT_142bc28f0,"con_fraction",&DAT_141ac8814,4,
+                "override console fraction, -1.f means no override",DAT_141ab3b34,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5a560);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413550d0 FUN_1413550d0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413550d0(void)
+
+{
+  FUN_140100840(&DAT_142bc2870,"con_opacity",&DAT_141abefb8,4,"console background opacity",0,
+                DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5a5a0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141356830 FUN_141356830 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141356830(void)
+
+{
+  FUN_140100840(&DAT_142bf7d50,"fc_maxCacheMemoryMB",&DAT_141abefb8,2,
+                "Maximum cache size in megabytes",DAT_141f697b0,DAT_141ac8ff8,0);
+  atexit((_func_5014 *)&LAB_141a5ab70);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141357df0 FUN_141357df0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141357df0(void)
+
+{
+  FUN_140100840(&DAT_142bfa940,"s_environmentalDetailLevel",&DAT_141ac1284,0x10002,
+                "scalable environmental detail level ",0,DAT_141ac8fdc,0);
+  atexit((_func_5014 *)&LAB_141a5b1f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141357f60 FUN_141357f60 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141357f60(void)
+
+{
+  FUN_140100840(&DAT_142bfaa50,"s_MasterBus_Gain","100.0",0x10004,"Master Bus Gain",0,DAT_141ac8ffc,
+                0);
+  atexit((_func_5014 *)&LAB_141a5b240);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141357fc0 FUN_141357fc0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141357fc0(void)
+
+{
+  FUN_140100840(&DAT_142bfaad0,"s_Music_Gain","100.0",0x10004,"Music Bus Gain",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a5b250);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141358020 FUN_141358020 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141358020(void)
+
+{
+  FUN_140100840(&DAT_142bfab50,"s_SFX_Gain","100.0",0x10004,"Sound Effects Bus Gain",0,DAT_141ac8ffc
+                ,0);
+  atexit((_func_5014 *)&LAB_141a5b260);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141358080 FUN_141358080 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141358080(void)
+
+{
+  FUN_140100840(&DAT_142bfac50,"s_Video_Gain","100.0",0x10004,"Video Bus Gain",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a5b270);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413580e0 FUN_1413580e0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413580e0(void)
+
+{
+  FUN_140100840(&DAT_142bfabd0,"s_Voices_Gain","100.0",0x10004,"Voices Bus Gain",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a5b280);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141358380 FUN_141358380 SIZE=104 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141358380(void)
+
+{
+  FUN_140100840(&DAT_143130c40,"g_mouseSmooth",&DAT_141abefb8,0x10004,
+                "number of samples blended for mouse viewing",DAT_141f697b0,DAT_141abf15c,
+                FUN_1400d0e30);
+  atexit((_func_5014 *)&LAB_141a5b350);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141358c80 FUN_141358c80 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141358c80(void)
+
+{
+  FUN_140100840(&DAT_143133580,"net_numPorts",&DAT_141ac12c4,2,
+                "Number of ports to try to open or broadcast for non-platform backend mode",
+                DAT_141f697b0,DAT_141ac8fe4,0);
+  atexit((_func_5014 *)&LAB_141a5b630);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14135cd40 FUN_14135cd40 SIZE=99 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14135cd40(void)
+
+{
+  FUN_140100840(&DAT_1432c70f0,"fs_debug",&DAT_141abe970,2,&DAT_141ab2848,0,DAT_141ab3b20,
+                FUN_14003c3f0);
+  atexit((_func_5014 *)&LAB_141a5c590);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14135d780 FUN_14135d780 SIZE=99 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14135d780(void)
+
+{
+  FUN_140100840(&DAT_1432ccfa0,"com_timeStampPrints",&DAT_141abe970,2,
+                "print time with each console print, 1 = sec, 2 = msec, 3 = MM:SS:sss",0,
+                DAT_141abc544,FUN_1401667b0);
+  atexit((_func_5014 *)&LAB_141a5c7c0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413635b0 FUN_1413635b0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413635b0(void)
+
+{
+  FUN_140100840(&DAT_1432cf8d0,"r_maxDynamicDecals",&DAT_141afc0c8,0x12,
+                "Maximum number of dynamic decals",DAT_141ac8fdc,DAT_141ab3b24,0);
+  atexit((_func_5014 *)&LAB_141a5cd50);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413665e0 FUN_1413665e0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413665e0(void)
+
+{
+  FUN_140100840(&DAT_1432d52d0,"r_schedulerThreadingMode",&DAT_141ac1264,2,
+                "0: single threaded (one worker enabled), 1: cpu-only tasks multithreaded, 2: fully multithreaded (cpu & gpu tasks - available only if deferred contexts are enabled !)"
+                ,0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5d770);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141366640 FUN_141366640 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141366640(void)
+
+{
+  FUN_140100840(&DAT_1432d5350,"r_schedulerUseDeferredCtx",&DAT_141abefb8,0x4002,
+                "scheduler context pool is deferred. -1: auto (depends on driver caps), 0: always disabled, 1: always enabled"
+                ,DAT_141ab3b34,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5d780);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141368580 FUN_141368580 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141368580(void)
+
+{
+  FUN_140100840(&DAT_1432e8b60,"r_useUniformArrays",&DAT_141abefb8,0x4002,
+                "0: use individual uniforms, 1: use uniform array",0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5d8c0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141369c60 FUN_141369c60 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141369c60(void)
+
+{
+  FUN_140100840(&DAT_1432ea800,"tlf_TileDim",&DAT_141acdfa4,0x4002,
+                "give the tile dimension for tiled culling",DAT_141ab3b20,DAT_141ab3b58,0);
+  atexit((_func_5014 *)&LAB_141a5dce0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14136aab0 FUN_14136aab0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_14136aab0(void)
+
+{
+  FUN_140100840(&DAT_1432ef6a0,"r_oceanGeometricDetails","4096.0f",0x14,"geometric details",
+                _DAT_141b2083c,DAT_141ab3b28,0);
+  atexit((_func_5014 *)&LAB_141a5dd10);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141371b50 FUN_141371b50 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141371b50(void)
+
+{
+  FUN_140100840(&DAT_1432f88c0,"r_TAAAmount",&DAT_141ad8eac,0x10002,"set the sharpness of TXAA",
+                DAT_141f697b0,DAT_141abf160,0);
+  atexit((_func_5014 *)&LAB_141a5e580);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141372f00 FUN_141372f00 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141372f00(void)
+
+{
+  FUN_140100840(&DAT_1432f8970,"r_shadowCullDistance","25.0f",4,
+                "Max distance to display shadow for models",DAT_141f697b0,DAT_141abf120,0);
+  atexit((_func_5014 *)&LAB_141a5e7c0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141373010 FUN_141373010 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141373010(void)
+
+{
+  FUN_140100840(&DAT_1432f89f0,"r_shadowParallelResolutionDividerLevel",&DAT_141abe970,2,
+                "the shadow resolution divider factor - 0: keep highest quality, 1: div by 2, 2: div by 4"
+                ,0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5e7f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141373110 FUN_141373110 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141373110(void)
+
+{
+  FUN_140100840(&DAT_1432f8f00,"r_shadowSpotAndOmniPartialUpdateDynaThreshold",&DAT_141b2a9a4,4,
+                "enable update of dynamic only if light shadow priority (screen cover) is above the threshold, to save performances"
+                ,0,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5e820);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413744e0 FUN_1413744e0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413744e0(void)
+
+{
+  FUN_140100840(&DAT_1432fb150,"r_displayRefresh",&DAT_141abe970,2,
+                "optional display refresh rate option for vid mode",0,DAT_141ac9018,0);
+  atexit((_func_5014 *)&LAB_141a5ec40);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141374630 FUN_141374630 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141374630(void)
+
+{
+  FUN_140100840(&DAT_1432fafd0,"r_multiSamples",&DAT_141abe970,0x20002,
+                "number of anti-aliasing samples (0 = no multi-sampled FBO)",0,DAT_141ac8fec,0);
+  atexit((_func_5014 *)&LAB_141a5ec80);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141374690 FUN_141374690 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141374690(void)
+
+{
+  FUN_140100840(&DAT_1432fb450,"r_renderQualityPresets",&DAT_141ad541c,0x10002,
+                "swap through rendering quality options (low, medium, high, ultra)",DAT_141ab3b34,
+                DAT_141ae3f28,0);
+  atexit((_func_5014 *)&LAB_141a5ec90);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141375710 FUN_141375710 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141375710(void)
+
+{
+  FUN_140100840(&DAT_1432fb6a0,"r_SsaoType",&DAT_141abefb8,2,"(0)SSAO (1)DWAO",0,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5efb0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413759f0 FUN_1413759f0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413759f0(void)
+
+{
+  FUN_140100840(&DAT_1432fbf20,"r_lodZoomMultiplicator",&DAT_141b2e634,0x14,
+                "Zoom multiplicator for static LODs",DAT_141acd7c8,DAT_141abdad4,0);
+  atexit((_func_5014 *)&LAB_141a5f040);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141376050 FUN_141376050 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141376050(void)
+
+{
+  FUN_140100840(&DAT_1432fc4f0,"r_logLevel",&DAT_141ac1264,2,"1 = blocks only, 2 = everything",
+                DAT_141f697b0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5f0a0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141376170 FUN_141376170 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141376170(void)
+
+{
+  FUN_140100840(&DAT_143937560,"r_brightness",&DAT_141ad8f48,0x20004,"changes gamma correction",
+                DAT_141ab3764,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5f0c0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413765a0 FUN_1413765a0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413765a0(void)
+
+{
+  FUN_140100840(&DAT_1439374e0,"r_gamma",&DAT_141b31ba4,0x10004,"Changes gamma correction",
+                DAT_141ab3764,DAT_141ac8fdc,0);
+  atexit((_func_5014 *)&LAB_141a5f190);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141376890 FUN_141376890 SIZE=99 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141376890(void)
+
+{
+  FUN_140100840(&DAT_143937e60,"r_showLights",&DAT_141abe970,2,
+                "1 = just print volumes numbers, highlighting ones covering the view, 2 = also draw planes of each volume, 3 = also draw edges of each volume"
+                ,0,DAT_141abc544,FUN_1401667b0);
+  atexit((_func_5014 *)&LAB_141a5f220);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141376d10 FUN_141376d10 SIZE=99 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141376d10(void)
+
+{
+  FUN_140100840(&DAT_143937260,"r_swapInterval",&DAT_141abefb8,0x10002,
+                "changes Present syncInterval. 0 = off, 1 = vsync freqMonitor Hz, 2 = vsync freqMonitor / 2 Hz, 3 = vsync freqMonitor / 3 Hz, 4 = vsync freqMonitor / 4 Hz"
+                ,0,DAT_141ac8fdc,FUN_140359e90);
+  atexit((_func_5014 *)&LAB_141a5f300);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141376d80 FUN_141376d80 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141376d80(void)
+
+{
+  FUN_140100840(&DAT_143937960,"r_testGamma",&DAT_141abe970,4,
+                "if > 0 draw a grid pattern to test gamma levels",0,DAT_141ac9014,0);
+  atexit((_func_5014 *)&LAB_141a5f310);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141376e80 FUN_141376e80 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141376e80(void)
+
+{
+  FUN_140100840(&DAT_143937460,"r_zfar",&DAT_141b31b78,4,"far Z clip plane distance, 0 = infinity",0
+                ,DAT_141b32c60,0);
+  atexit((_func_5014 *)&LAB_141a5f340);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141376ee0 FUN_141376ee0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141376ee0(void)
+
+{
+  FUN_140100840(&DAT_1439373e0,"r_znear",&DAT_141b149a8,4,"near Z clip plane distance",DAT_141ab3b04
+                ,DAT_141b32c58,0);
+  atexit((_func_5014 *)&LAB_141a5f350);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141376fb0 FUN_141376fb0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141376fb0(void)
+
+{
+  FUN_140100840(&DAT_143979de0,"binkVolumeLinearFloat","0.40f",4,"Bink track volume percentage",0,
+                DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5f380);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141377730 FUN_141377730 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141377730(void)
+
+{
+  FUN_140100840(&DAT_14397a4d0,"r_shadowAtlasSliceCnt",&DAT_141ac12c4,2,
+                "Number of slices in the shadow map atlas( used for omni & spot shadows )",
+                DAT_141f697b0,DAT_141ab3b58,0);
+  atexit((_func_5014 *)&LAB_141a5f3f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413777a0 FUN_1413777a0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413777a0(void)
+
+{
+  FUN_140100840(&DAT_14397a3d0,"r_shadowAtlasSliceHeight",&DAT_141b2a8fc,2,
+                "Dimensions of one slice of the shadow map atlas( used for omni & spot shadows )",
+                DAT_141ac9020,DAT_141ab3b28,0);
+  atexit((_func_5014 *)&LAB_141a5f400);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141377810 FUN_141377810 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141377810(void)
+
+{
+  FUN_140100840(&DAT_14397a450,"r_shadowAtlasSliceWidth",&DAT_141b2a8fc,2,
+                "Dimensions of one slice of the shadow map atlas( used for omni & spot shadows )",
+                DAT_141ac9020,DAT_141ab3b28,0);
+  atexit((_func_5014 *)&LAB_141a5f410);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141377880 FUN_141377880 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141377880(void)
+
+{
+  FUN_140100840(&DAT_14397a650,"r_shadowCacheSliceCnt",&DAT_141af3a2c,2,
+                "Number of slices in the shadow map cache( used for omni & spot shadows )",
+                DAT_141f697b0,DAT_141ad038c,0);
+  atexit((_func_5014 *)&LAB_141a5f420);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413778f0 FUN_1413778f0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413778f0(void)
+
+{
+  FUN_140100840(&DAT_14397a550,"r_shadowCacheSliceHeight",&DAT_141b2a8fc,2,
+                "Dimensions of one slice of the shadow map cache( used for omni & spot shadows )",
+                DAT_141ac9020,DAT_141ab3b28,0);
+  atexit((_func_5014 *)&LAB_141a5f430);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141377960 FUN_141377960 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141377960(void)
+
+{
+  FUN_140100840(&DAT_14397a5d0,"r_shadowCacheSliceWidth",&DAT_141b2a8fc,2,
+                "Dimensions of one slice of the shadow map cache( used for omni & spot shadows )",
+                DAT_141ac9020,DAT_141ab3b28,0);
+  atexit((_func_5014 *)&LAB_141a5f440);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141377a20 FUN_141377a20 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141377a20(void)
+
+{
+  FUN_140100840(&DAT_14397a2d0,"r_shadowParallelSliceCnt",&DAT_141ac1284,2,
+                "current parallel shadow slice count",DAT_141f697b0,DAT_141ac8fdc,0);
+  atexit((_func_5014 *)&LAB_141a5f460);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141377a90 FUN_141377a90 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141377a90(void)
+
+{
+  FUN_140100840(&DAT_14397a250,"r_shadowParallelSliceSize",&DAT_141b2a8fc,0x4002,
+                "Dimensions of one slice of directional shadow buffer",DAT_141ac9020,DAT_141ab3b28,0
+               );
+  atexit((_func_5014 *)&LAB_141a5f470);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141377f60 FUN_141377f60 SIZE=104 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141377f60(void)
+
+{
+  FUN_140100840(&DAT_14397b2d0,"r_showTris",&DAT_141abe970,2,
+                "Enables wireframe rendering of the world. 0 = Disabled, 1 = Only draw visible ones, 2 = Draw all front facing, 3 = Draw all, 4 = Only visible ones with blended lines. Negative values will draw the world in solid color"
+                ,DAT_141b36be0,DAT_141ac8fdc,FUN_1403738c0);
+  atexit((_func_5014 *)&LAB_141a5f540);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141379390 FUN_141379390 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141379390(void)
+
+{
+  FUN_140100840(&DAT_14397c9d0,"umbra_queryJobNum",&DAT_141af3a2c,2,
+                "number of umbra jobs to trigger for a visibity query",DAT_141f697b0,DAT_141ab3b58,0
+               );
+  atexit((_func_5014 *)&LAB_141a5f9a0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141379840 FUN_141379840 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141379840(void)
+
+{
+  FUN_140100840(&DAT_14397d7b0,"ark_player_autoaim_model_mouse",&DAT_141abe970,0x10002,
+                "0: off - 1: snap - 2: friction",0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5fa60);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413798a0 FUN_1413798a0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413798a0(void)
+
+{
+  FUN_140100840(&DAT_14397d6b0,"ark_player_autoaim_model_pad",&DAT_141abefb8,0x10002,
+                "0: off - 1: snap - 2: friction",0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a5fa70);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141379900 FUN_141379900 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141379900(void)
+
+{
+  FUN_140100840(&DAT_14397d830,"ark_player_autoaim_strength_mouse",&DAT_141b2e634,0x10004,
+                "the strength of the auto aim. The more it is the more it attract the crosshair from far"
+                ,0,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5fa80);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141379960 FUN_141379960 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141379960(void)
+
+{
+  FUN_140100840(&DAT_14397d730,"ark_player_autoaim_strength_pad",&DAT_141b2e634,0x10004,
+                "the strength of the auto aim. The more it is the more it attract the crosshair from far"
+                ,0,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a5fa90);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14137c6e0 FUN_14137c6e0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14137c6e0(void)
+
+{
+  FUN_140100840(&DAT_1439809f0,"r_umbraGateVisibilityRatio",&DAT_141ad8f48,0x14,
+                "Visibility factor for umbra gates",0,DAT_141abf158,0);
+  atexit((_func_5014 *)&LAB_141a5ffd0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14137d7e0 FUN_14137d7e0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14137d7e0(void)
+
+{
+  FUN_140100840(&DAT_143982ef0,"r_AntiAliasingPreset",&DAT_141ac1274,0x10002,
+                "Anti-Aliasing preset : 0 Disabled 1 FXAA Low 2 FXAA High 3 Temporal AA",0,
+                DAT_141abc544,0);
+  atexit((_func_5014 *)&LAB_141a602a0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14137d840 FUN_14137d840 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14137d840(void)
+
+{
+  FUN_140100840(&DAT_1439830f0,"r_downsampleQualityPreset",&DAT_141abefb8,0x10002,
+                "Fog blur radius preset : 0 Low 1 High",0,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a602b0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14137d940 FUN_14137d940 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14137d940(void)
+
+{
+  FUN_140100840(&DAT_143982ff0,"r_maxDynamicDecalsPreset",&DAT_141ac1274,0x10002,
+                "Decals details preset : 0 Very Low 1 Low 2 Medium 3 High 4 Very High 5 Ultra",0,
+                DAT_141abf154,0);
+  atexit((_func_5014 *)&LAB_141a602e0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14137d9a0 FUN_14137d9a0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14137d9a0(void)
+
+{
+  FUN_140100840(&DAT_143982df0,"r_modelsQualityPreset",&DAT_141ac1274,0x10002,
+                "Models quality preset : 0 Very Low 1 Low 2 Medium 3 High 4 Very High 5 Ultra",0,
+                DAT_141abf154,0);
+  atexit((_func_5014 *)&LAB_141a602f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14137da00 FUN_14137da00 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14137da00(void)
+
+{
+  FUN_140100840(&DAT_143982d70,"r_oceanQualityPreset",&DAT_141ac1274,0x10002,
+                "Ocean quality preset : 0 Very Low 1 Low 2 Medium 3 High 4 Very High 5 Ultra",0,
+                DAT_141abf154,0);
+  atexit((_func_5014 *)&LAB_141a60300);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14137da60 FUN_14137da60 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14137da60(void)
+
+{
+  FUN_140100840(&DAT_143982cf0,"r_shadowQualityPreset",&DAT_141ac1274,0x10002,
+                "Shadow quality preset : 0 Very Low 1 Low 2 Medium 3 High 4 Very High 5 Ultra",0,
+                DAT_141abf154,0);
+  atexit((_func_5014 *)&LAB_141a60310);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14137db10 FUN_14137db10 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14137db10(void)
+
+{
+  FUN_140100840(&DAT_143982f70,"r_textureDetailsPreset",&DAT_141ac1274,0x10002,
+                "Texture details preset : 0 Very Low 1 Low 2 Medium 3 High 4 Very High 5 Ultra",0,
+                DAT_141abf154,0);
+  atexit((_func_5014 *)&LAB_141a60330);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14137db70 FUN_14137db70 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14137db70(void)
+
+{
+  FUN_140100840(&DAT_143982e70,"r_viewDistPreset",&DAT_141ac1274,0x10002,
+                "View distance preset : 0 Very Low 1 Low 2 Medium 3 High 4 Very High 5 Ultra",0,
+                DAT_141abf154,0);
+  atexit((_func_5014 *)&LAB_141a60340);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141384d90 FUN_141384d90 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141384d90(void)
+
+{
+  FUN_140100840(&DAT_1439859b0,"r_useAnimBlendJobs",&DAT_141abefb8,2,"0 = off, 1 = threaded",0,
+                DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a604e0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141387030 FUN_141387030 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141387030(void)
+
+{
+  FUN_140100840(&DAT_143988250,"ark_killcam_chance_setting",&DAT_141abefb8,0x10002,
+                "Set the killcam appearance chance.",0,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a60b70);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413878e0 FUN_1413878e0 SIZE=99 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413878e0(void)
+
+{
+  FUN_140100840(&DAT_143989030,"ark_input_set_gamepad_preset",&DAT_141abe970,0x10002,
+                "The selected gamepad configuration",0,DAT_141abc544,FUN_1401667b0);
+  atexit((_func_5014 *)&LAB_141a60d70);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141388310 FUN_141388310 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141388310(void)
+
+{
+  FUN_140100840(&DAT_14398a000,"ark_ui_crosshair_opacity",&DAT_141ad8f48,0x10004,
+                "Crosshair opacity: 0.0 = fully transparent (invisible) => 1.0 = fully opaque",0,
+                DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a60ef0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138ad80 FUN_14138ad80 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138ad80(void)
+
+{
+  FUN_140100840(&DAT_14398dd90,"g_playerDebugCameraDistance",&DAT_141b12020,4,
+                "Distance to the player. Best increment is abs(0.1).",DAT_141ab3b0c,DAT_141abf160,0)
+  ;
+  atexit((_func_5014 *)&LAB_141a61440);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138adf0 FUN_14138adf0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138adf0(void)
+
+{
+  FUN_140100840(&DAT_14398dd10,"g_playerDebugCameraPitchAngle","10.0f",4,
+                "Player debug camPitch angle (in degree) from behind the player.",DAT_141ae8ab4,
+                DAT_141ae8ab0,0);
+  atexit((_func_5014 *)&LAB_141a61450);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138ae60 FUN_14138ae60 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138ae60(void)
+
+{
+  FUN_140100840(&DAT_14398de10,"g_playerDebugCameraYawAngle",&DAT_141b23b98,4,
+                "Yaw angle from behind the player in degree.",DAT_141ae8b0c,DAT_141ac9010,0);
+  atexit((_func_5014 *)&LAB_141a61460);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138b340 FUN_14138b340 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138b340(void)
+
+{
+  FUN_140100840(&DAT_14398e200,"ark_playerBobAmount",&DAT_141ad8f48,0x10004,"bob amount.",0,
+                DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a614e0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138d300 FUN_14138d300 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138d300(void)
+
+{
+  FUN_140100840(&DAT_143991a90,"cam_freecam_movespeed",&DAT_141c71e6c,0x20004,
+                "freecam linear move speed",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a61b10);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138d360 FUN_14138d360 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138d360(void)
+
+{
+  FUN_140100840(&DAT_143991b10,"cam_freecam_movespeedz",&DAT_141c71ec0,0x20004,
+                "freecam linear move speed when going up/down",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a61b20);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138d3c0 FUN_14138d3c0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138d3c0(void)
+
+{
+  FUN_140100840(&DAT_143991c10,"cam_freecam_runspeed",&DAT_141c71f5c,0x20004,
+                "freecam linear move speed when run button is down",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a61b30);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138d420 FUN_14138d420 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138d420(void)
+
+{
+  FUN_140100840(&DAT_143991b90,"cam_freecam_runspeedz",&DAT_141c71ec0,0x20004,
+                "freecam linear move speed running up/down",0,DAT_141ac8ffc,0);
+  atexit((_func_5014 *)&LAB_141a61b40);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138d480 FUN_14138d480 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138d480(void)
+
+{
+  FUN_140100840(&DAT_143991c90,"cam_freecam_turnspeed","300.0f",0x20004,
+                "freecam angular move speed (in deg/s)",0,DAT_141c575a4,0);
+  atexit((_func_5014 *)&LAB_141a61b50);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138d6f0 FUN_14138d6f0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138d6f0(void)
+
+{
+  FUN_140100840(&DAT_143991f30,"g_lookStickSensitivityX",&DAT_141b2e634,0x10004,
+                "look stick X sensitivity ratio",DAT_141accf9c,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a61bb0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138d760 FUN_14138d760 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138d760(void)
+
+{
+  FUN_140100840(&DAT_143991fb0,"g_lookStickSensitivityY",&DAT_141b2e634,0x10004,
+                "look stick Y sensitivity ratio",DAT_141accf9c,DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a61bc0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138d7d0 FUN_14138d7d0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138d7d0(void)
+
+{
+  FUN_140100840(&DAT_143991e30,"g_mouseClamp","360.0f",0x10004,
+                "clamper for mouse movements normalization",DAT_141f697b0,DAT_141ae8924,0);
+  atexit((_func_5014 *)&LAB_141a61bd0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138d840 FUN_14138d840 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138d840(void)
+
+{
+  FUN_140100840(&DAT_143991eb0,"g_mouseSensitivity",&DAT_141b2e634,0x10004,"mouse sensitivity ratio"
+                ,DAT_141ab3b0c,DAT_141ae3f28,0);
+  atexit((_func_5014 *)&LAB_141a61be0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14138ecc0 FUN_14138ecc0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14138ecc0(void)
+
+{
+  FUN_140100840(&DAT_143994930,"ark_phys_ContactMinImpulseForEvent",&DAT_141b149a8,4,
+                "Min contact impulse to trigger contact on contact system.",0,DAT_141f697b0,0);
+  atexit((_func_5014 *)&LAB_141a61ee0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141390530 FUN_141390530 SIZE=99 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141390530(void)
+
+{
+  FUN_140100840(&DAT_1439a1890,"ai_showObstacleAvoidance",&DAT_141abe970,2,
+                "draws obstacle avoidance information. 2,4 = draw obstacles for player, 3,4 = top-down view"
+                ,0,DAT_141ac8fdc,FUN_140359e90);
+  atexit((_func_5014 *)&LAB_141a62290);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141390c30 FUN_141390c30 SIZE=99 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141390c30(void)
+
+{
+  FUN_140100840(&DAT_1439a1a90,"g_editEntityMode",&DAT_141abe970,2,
+                "0 = off\n1 = lights\n2 = sounds\n3 = articulated figures\n4 = particle systems\n5 = monsters\n6 = entity names\n7 = entity models\n8 = fx\n9 = entity properties"
+                ,0,DAT_141ae3f2c,FUN_140887d10);
+  atexit((_func_5014 *)&LAB_141a623f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141391ec0 FUN_141391ec0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141391ec0(void)
+
+{
+  FUN_140100840(&DAT_1439a2590,"pm_sprintAngle","100.0",0x2004,
+                "the angle the player has to stay in with their forward movement",DAT_141f697b0,
+                DAT_141ac9010,0);
+  atexit((_func_5014 *)&LAB_141a627a0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141391f80 FUN_141391f80 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141391f80(void)
+
+{
+  FUN_140100840(&DAT_1439a2510,"pm_sprintChargeTime",&DAT_141c8c4c0,0x2004,
+                "how many ms to fully recharge sprint",DAT_141f697b0,DAT_141ae8a70,0);
+  atexit((_func_5014 *)&LAB_141a627c0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141391ff0 FUN_141391ff0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141391ff0(void)
+
+{
+  FUN_140100840(&DAT_1439a2490,"pm_sprintMaxTime",&DAT_141c8c474,0x2004,
+                "how many ms the player can sprint",DAT_141f697b0,DAT_141ae8a70,0);
+  atexit((_func_5014 *)&LAB_141a627d0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413920b0 FUN_1413920b0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413920b0(void)
+
+{
+  FUN_140100840(&DAT_1439a2610,"pm_sprintStickDeadZone","100.0f",0x2002,
+                "how far the movement stick has to be pressed forward before we allow sprint to kick in max is 120 because full stick max is 127"
+                ,0,DAT_141ac9c28,0);
+  atexit((_func_5014 *)&LAB_141a627f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141392430 FUN_141392430 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141392430(void)
+
+{
+  FUN_140100840(&DAT_1439a2c10,"pm_thrusterSprintAngle","45.0f",0x2004,
+                "the angle the player has to stay in with their forward movement",DAT_141f697b0,
+                DAT_141ac9010,0);
+  atexit((_func_5014 *)&LAB_141a628a0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413924f0 FUN_1413924f0 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413924f0(void)
+
+{
+  FUN_140100840(&DAT_1439a2b10,"pm_thrusterSprintChargeTime",&DAT_141c8c83c,0x2004,
+                "how many ms to fully recharge thruster sprint",DAT_141f697b0,DAT_141ae8a70,0);
+  atexit((_func_5014 *)&LAB_141a628c0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141392560 FUN_141392560 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141392560(void)
+
+{
+  FUN_140100840(&DAT_1439a2a90,"pm_thrusterSprintDelayTime",&DAT_141c8c83c,0x2004,
+                "how many ms to delay before sprinting is possible again",DAT_141f697b0,
+                DAT_141ae8a70,0);
+  atexit((_func_5014 *)&LAB_141a628d0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141392620 FUN_141392620 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141392620(void)
+
+{
+  FUN_140100840(&DAT_1439a2a10,"pm_thrusterSprintMaxTime",&DAT_141c8c83c,0x2004,
+                "how many ms the player can thruster sprint",DAT_141f697b0,DAT_141ae8a70,0);
+  atexit((_func_5014 *)&LAB_141a628f0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413926e0 FUN_1413926e0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413926e0(void)
+
+{
+  FUN_140100840(&DAT_1439a2c90,"pm_thrusterSprintStickDeadZone","100.0f",0x2002,
+                "how far the movement stick has to be pressed forward before we allow thruster sprint to kick in max is 120 because full stick max is 127"
+                ,0,DAT_141ac9c28,0);
+  atexit((_func_5014 *)&LAB_141a62910);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141392b10 FUN_141392b10 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141392b10(void)
+
+{
+  FUN_140100840(&DAT_1439a40a0,"ark_fieldOfView",&DAT_141c8de48,0x10004,
+                "horizontal field of view in degree, (this value is silently modified by the system to fit aspect ratio)"
+                ,DAT_141c8e8a4,DAT_141c8e8a8,0);
+  atexit((_func_5014 *)&LAB_141a629d0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141393080 FUN_141393080 SIZE=101 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141393080(void)
+
+{
+  FUN_140100840(&DAT_1439a42a0,"r_water_ScreenSpaceMaxStepsCount",&DAT_141adea78,2,
+                "max authorized ocean SSR steps number",DAT_141f697b0,DAT_141ac9020,0);
+  atexit((_func_5014 *)&LAB_141a62a00);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141393250 FUN_141393250 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141393250(void)
+
+{
+  FUN_140100840(&DAT_1439a4fe0,"devgui",&DAT_141abe970,2,
+                "0 = disable DevGUI, 1 = enable DevGUI, 2 = enable DevGUI with key legend",0,
+                DAT_141ab3b20,0);
+  atexit((_func_5014 *)&LAB_141a62a30);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1413932b0 FUN_1413932b0 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1413932b0(void)
+
+{
+  FUN_140100840(&DAT_1439a5060,"devgui_currentSyncMeleeAINum",&DAT_141abe970,2,
+                "0 = disable, 1 - 6, show a different AI and its various sync styles.",0,
+                DAT_141ae3f28,0);
+  atexit((_func_5014 *)&LAB_141a62a40);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 141393310 FUN_141393310 SIZE=96 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_141393310(void)
+
+{
+  FUN_140100840(&DAT_1439a50e0,"devgui_currentSyncMeleeNum",&DAT_141abe970,2,
+                "0 = disable, 1 - n, show a different AI sync melee interaction.",0,DAT_141abf164,0)
+  ;
+  atexit((_func_5014 *)&LAB_141a62a50);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 140101770 FUN_140101770 SIZE=1401 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_140101770(longlong *param_1,int *param_2)
+
+{
+  bool bVar1;
+  bool bVar2;
+  longlong *plVar3;
+  int iVar4;
+  int iVar5;
+  undefined8 uVar6;
+  longlong lVar7;
+  undefined8 uVar8;
+  undefined8 uVar9;
+  undefined1 *puVar10;
+  char *pcVar11;
+  int iVar12;
+  uint uVar13;
+  longlong local_res10;
+  undefined **local_res18;
+  uint in_stack_fffffffffffffed8;
+  longlong *local_118;
+  uint local_110;
+  undefined4 local_10c;
+  undefined1 local_108 [40];
+  undefined1 local_e0 [40];
+  undefined1 local_b8 [40];
+  undefined8 local_90;
+  undefined1 local_88 [40];
+  undefined1 local_60 [40];
+  
+  local_90 = 0xfffffffffffffffe;
+  bVar1 = false;
+  FUN_14013fb30(local_e0);
+  FUN_14013fb30(local_b8);
+  FUN_14013fb30();
+  local_118 = (longlong *)0x0;
+  FUN_1401548e0();
+  local_118 = (longlong *)0x0;
+  local_10c = 0x3f;
+  local_res10 = CONCAT44(local_res10._4_4_,0x5000000);
+  local_110 = 0x5000000;
+  iVar5 = 1;
+  iVar12 = 0;
+  if (*param_2 < 2) {
+    puVar10 = &DAT_141ab2848;
+  }
+  else {
+    puVar10 = *(undefined1 **)(param_2 + 4);
+  }
+  iVar4 = FUN_140143650(puVar10,"-help");
+  if (iVar4 == 0) {
+LAB_140101907:
+    iVar12 = 1;
+LAB_14010190d:
+    iVar5 = 2;
+  }
+  else {
+    if (*param_2 < 2) {
+      puVar10 = &DAT_141ab2848;
+    }
+    else {
+      puVar10 = *(undefined1 **)(param_2 + 4);
+    }
+    iVar4 = FUN_140143650(puVar10,&DAT_141ace098);
+    if (iVar4 == 0) goto LAB_140101907;
+    if (*param_2 < 2) {
+      puVar10 = &DAT_141ab2848;
+    }
+    else {
+      puVar10 = *(undefined1 **)(param_2 + 4);
+    }
+    iVar4 = FUN_140143650(puVar10,"-type");
+    if (iVar4 != 0) {
+      if (*param_2 < 2) {
+        puVar10 = &DAT_141ab2848;
+      }
+      else {
+        puVar10 = *(undefined1 **)(param_2 + 4);
+      }
+      iVar4 = FUN_140143650(puVar10,"-range");
+      if (iVar4 == 0) goto LAB_1401018fd;
+      if (*param_2 < 2) {
+        puVar10 = &DAT_141ab2848;
+      }
+      else {
+        puVar10 = *(undefined1 **)(param_2 + 4);
+      }
+      iVar4 = FUN_140143650(puVar10,"-flags");
+      if (iVar4 != 0) {
+        if (*param_2 < 2) {
+          puVar10 = &DAT_141ab2848;
+        }
+        else {
+          puVar10 = *(undefined1 **)(param_2 + 4);
+        }
+        iVar4 = FUN_140143650(puVar10,"-changed");
+        if (iVar4 == 0) {
+          iVar12 = 4;
+          goto LAB_14010190d;
+        }
+        goto LAB_140101912;
+      }
+      iVar12 = 3;
+      goto LAB_14010190d;
+    }
+LAB_1401018fd:
+    iVar5 = 2;
+    iVar12 = 2;
+  }
+LAB_140101912:
+  if (iVar5 < *param_2) {
+    uVar6 = FUN_140132470(param_2,iVar5,0xffffffff,0,in_stack_fffffffffffffed8 & 0xffffff00);
+    FUN_14013ff40(local_e0,uVar6);
+    FUN_1401445a0(local_e0,&DAT_141ab5fa4,&DAT_141ab2848,0);
+  }
+  else {
+    FUN_14013ff40(local_e0,&DAT_141ab2848);
+  }
+  FUN_1401445a0(local_e0,&DAT_141ab3cc8,&DAT_141ab2848,0);
+  iVar4 = 0;
+  iVar5 = (**(code **)(*param_1 + 8))(param_1);
+  if (iVar5 < 1) {
+    uVar13 = (uint)local_res10;
+  }
+  else {
+    do {
+      lVar7 = (**(code **)(*param_1 + 0x10))(param_1,iVar4);
+      local_res10 = lVar7;
+      iVar5 = FUN_140143ff0(local_e0);
+      if (iVar5 < 1) {
+LAB_140101a0b:
+        bVar2 = false;
+      }
+      else {
+        uVar6 = FUN_14013f9d0(local_88,*(undefined8 *)(lVar7 + 0x30));
+        bVar1 = true;
+        uVar8 = FUN_1401d9090(local_e0);
+        iVar5 = FUN_140142670(uVar6,uVar8,0,0,0,0xffffffff);
+        if (iVar5 != -1) goto LAB_140101a0b;
+        bVar2 = true;
+      }
+      if (bVar1) {
+        bVar1 = false;
+        FUN_14013fd10(local_88);
+      }
+      if (!bVar2) {
+        if (iVar12 == 4) {
+          uVar6 = *(undefined8 *)(lVar7 + 0x38);
+          uVar8 = FUN_1401d9090(lVar7);
+          iVar5 = FUN_140143650(uVar8,uVar6);
+          if (iVar5 == 0) goto LAB_140101a52;
+        }
+        FUN_1408918f0(&local_118,&local_res10);
+      }
+LAB_140101a52:
+      iVar4 = iVar4 + 1;
+      iVar5 = (**(code **)(*param_1 + 8))(param_1);
+    } while (iVar4 < iVar5);
+    local_res10 = CONCAT44(local_res10._4_4_,local_110);
+    uVar13 = local_110;
+  }
+  plVar3 = local_118;
+  local_res18 = idSort_CVarPtr::vftable;
+  if (local_118 != (longlong *)0x0) {
+    (*(code *)PTR_FUN_141ae6fa8)(&local_res18,local_118,uVar13 & 0xffffff);
+  }
+  if (iVar12 != 0) {
+    if (iVar12 == 1) {
+      FUN_140142560(local_b8,0x20,0x21);
+      FUN_140143a80(local_b8,&DAT_141ab5f24,0);
+      if ((uVar13 & 0xffffff) != 0) {
+        lVar7 = *plVar3;
+        uVar6 = *(undefined8 *)(lVar7 + 0x40);
+        uVar8 = FUN_1401d9090(local_b8);
+        uVar6 = FUN_1401011b0(uVar6,0x2c,uVar8,local_108);
+                    /* WARNING: Subroutine does not return */
+        FUN_140166830("%-32s ^7%s\n",*(undefined8 *)(lVar7 + 0x30),uVar6);
+      }
+      goto LAB_140101ede;
+    }
+    if (iVar12 == 2) {
+      if ((uVar13 & 0xffffff) == 0) goto LAB_140101ede;
+      lVar7 = *plVar3;
+      uVar13 = *(uint *)(lVar7 + 0x48);
+      if ((uVar13 & 1) == 0) {
+        if ((uVar13 & 2) != 0) {
+          uVar6 = *(undefined8 *)(lVar7 + 0x30);
+          if (*(float *)(lVar7 + 0x4c) < *(float *)(lVar7 + 0x50)) {
+                    /* WARNING: Subroutine does not return */
+            FUN_140166830("%-32s ^2int ^7[%d, %d]\n",uVar6,(int)*(float *)(lVar7 + 0x4c),
+                          (int)*(float *)(lVar7 + 0x50));
+          }
+          pcVar11 = "%-32s ^2int\n";
+          goto LAB_140101e03;
+        }
+        if ((uVar13 & 4) == 0) {
+          if (*(longlong *)(lVar7 + 0x58) != 0) {
+                    /* WARNING: Subroutine does not return */
+            FUN_140166830("%-32s ^7string ^7[",*(undefined8 *)(lVar7 + 0x30));
+          }
+          if (*(longlong *)(lVar7 + 0x60) != 0) {
+                    /* WARNING: Subroutine does not return */
+            FUN_140166830("%-32s ^7string ^7[",*(undefined8 *)(lVar7 + 0x30));
+          }
+          pcVar11 = "%-32s ^7string\n";
+        }
+        else {
+          if (*(float *)(lVar7 + 0x4c) <= *(float *)(lVar7 + 0x50) &&
+              *(float *)(lVar7 + 0x50) != *(float *)(lVar7 + 0x4c)) {
+            uVar8 = FUN_14013f8a0(local_60);
+            uVar9 = FUN_14013f8a0(local_88,*(undefined4 *)(lVar7 + 0x4c));
+            uVar6 = *(undefined8 *)(lVar7 + 0x30);
+            uVar8 = FUN_1401d9090(uVar8);
+            uVar9 = FUN_1401d9090(uVar9);
+                    /* WARNING: Subroutine does not return */
+            FUN_140166830("%-32s ^1float ^7[%s, %s]\n",uVar6,uVar9,uVar8);
+          }
+          pcVar11 = "%-32s ^1float\n";
+        }
+      }
+      else {
+        pcVar11 = "%-32s ^5bool\n";
+      }
+      uVar6 = *(undefined8 *)(lVar7 + 0x30);
+LAB_140101e03:
+                    /* WARNING: Subroutine does not return */
+      FUN_140166830(pcVar11,uVar6);
+    }
+    if (iVar12 == 3) {
+      if ((uVar13 & 0xffffff) != 0) {
+                    /* WARNING: Subroutine does not return */
+        FUN_140166830("%-32s ",*(undefined8 *)(*plVar3 + 0x30));
+      }
+      goto LAB_140101ede;
+    }
+    if (iVar12 != 4) goto LAB_140101ede;
+  }
+  if ((uVar13 & 0xffffff) != 0) {
+    lVar7 = *plVar3;
+    uVar6 = FUN_1401d9090(lVar7);
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("%-32s ^7\"%s\"\n",*(undefined8 *)(lVar7 + 0x30),uVar6);
+  }
+LAB_140101ede:
+                    /* WARNING: Subroutine does not return */
+  FUN_140166830("\n%i cvars listed\n\n",uVar13 & 0xffffff);
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1401010c0 FUN_1401010c0 SIZE=229 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1401010c0(longlong param_1,longlong param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  ulonglong uVar3;
+  uint uVar4;
+  ulonglong uVar5;
+  undefined1 local_30 [40];
+  
+  uVar3 = 0;
+  uVar5 = uVar3;
+  if ((*(uint *)(param_1 + 0x10) & 0xffffff) != 0) {
+    do {
+      if (*(int *)(param_2 + 8) == 1) {
+        FUN_14013f9d0(local_30,*(undefined8 *)
+                                (*(longlong *)(uVar3 + *(longlong *)(param_1 + 8)) + 0x30));
+        FUN_1401585b0(param_2,local_30,0xffffffff);
+        FUN_14013fd10(local_30);
+      }
+      if (*(longlong *)(*(longlong *)(*(longlong *)(param_1 + 8) + uVar3) + 0x68) != 0) {
+        uVar2 = FUN_14001e980(param_2,0);
+        iVar1 = FUN_140143650(uVar2);
+        if (iVar1 == 0) {
+          (**(code **)(*(longlong *)(*(longlong *)(param_1 + 8) + uVar3) + 0x68))(param_2);
+        }
+      }
+      uVar4 = (int)uVar5 + 1;
+      uVar3 = uVar3 + 8;
+      uVar5 = (ulonglong)uVar4;
+    } while ((int)uVar4 < (int)(*(uint *)(param_1 + 0x10) & 0xffffff));
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1401022d0 FUN_1401022d0 SIZE=31 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1401022d0(longlong param_1)
+
+{
+  FUN_14013ff40(param_1,*(undefined8 *)(param_1 + 0x38));
+  FUN_140102cb0(param_1);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1405051a0 FUN_1405051a0 SIZE=173 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1405051a0(void)
+
+{
+  undefined8 uVar1;
+  
+  FUN_1401022d0(&DAT_142bfacd0);
+  FUN_1401022d0(&DAT_142bfaa50);
+  FUN_1401022d0(&DAT_142bfaad0);
+  FUN_1401022d0(&DAT_142bfab50);
+  FUN_1401022d0(&DAT_142bfabd0);
+  FUN_1401022d0(&DAT_142bfac50);
+  FUN_1401028e0(&DAT_142436b90,DAT_142436c38,1);
+  FUN_1401028e0(&DAT_142bf8b70,0xffff,1);
+  FUN_1401028e0(&DAT_142bf8af0,0xffff,1);
+  uVar1 = FUN_140034ab0(PTR_DAT_142274270);
+  FUN_140036460(uVar1);
+  FUN_1400a3630(PTR_DAT_1422855b8);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 140506d10 FUN_140506d10 SIZE=214 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_140506d10(void)
+
+{
+  (**(code **)(*(longlong *)PTR_PTR_14228bae0 + 0x48))
+            (PTR_PTR_14228bae0,"exec default_keybinds.cfg -s\n");
+  (**(code **)(*(longlong *)PTR_PTR_14228bae0 + 0x50))();
+  FUN_1401022d0(&DAT_143989030);
+  FUN_1401022d0(&DAT_14398f470);
+  FUN_1401022d0(&DAT_143991f30);
+  FUN_1401022d0(&DAT_143991fb0);
+  FUN_1401022d0(&DAT_143992030);
+  FUN_1401022d0(&DAT_14397d6b0);
+  FUN_1401022d0(&DAT_14397d730);
+  FUN_1401022d0(&DAT_143991eb0);
+  FUN_1401022d0(&DAT_1439920b0);
+  FUN_1401022d0(&DAT_14397d7b0);
+  FUN_1401022d0(&DAT_14397d830);
+  FUN_1401022d0(&DAT_143130c40);
+  FUN_1401022d0(&DAT_143995600);
+  FUN_1401022d0(&DAT_1439965b0);
+  FUN_1406509f0();
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 140508f40 FUN_140508f40 SIZE=334 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_140508f40(longlong param_1)
+
+{
+  FUN_1401022d0(&DAT_143981ed0);
+  FUN_1401022d0(&DAT_143989f80);
+  FUN_1401022d0(&DAT_14398a000);
+  FUN_1401022d0(&DAT_14398ec30);
+  FUN_1401022d0(&DAT_14397d300);
+  FUN_1401022d0(&DAT_143989aa0);
+  FUN_1401022d0(&DAT_14397f410);
+  FUN_1401022d0(&DAT_14397b0d0);
+  FUN_1401022d0(&DAT_14398a080);
+  FUN_1401022d0(&DAT_14397d380);
+  FUN_1401022d0(&DAT_14397d0a0);
+  FUN_1401022d0(&DAT_143989840);
+  FUN_1401022d0(&DAT_143989b20);
+  FUN_1401022d0(&DAT_143989c20);
+  FUN_1401022d0(&DAT_143985bc0);
+  FUN_1401022d0(&DAT_143995fc0);
+  FUN_1401022d0(&DAT_14397d410);
+  FUN_1401022d0(&DAT_14397f1a0);
+  FUN_1401022d0(&DAT_14397f220);
+  FUN_1401022d0(&DAT_143989ba0);
+  FUN_1401022d0(&DAT_1439888a0);
+  FUN_1401022d0(&DAT_143994e00);
+  FUN_1401022d0(&DAT_14398ecc0);
+  FUN_1401022d0(&DAT_143988250);
+  FUN_1401022d0(&DAT_14398e200);
+  FUN_140394240(param_1 + 0x230);
+  FUN_140508b10(param_1);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14050f850 FUN_14050f850 SIZE=434 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14050f850(longlong param_1)
+
+{
+  int iVar1;
+  
+  (**(code **)(*(longlong *)PTR_DAT_1422fcd70 + 0x278))
+            (PTR_DAT_1422fcd70,DAT_1432fb078,param_1 + 0x2c4,param_1 + 0x2c8,param_1 + 0x2cc);
+  FUN_140348bb0(PTR_DAT_1422fcd70);
+  *(bool *)(param_1 + 0x2d4) = DAT_1432fa908 != 0;
+  FUN_1401022d0(&DAT_1432fa8e0);
+  if ((bool)*(char *)(param_1 + 0x2d4) != (DAT_1432fa908 != 0)) {
+    *(undefined1 *)(param_1 + 0x234) = 1;
+  }
+  DAT_1432fa928 = DAT_1432fa928 & 0xfffbffff;
+  FUN_1401022d0(&DAT_1425b1e80);
+  FUN_1401022d0(&DAT_1425b1e00);
+  FUN_1401022d0(&DAT_1432fb1d0);
+  *(undefined4 *)(param_1 + 0x2d0) = DAT_1432fb1f8;
+  *(undefined2 *)(param_1 + 0x308) = 0x101;
+  FUN_1401022d0(&DAT_143937260);
+  FUN_1401022d0(&DAT_143983170);
+  FUN_1401022d0(&DAT_1432f88c0);
+  FUN_1401022d0(&DAT_14397c4c0);
+  FUN_1401028e0(&DAT_1432fa7e0,0,1);
+  FUN_1401022d0(&DAT_1432fa860);
+  FUN_1401022d0(&DAT_14397bec0);
+  FUN_1401022d0(&DAT_14397bf40);
+  FUN_1401028e0(&DAT_1432fb450,6,1);
+  FUN_1401022d0(&DAT_1439a40a0);
+  FUN_1401022d0(&DAT_1432ef770);
+  *(undefined1 *)(param_1 + 0x30b) = 1;
+  FUN_1405122d0(param_1);
+  FUN_1401022d0(&DAT_1439374e0);
+  FUN_1401022d0(&DAT_1432fb820);
+  iVar1 = FUN_140787900(DAT_1439a5290 + 0x1f6ec8);
+  if (iVar1 == 6) {
+    FUN_140102520(&DAT_1432f3d50,DAT_143983098 != 0,1);
+    return;
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 14093fbd0 FUN_14093fbd0 SIZE=4208 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_14093fbd0(void)
+
+{
+  FUN_1401022d0(&DAT_143a05bd0);
+  FUN_1401022d0(&DAT_143a05c50);
+  FUN_1401022d0(&DAT_143a05cd0);
+  FUN_1401022d0(&DAT_143a05d50);
+  FUN_1401022d0(&DAT_143a05dd0);
+  FUN_1401022d0(&DAT_143a05e50);
+  FUN_1401022d0(&DAT_143a05ed0);
+  FUN_1401022d0(&DAT_143a05f50);
+  FUN_1401022d0(&DAT_143a05fd0);
+  FUN_1401022d0(&DAT_143a06050);
+  FUN_1401022d0(&DAT_143a060d0);
+  FUN_1401022d0(&DAT_143a06150);
+  FUN_1401022d0(&DAT_143a061d0);
+  FUN_1401022d0(&DAT_143a06250);
+  FUN_1401022d0(&DAT_143a062d0);
+  FUN_1401022d0(&DAT_143a06350);
+  FUN_1401022d0(&DAT_143a063d0);
+  FUN_1401022d0(&DAT_143a06450);
+  FUN_1401022d0(&DAT_143a064d0);
+  FUN_1401022d0(&DAT_143a06550);
+  FUN_1401022d0(&DAT_143a065d0);
+  FUN_1401022d0(&DAT_143a06650);
+  FUN_1401022d0(&DAT_143a066d0);
+  FUN_1401022d0(&DAT_143a06750);
+  FUN_1401022d0(&DAT_143a067d0);
+  FUN_1401022d0(&DAT_143a06850);
+  FUN_1401022d0(&DAT_143a068d0);
+  FUN_1401022d0(&DAT_143a06950);
+  FUN_1401022d0(&DAT_143a069d0);
+  FUN_1401022d0(&DAT_143a06a50);
+  FUN_1401022d0(&DAT_143a06ad0);
+  FUN_1401022d0(&DAT_143a06b50);
+  FUN_1401022d0(&DAT_143a06bd0);
+  FUN_1401022d0(&DAT_143a06c50);
+  FUN_1401022d0(&DAT_143a06cd0);
+  FUN_1401022d0(&DAT_143a06d50);
+  FUN_1401022d0(&DAT_143a06dd0);
+  FUN_1401022d0(&DAT_143a06e50);
+  FUN_1401022d0(&DAT_143a06ed0);
+  FUN_1401022d0(&DAT_143a06f50);
+  FUN_1401022d0(&DAT_143a06fd0);
+  FUN_1401022d0(&DAT_143a07050);
+  FUN_1401022d0(&DAT_143a070d0);
+  FUN_1401022d0(&DAT_143a07150);
+  FUN_1401022d0(&DAT_143a071d0);
+  FUN_1401022d0(&DAT_143a07250);
+  FUN_1401022d0(&DAT_143a072d0);
+  FUN_1401022d0(&DAT_143a07350);
+  FUN_1401022d0(&DAT_143a073d0);
+  FUN_1401022d0(&DAT_143a07450);
+  FUN_1401022d0(&DAT_143a074d0);
+  FUN_1401022d0(&DAT_143a07550);
+  FUN_1401022d0(&DAT_143a075d0);
+  FUN_1401022d0(&DAT_143a07650);
+  FUN_1401022d0(&DAT_143a076d0);
+  FUN_1401022d0(&DAT_143a07750);
+  FUN_1401022d0(&DAT_143a077d0);
+  FUN_1401022d0(&DAT_143a07850);
+  FUN_1401022d0(&DAT_143a078d0);
+  FUN_1401022d0(&DAT_143a07950);
+  FUN_1401022d0(&DAT_143a079d0);
+  FUN_1401022d0(&DAT_143a07a50);
+  FUN_1401022d0(&DAT_143a07ad0);
+  FUN_1401022d0(&DAT_143a07b50);
+  FUN_1401022d0(&DAT_143a07bd0);
+  FUN_1401022d0(&DAT_143a07c50);
+  FUN_1401022d0(&DAT_143a07cd0);
+  FUN_1401022d0(&DAT_143a07d50);
+  FUN_1401022d0(&DAT_143a07dd0);
+  FUN_1401022d0(&DAT_143a07e50);
+  FUN_1401022d0(&DAT_143a07ed0);
+  FUN_1401022d0(&DAT_143a07f50);
+  FUN_1401022d0(&DAT_143a07fd0);
+  FUN_1401022d0(&DAT_143a08050);
+  FUN_1401022d0(&DAT_143a080d0);
+  FUN_1401022d0(&DAT_143a08150);
+  FUN_1401022d0(&DAT_143a081d0);
+  FUN_1401022d0(&DAT_143a08250);
+  FUN_1401022d0(&DAT_143a082d0);
+  FUN_1401022d0(&DAT_143a08350);
+  FUN_1401022d0(&DAT_143a083d0);
+  FUN_1401022d0(&DAT_143a08450);
+  FUN_1401022d0(&DAT_143a084d0);
+  FUN_1401022d0(&DAT_143a08550);
+  FUN_1401022d0(&DAT_143a085d0);
+  FUN_1401022d0(&DAT_143a08650);
+  FUN_1401022d0(&DAT_143a086d0);
+  FUN_1401022d0(&DAT_143a08750);
+  FUN_1401022d0(&DAT_143a087d0);
+  FUN_1401022d0(&DAT_143a08850);
+  FUN_1401022d0(&DAT_143a088d0);
+  FUN_1401022d0(&DAT_143a08950);
+  FUN_1401022d0(&DAT_143a089d0);
+  FUN_1401022d0(&DAT_143a08a50);
+  FUN_1401022d0(&DAT_143a08ad0);
+  FUN_1401022d0(&DAT_143a08b50);
+  FUN_1401022d0(&DAT_143a08bd0);
+  FUN_1401022d0(&DAT_143a08c50);
+  FUN_1401022d0(&DAT_143a08cd0);
+  FUN_1401022d0(&DAT_143a08d50);
+  FUN_1401022d0(&DAT_143a08dd0);
+  FUN_1401022d0(&DAT_143a08e50);
+  FUN_1401022d0(&DAT_143a08ed0);
+  FUN_1401022d0(&DAT_143a08f50);
+  FUN_1401022d0(&DAT_143a08fd0);
+  FUN_1401022d0(&DAT_143a09050);
+  FUN_1401022d0(&DAT_143a090d0);
+  FUN_1401022d0(&DAT_143a09150);
+  FUN_1401022d0(&DAT_143a091d0);
+  FUN_1401022d0(&DAT_143a09250);
+  FUN_1401022d0(&DAT_143a092d0);
+  FUN_1401022d0(&DAT_143a09350);
+  FUN_1401022d0(&DAT_143a093d0);
+  FUN_1401022d0(&DAT_143a09450);
+  FUN_1401022d0(&DAT_143a094d0);
+  FUN_1401022d0(&DAT_143a09550);
+  FUN_1401022d0(&DAT_143a095d0);
+  FUN_1401022d0(&DAT_143a09650);
+  FUN_1401022d0(&DAT_143a096d0);
+  FUN_1401022d0(&DAT_143a09750);
+  FUN_1401022d0(&DAT_143a097d0);
+  FUN_1401022d0(&DAT_143a09850);
+  FUN_1401022d0(&DAT_143a098d0);
+  FUN_1401022d0(&DAT_143a09950);
+  FUN_1401022d0(&DAT_143a099d0);
+  FUN_1401022d0(&DAT_143a09a50);
+  FUN_1401022d0(&DAT_143a09ad0);
+  FUN_1401022d0(&DAT_143a09b50);
+  FUN_1401022d0(&DAT_143a09bd0);
+  FUN_1401022d0(&DAT_143a09c50);
+  FUN_1401022d0(&DAT_143a09cd0);
+  FUN_1401022d0(&DAT_143a09d50);
+  FUN_1401022d0(&DAT_143a09dd0);
+  FUN_1401022d0(&DAT_143a09e50);
+  FUN_1401022d0(&DAT_143a09ed0);
+  FUN_1401022d0(&DAT_143a09f50);
+  FUN_1401022d0(&DAT_143a09fd0);
+  FUN_1401022d0(&DAT_143a0a050);
+  FUN_1401022d0(&DAT_143a0a0d0);
+  FUN_1401022d0(&DAT_143a0a150);
+  FUN_1401022d0(&DAT_143a0a1d0);
+  FUN_1401022d0(&DAT_143a0a250);
+  FUN_1401022d0(&DAT_143a0a2d0);
+  FUN_1401022d0(&DAT_143a0a350);
+  FUN_1401022d0(&DAT_143a0a3d0);
+  FUN_1401022d0(&DAT_143a0a450);
+  FUN_1401022d0(&DAT_143a0a4d0);
+  FUN_1401022d0(&DAT_143a0a550);
+  FUN_1401022d0(&DAT_143a0a5d0);
+  FUN_1401022d0(&DAT_143a0a650);
+  FUN_1401022d0(&DAT_143a0a6d0);
+  FUN_1401022d0(&DAT_143a0a750);
+  FUN_1401022d0(&DAT_143a0a7d0);
+  FUN_1401022d0(&DAT_143a0a850);
+  FUN_1401022d0(&DAT_143a0a8d0);
+  FUN_1401022d0(&DAT_143a0a950);
+  FUN_1401022d0(&DAT_143a0a9d0);
+  FUN_1401022d0(&DAT_143a0aa50);
+  FUN_1401022d0(&DAT_143a0aad0);
+  FUN_1401022d0(&DAT_143a0ab50);
+  FUN_1401022d0(&DAT_143a0abd0);
+  FUN_1401022d0(&DAT_143a0ac50);
+  FUN_1401022d0(&DAT_143a0acd0);
+  FUN_1401022d0(&DAT_143a0ad50);
+  FUN_1401022d0(&DAT_143a0add0);
+  FUN_1401022d0(&DAT_143a0ae50);
+  FUN_1401022d0(&DAT_143a0aed0);
+  FUN_1401022d0(&DAT_143a0af50);
+  FUN_1401022d0(&DAT_143a0afd0);
+  FUN_1401022d0(&DAT_143a0b050);
+  FUN_1401022d0(&DAT_143a0b0d0);
+  FUN_1401022d0(&DAT_143a0b150);
+  FUN_1401022d0(&DAT_143a0b1d0);
+  FUN_1401022d0(&DAT_143a0b250);
+  FUN_1401022d0(&DAT_143a0b2d0);
+  FUN_1401022d0(&DAT_143a0b350);
+  FUN_1401022d0(&DAT_143a0b3d0);
+  FUN_1401022d0(&DAT_143a0b450);
+  FUN_1401022d0(&DAT_143a0b4d0);
+  FUN_1401022d0(&DAT_143a0b550);
+  FUN_1401022d0(&DAT_143a0b5d0);
+  FUN_1401022d0(&DAT_143a0b650);
+  FUN_1401022d0(&DAT_143a0b6d0);
+  FUN_1401022d0(&DAT_143a0b750);
+  FUN_1401022d0(&DAT_143a0b7d0);
+  FUN_1401022d0(&DAT_143a0b850);
+  FUN_1401022d0(&DAT_143a0b8d0);
+  FUN_1401022d0(&DAT_143a0b950);
+  FUN_1401022d0(&DAT_143a0b9d0);
+  FUN_1401022d0(&DAT_143a0ba50);
+  FUN_1401022d0(&DAT_143a0bad0);
+  FUN_1401022d0(&DAT_143a0bb50);
+  FUN_1401022d0(&DAT_143a0bbd0);
+  FUN_1401022d0(&DAT_143a0bc50);
+  FUN_1401022d0(&DAT_143a0bcd0);
+  FUN_1401022d0(&DAT_143a0bd50);
+  FUN_1401022d0(&DAT_143a0bdd0);
+  FUN_1401022d0(&DAT_143a0be50);
+  FUN_1401022d0(&DAT_143a0bed0);
+  FUN_1401022d0(&DAT_143a0bf50);
+  FUN_1401022d0(&DAT_143a0bfd0);
+  FUN_1401022d0(&DAT_143a0c050);
+  FUN_1401022d0(&DAT_143a0c0d0);
+  FUN_1401022d0(&DAT_143a0c150);
+  FUN_1401022d0(&DAT_143a0c1d0);
+  FUN_1401022d0(&DAT_143a0c250);
+  FUN_1401022d0(&DAT_143a0c2d0);
+  FUN_1401022d0(&DAT_143a0c350);
+  FUN_1401022d0(&DAT_143a0c3d0);
+  FUN_1401022d0(&DAT_143a0c450);
+  FUN_1401022d0(&DAT_143a0c4d0);
+  FUN_1401022d0(&DAT_143a0c550);
+  FUN_1401022d0(&DAT_143a0c5d0);
+  FUN_1401022d0(&DAT_143a0c650);
+  FUN_1401022d0(&DAT_143a0c6d0);
+  FUN_1401022d0(&DAT_143a0c750);
+  FUN_1401022d0(&DAT_143a0c7d0);
+  FUN_1401022d0(&DAT_143a0c850);
+  FUN_1401022d0(&DAT_143a0c8d0);
+  FUN_1401022d0(&DAT_143a0c950);
+  FUN_1401022d0(&DAT_143a0c9d0);
+  FUN_1401022d0(&DAT_143a0ca50);
+  FUN_1401022d0(&DAT_143a0cad0);
+  FUN_1401022d0(&DAT_143a0cb50);
+  FUN_1401022d0(&DAT_143a0cbd0);
+  FUN_1401022d0(&DAT_143a0cc50);
+  FUN_1401022d0(&DAT_143a0ccd0);
+  FUN_1401022d0(&DAT_143a0cd50);
+  FUN_1401022d0(&DAT_143a0cdd0);
+  FUN_1401022d0(&DAT_143a0ce50);
+  FUN_1401022d0(&DAT_143a0ced0);
+  FUN_1401022d0(&DAT_143a0cf50);
+  FUN_1401022d0(&DAT_143a0cfd0);
+  FUN_1401022d0(&DAT_143a0d050);
+  FUN_1401022d0(&DAT_143a0d0d0);
+  FUN_1401022d0(&DAT_143a0d150);
+  FUN_1401022d0(&DAT_143a0d1d0);
+  FUN_1401022d0(&DAT_143a0d250);
+  FUN_1401022d0(&DAT_143a0d2d0);
+  FUN_1401022d0(&DAT_143a0d350);
+  FUN_1401022d0(&DAT_143a0d3d0);
+  FUN_1401022d0(&DAT_143a0d450);
+  FUN_1401022d0(&DAT_143a0d4d0);
+  FUN_1401022d0(&DAT_143a0d550);
+  FUN_1401022d0(&DAT_143a0d5d0);
+  FUN_1401022d0(&DAT_143a0d650);
+  FUN_1401022d0(&DAT_143a0d6d0);
+  FUN_1401022d0(&DAT_143a0d750);
+  FUN_1401022d0(&DAT_143a0d7d0);
+  FUN_1401022d0(&DAT_143a0d850);
+  FUN_1401022d0(&DAT_143a0d8d0);
+  FUN_1401022d0(&DAT_143a0d950);
+  FUN_1401022d0(&DAT_143a0d9d0);
+  FUN_1401022d0(&DAT_143a0da50);
+  FUN_1401022d0(&DAT_143a0dad0);
+  FUN_1401022d0(&DAT_143a0db50);
+  FUN_1401022d0(&DAT_143a0dbd0);
+  FUN_1401022d0(&DAT_143a0dc50);
+  FUN_1401022d0(&DAT_143a0dcd0);
+  FUN_1401022d0(&DAT_143a0dd50);
+  FUN_1401022d0(&DAT_143a0ddd0);
+  FUN_1401022d0(&DAT_143a0de50);
+  FUN_1401022d0(&DAT_143a0ded0);
+  FUN_1401022d0(&DAT_143a0df50);
+  FUN_1401022d0(&DAT_143a0dfd0);
+  FUN_1401022d0(&DAT_143a0e050);
+  FUN_1401022d0(&DAT_143a0e0d0);
+  FUN_1401022d0(&DAT_143a0e150);
+  FUN_1401022d0(&DAT_143a0e1d0);
+  FUN_1401022d0(&DAT_143a0e250);
+  FUN_1401022d0(&DAT_143a0e2d0);
+  FUN_1401022d0(&DAT_143a0e350);
+  FUN_1401022d0(&DAT_143a0e3d0);
+  FUN_1401022d0(&DAT_143a0e450);
+  FUN_1401022d0(&DAT_143a0e4d0);
+  FUN_1401022d0(&DAT_143a0e550);
+  FUN_1401022d0(&DAT_143a0e5d0);
+  FUN_1401022d0(&DAT_143a0e650);
+  FUN_1401022d0(&DAT_143a0e6d0);
+  FUN_1401022d0(&DAT_143a0e750);
+  FUN_1401022d0(&DAT_143a0e7d0);
+  FUN_1401022d0(&DAT_143a0e850);
+  FUN_1401022d0(&DAT_143a0e8d0);
+  FUN_1401022d0(&DAT_143a0e950);
+  FUN_1401022d0(&DAT_143a0e9d0);
+  FUN_1401022d0(&DAT_143a0ea50);
+  FUN_1401022d0(&DAT_143a0ead0);
+  FUN_1401022d0(&DAT_143a0eb50);
+  FUN_1401022d0(&DAT_143a0ebd0);
+  FUN_1401022d0(&DAT_143a0ec50);
+  FUN_1401022d0(&DAT_143a0ecd0);
+  FUN_1401022d0(&DAT_143a0ed50);
+  FUN_1401022d0(&DAT_143a0edd0);
+  FUN_1401022d0(&DAT_143a0ee50);
+  FUN_1401022d0(&DAT_143a0eed0);
+  FUN_1401022d0(&DAT_143a0ef50);
+  FUN_1401022d0(&DAT_143a0efd0);
+  FUN_1401022d0(&DAT_143a0f050);
+  FUN_1401022d0(&DAT_143a0f0d0);
+  FUN_1401022d0(&DAT_143a0f150);
+  FUN_1401022d0(&DAT_143a0f1d0);
+  FUN_1401022d0(&DAT_143a0f250);
+  FUN_1401022d0(&DAT_143a0f2d0);
+  FUN_1401022d0(&DAT_143a0f350);
+  FUN_1401022d0(&DAT_143a0f3d0);
+  FUN_1401022d0(&DAT_143a0f450);
+  FUN_1401022d0(&DAT_143a0f4d0);
+  FUN_1401022d0(&DAT_143a0f550);
+  FUN_1401022d0(&DAT_143a0f5d0);
+  FUN_1401022d0(&DAT_143a0f650);
+  FUN_1401022d0(&DAT_143a0f6d0);
+  FUN_1401022d0(&DAT_143a0f750);
+  FUN_1401022d0(&DAT_143a0f7d0);
+  FUN_1401022d0(&DAT_143a0f850);
+  FUN_1401022d0(&DAT_143a0f8d0);
+  FUN_1401022d0(&DAT_143a0f950);
+  FUN_1401022d0(&DAT_143a0f9d0);
+  FUN_1401022d0(&DAT_143a0fa50);
+  FUN_1401022d0(&DAT_143a0fad0);
+  FUN_1401022d0(&DAT_143a0fb50);
+  FUN_1401022d0(&DAT_143a0fbd0);
+  FUN_1401022d0(&DAT_143a0fc50);
+  FUN_1401022d0(&DAT_143a0fcd0);
+  FUN_1401022d0(&DAT_143a0fd50);
+  FUN_1401022d0(&DAT_143a0fdd0);
+  FUN_1401022d0(&DAT_143a0fe50);
+  FUN_1401022d0(&DAT_143a0fed0);
+  FUN_1401022d0(&DAT_143a0ff50);
+  FUN_1401022d0(&DAT_143a0ffd0);
+  FUN_1401022d0(&DAT_143a10050);
+  FUN_1401022d0(&DAT_143a100d0);
+  FUN_1401022d0(&DAT_143a10150);
+  FUN_1401022d0(&DAT_143a101d0);
+  FUN_1401022d0(&DAT_143a10250);
+  FUN_1401022d0(&DAT_143a102d0);
+  FUN_1401022d0(&DAT_143a10350);
+  FUN_1401022d0(&DAT_143a103d0);
+  FUN_1401022d0(&DAT_143a10450);
+  FUN_1401022d0(&DAT_143a104d0);
+  FUN_1401022d0(&DAT_143a10550);
+  FUN_1401022d0(&DAT_143a105d0);
+  FUN_1401022d0(&DAT_143a10650);
+  FUN_1401022d0(&DAT_143a106d0);
+  FUN_1401022d0(&DAT_143a10750);
+  FUN_1401022d0(&DAT_143a107d0);
+  FUN_1401022d0(&DAT_143a10850);
+  FUN_1401022d0(&DAT_143a108d0);
+  FUN_1401022d0(&DAT_143a10950);
+  FUN_1401022d0(&DAT_143a109d0);
+  FUN_1401022d0(&DAT_143a10a50);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+FUNCTION 1401022f0 FUN_1401022f0 SIZE=42 (GhidraScript)  
+INFO  InspectCvarRegistration.java> 
+void FUN_1401022f0(longlong param_1,int param_2)
+
+{
+  longlong lVar1;
+  
+  lVar1 = *(longlong *)(*(longlong *)(param_1 + 8) + (longlong)param_2 * 8);
+  FUN_14013ff40(lVar1,*(undefined8 *)(lVar1 + 0x38));
+  FUN_140102cb0(lVar1);
+  return;
+}
+
+ (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /Dishonored2.exe (HeadlessAnalyzer)  

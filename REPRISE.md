@@ -166,3 +166,169 @@ Les messages de l'ancien assistant constituent des recherches à vérifier, pas 
 - Release build succeeded with Visual Studio 2022/MSVC 14.44.35207 in
   `build-v16-vs17`; package: `bin/v1.16/Release`, `dist/VoidCamera_1.16.zip`.
 
+## Native 1.17 — lower static LOD multiplier
+
+- Lowered the `r_lodZoomMultiplicator` UI minimum from `0.01` to `0.001` and
+  added three-decimal display. This allows testing finer static-world LOD at
+  the same camera view; `0.001` has not been visually tested.
+- Static retail disassembly found only registration/forwarding references to
+  the CVar object at RVA `0x32FBF20`; no direct reference to its float cache or
+  an obvious `r_forceLOD` retail consumer. The exact zoom-driven LOD selection
+  path remains unresolved and needs a runtime read trace while the scene zoom
+  makes the chair/details appear.
+
+## Native 1.18 — HUD marker CVar synchronization
+
+- Fixed the HUD toggle to synchronize each verified CVar's inline current-value
+  string along with its integer and float caches, matching the known retail
+  CVar update path. The hide operation still requires visual confirmation in
+  game; the 1.17 screenshot showed markers visible with the toggle checked.
+- Release build and package: `bin/v1.18/Release`, `dist/VoidCamera_1.18.zip`.
+
+## Native 1.19 — in-game hotsampling tab
+
+- Added a Hotsampling tab with direct client-width/height entry, common aspect
+  presets, current output size, saved restore size, and an apply/restore flow.
+  It only resizes a windowed swap chain; if the camera is active it must be
+  pose-locked before applying the resize. Window resizing is queued to the game
+  window procedure to avoid resizing the swap chain inside Present.
+- The tab reports the current client area and aspect; live FOV behavior should
+  be confirmed in game at non-16:9 resolutions. This does not add resolution
+  scaling or screenshot capture.
+- Release build succeeded with Visual Studio 2022/MSVC 14.44.35207; package:
+  `bin/v1.19/Release`, `dist/VoidCamera_1.19.zip`. The in-game resize and restore
+  flow still needs manual validation with Dishonored 2 in Windowed mode.
+
+## Native 1.20 — hotsampling resize correction
+
+- User reported the 1.19 Hotsampling tab did not resize the game window. Corrected
+  client-area sizing to use DPI-aware non-client frame metrics, restore a
+  maximized window before resizing, and reconcile the resulting client dimensions
+  against the requested size.
+- The tab now displays actual client dimensions after applying and reports when
+  Windows or the game constrains the requested size instead of showing a false
+  success. This build still needs user confirmation in the running game.
+- Release package target: `bin/v1.20/Release`, `dist/VoidCamera_1.20.zip`.
+
+## Native 1.21 — hotsampling controls
+
+- Apply is available while the camera is either locked or unlocked; there is no
+  automatic camera lock.
+- Removed the captured-size Restore button. The Apply button now remains enabled
+  for a normal titled game window even if the swap chain reports fullscreen, and
+  requests a windowed swap chain during resize if needed. Current size fields can
+  be copied back to return to the prior dimensions.
+- Package target: `bin/v1.21/Release`, `dist/VoidCamera_1.21.zip`.
+
+## Native 1.22 — oversized hotsampling windows
+
+- The user screenshot from 1.20 showed a windowed swap chain and an active Apply
+  button, but applying 4200×1800 left the client area at 2564×1421. This rules
+  out the earlier fullscreen-disable explanation for that attempt.
+- The game window procedure now raises `WM_GETMINMAXINFO.ptMaxTrackSize` to allow
+  client sizes larger than the desktop. Apply works while the camera is locked
+  or unlocked; the obsolete restore-size button remains removed.
+- Removed the aspect-ratio preset. Width and height are entered directly.
+- Package target: `bin/v1.22/Release`, `dist/VoidCamera_1.22.zip`. Oversized
+  resizing needs confirmation in game.
+
+## Native 1.23 — Deus Ex camera UI template
+
+- Matched the hotsampling tab to the DXMD Freecam layout: saved successful
+  resolutions appear above the size fields, most recent first, and selecting one
+  applies it directly. Up to 16 unique resolutions persist beside the DLL in
+  `VoidCamera-Hotsampling.ini`.
+- `Use default res` fills the fields with the swap-chain render size detected at
+  first draw after injection. A size enters history only once the live render
+  buffer reports that requested size.
+- The overlay toggle and window title now use F10. F10 system-key messages are
+  consumed so Windows does not open its system menu.
+- Package target: `bin/v1.23/Release`, `dist/VoidCamera_1.23.zip`.
+
+## Native 1.24 — FOV / aspect preservation
+
+- Corrected the camera writeback: retail field `view+0x3A6C` is the aspect ratio,
+  not horizontal FOV. `publish()` writes the engine's captured aspect value
+  there and keeps vertical FOV in `view+0x3A70`; horizontal FOV remains a
+  derived UI value. This prevents a radian FOV value from corrupting projection
+  aspect at wide and portrait resolutions.
+- Snapshot validation now accepts aspect ratios up to 10:1, including 32:9.
+  Hotsampling shows the live camera AR and horizontal/vertical FOV for checking.
+- Moved saved resolutions below the target controls, matching the DXMD tab order.
+- Package target: `bin/v1.24/Release`, `dist/VoidCamera_1.24.zip`. Visual FOV
+  confirmation remains pending.
+
+## Native 1.25 — use Dishonored 2 native aspect
+
+- The user clarified that Deus Ex Camera is a UI template only; each game has its
+  own camera/FOV implementation. Switched the live aspect source to Dishonored
+  2's captured camera field at `view+0x3A6C` instead of deriving it from the
+  registers' width/height values. The hook preserves that native AR value while
+  retaining vertical FOV at `view+0x3A70`.
+- Package target: `bin/v1.25/Release`, `dist/VoidCamera_1.25.zip`. In-game
+  validation is required to confirm the stretch is gone.
+
+## Native 1.26 — sync game AR to live render target
+
+- The 1.25 screenshots showed the render target at 2100×900 (AR 2.333) and
+  3000×4000 (portrait AR 0.75), while the camera's native AR field stayed at
+  1.2936. Preserving the native field therefore preserved a stale ratio.
+- The overlay now publishes the actual DXGI backbuffer width and height to the
+  camera loop. Dishonored 2's native aspect field is updated from that live
+  buffer ratio before the camera pose/FOV is published. This covers both
+  landscape and portrait aspect ratios; vertical FOV stays unchanged.
+- Package target: `bin/v1.26/Release`, `dist/VoidCamera_1.26.zip`. The 3000×4000
+  portrait shot and a wide shot still need visual confirmation with this build.
+
+## Native 1.27 — aspect writeback experiment (regressed projection)
+
+- Experiment wrote the ratio directly into `view+0x3A6C`, while sourcing the
+  ratio from the DXGI backbuffer. The user confirmed the displayed AR was right
+  but the projection remained wrong after enabling the camera.
+- Package target: `bin/v1.27/Release`, `dist/VoidCamera_1.27.zip`.
+
+## Native 1.28 — restore Dishonored 2 camera projection calculation
+
+- Compared against the known-good 1.16 source. That camera calculates the
+  game's first projection input as `2*atan(tan(verticalFov/2)*aspect)`; 1.27
+  replaced it with the raw aspect ratio. Restored the original calculation.
+- The in-game hotsampling tab still supplies its actual DXGI backbuffer aspect
+  to that game-specific calculation, covering landscape, ultrawide, and
+  portrait sizes without changing the original vertical FOV behavior.
+- Package target: `bin/v1.28/Release`, `dist/VoidCamera_1.28.zip`. Visual
+  confirmation: user tested the build and confirmed « OK, maintenant c'est bon ».
+  The restored Dishonored 2 projection calculation works with hotsampling.
+
+## Native 1.29 — entity LOD / Spyglass diagnostic build
+
+- Restores the verified retail entity distance controls in the LOD tab:
+  `lod_forcevisibledistance`, `lod_dist_level0..3`, and `lod_dist_far`.
+- Adds a reversible test preset (`100000 / 100000 / 200000 / 300000 / 400000 /
+  500000`) that attempts to keep highest entity detail farther away. This is
+  separate from static-world `r_lodZoomMultiplicator`; no exact retail
+  `r_forceLOD` control has been confirmed.
+- Adds a start/stop CSV logger at
+  `%LOCALAPPDATA%\VoidCamera\lod-spyglass-test.csv`, sampling every 250 ms.
+  It records ZOOM key Z, MOVE_FORWARD key W, gamepad buttons/sticks/triggers,
+  camera position and captured view dimensions, render aspect, static LOD scale,
+  and all six entity distance caches. The user can log an approach-to-table
+  pass and a separate Spyglass pass to compare distance transitions with input.
+- Package target: `bin/v1.29/Release`, `dist/VoidCamera_1.29.zip`. Logging and
+  forced entity LOD still need runtime/visual validation.
+
+## Native 1.30 — mesh appearance distance diagnostic
+
+- Runtime read-only inspection of the open retail game confirmed `r_viewDistPreset=5` (Ultra),
+  `r_zfar=7000`, and `r_lodZoomMultiplicator=0.001`.
+- The user reports the 1.29 entity LOD distance controls and force preset did
+  not change the observed mesh appearance range. Added `r_viewDistPreset` and
+  `r_zfar` to the LOD tab as diagnostic candidates; the latter is documented
+  as far Z clipping, not mesh streaming.
+- Replaced the coarse Spyglass log with a 100 ms mesh log and explicit absent / visible
+  markers. Marker rows capture camera position, input state, entity/static LOD
+  values, view-distance preset, and far clip so an approaching-object event can
+  be compared with a fixed-position Spyglass toggle.
+- Log path: `%LOCALAPPDATA%\VoidCamera\lod-mesh-test.csv`.
+- Package target: `bin/v1.30/Release`, `dist/VoidCamera_1.30.zip`. The user must
+  test with the same mesh and mark its state at the observed transition.
+

@@ -1,0 +1,1230 @@
+INFO  Using log config file: jar:file:/F:/CE%20Projects/OutlawsLab/tooling/ghidra-12.1.4/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: F:\CE Projects\VoidCamera\research\ghidra\userhome\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: F:\CE Projects\VoidCamera\research\ghidra\userhome\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1239 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (8428 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    F:\CE Projects\VoidCamera\research\ghidra (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: F:\CE Projects\VoidCamera\research\ghidra\projects\D2Retail (HeadlessAnalyzer)  
+INFO  Opening project: F:\CE Projects\VoidCamera\research\ghidra\projects\D2Retail (HeadlessProject)  
+INFO  REPORT: Processing project file: /Dishonored2.exe (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: TraceOptionsCallers.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: F:\CE Projects\VoidCamera\research\ghidra\TraceOptionsCallers.java (HeadlessAnalyzer)  
+INFO  TraceOptionsCallers.java> TARGET 1405122d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 143f08f98 none (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050e174 14050df80 FUN_14050df80 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050ef22 14050eea0 FUN_14050eea0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050f9a9 14050f850 FUN_14050f850 (GhidraScript)  
+INFO  TraceOptionsCallers.java> TARGET 14050ace0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 143f08b18 none (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405122f2 1405122d0 FUN_1405122d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java> TARGET 140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 143f08ff8 none (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140512507 1405122d0 FUN_1405122d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140512543 1405122d0 FUN_1405122d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405125a2 1405122d0 FUN_1405122d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140512607 1405122d0 FUN_1405122d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140513497 140513420 FUN_140513420 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050aee0 14050ace0 FUN_14050ace0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050b108 14050ace0 FUN_14050ace0 (GhidraScript)  
+INFO  TraceOptionsCallers.java> TARGET 140502970 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 143f082f0 none (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140512cc1 140512ca0 FUN_140512ca0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050b036 14050ace0 FUN_14050ace0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140512f9c 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14051332d 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140505608 140505560 FUN_140505560 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050561f 140505560 FUN_140505560 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140505636 140505560 FUN_140505560 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050564d 140505560 FUN_140505560 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140505664 140505560 FUN_140505560 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050567b 140505560 FUN_140505560 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140505692 140505560 FUN_140505560 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140512e89 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140512ead 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140512f46 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140512f6a 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140512fde 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140513002 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140513048 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14051307d 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405130a1 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140513266 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14051328a 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405132ae 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405132d2 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405132f6 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14051336f 140512dd0 FUN_140512dd0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140509778 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050978f 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405097a6 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405097bd 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405097d4 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405097eb 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140509802 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140509819 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140509830 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140509847 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050985e 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140509875 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050988c 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405098a3 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405098ba 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405098d1 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405098e8 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405098ff 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140509916 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050992d 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140509944 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050995b 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140509972 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140509989 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405099a0 1405096d0 FUN_1405096d0 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140507fd1 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140507fe8 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140507fff 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140508016 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050802d 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140508044 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 14050805b 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140508072 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 140508089 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405080a0 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405080b7 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405080ce 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405080e5 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java>  REF 1405080fc 140507f20 FUN_140507f20 (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+FUNCTION 14050df80 FUN_14050df80 SIZE=537 (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+void FUN_14050df80(longlong param_1)
+
+{
+  longlong lVar1;
+  undefined8 *puVar2;
+  undefined *puVar3;
+  char cVar4;
+  int iVar5;
+  int iVar6;
+  undefined8 uVar7;
+  longlong lVar8;
+  undefined8 *puVar9;
+  ulonglong uVar10;
+  ulonglong uVar11;
+  float fVar12;
+  float fVar13;
+  undefined4 local_res10 [2];
+  undefined1 local_res18 [8];
+  undefined1 local_res20 [8];
+  
+  FUN_14050fd30(param_1,0xc,DAT_143982d18);
+  FUN_14050fd30(param_1,10,DAT_143982d98);
+  FUN_14050fd30(param_1,9,DAT_143982e18);
+  FUN_14050fd30(param_1,0xb);
+  iVar5 = DAT_143982f18;
+  if (DAT_143982f18 == 6) {
+    lVar1 = *(longlong *)(param_1 + 0x78);
+    uVar7 = FUN_1400d0600();
+    iVar5 = FUN_14050b410(param_1,uVar7);
+    lVar8 = FUN_1400d0600();
+    iVar6 = FUN_14050b760(param_1,lVar8 + 0x38);
+    uVar10 = 0;
+    puVar2 = *(undefined8 **)(DAT_1432cdce8 + 0x10);
+    cVar4 = *(char *)*puVar2;
+    puVar9 = puVar2;
+    uVar11 = uVar10;
+    while (lVar8 = DAT_1439833e0, cVar4 != '\0') {
+      if (puVar9[1] == 0xf) {
+        lVar8 = lVar1 + 0xa0 + (longlong)(int)uVar11 * 0x120;
+        break;
+      }
+      uVar10 = uVar10 + 1;
+      uVar11 = (ulonglong)((int)uVar11 + 1);
+      puVar9 = puVar2 + uVar10 * 2;
+      cVar4 = *(char *)*puVar9;
+    }
+    fVar12 = (float)iVar6;
+    fVar13 = (float)iVar5;
+    if ((float)((uint)fVar12 & DAT_141ab22a0) <= DAT_141ab2294) {
+      fVar12 = 0.0;
+    }
+    if ((float)((uint)fVar13 & DAT_141ab22a0) <= DAT_141ab2294) {
+      fVar13 = 0.0;
+    }
+    iVar5 = (int)((DAT_141f697b0 - *(float *)(lVar8 + 0x11c)) * fVar13 +
+                  fVar12 * *(float *)(lVar8 + 0x11c) + DAT_141ab3764);
+  }
+  FUN_14050fa10(param_1,iVar5);
+  FUN_14050fd30(param_1,8,DAT_143982f98);
+  FUN_14050fd30(param_1,0xd,DAT_143983018);
+  FUN_14050fd30(param_1,0xe,DAT_143983118);
+  puVar3 = PTR_DAT_1422fcd70;
+  local_res10[0] = 0xffffffff;
+  cVar4 = (**(code **)(*(longlong *)PTR_DAT_1422fcd70 + 0x278))
+                    (PTR_DAT_1422fcd70,DAT_1432fb078,local_res20,local_res18,local_res10);
+  if (cVar4 == '\0') {
+    FUN_140348bb0(puVar3);
+  }
+  if (DAT_1432fb478 == -1) {
+    FUN_1401028e0(&DAT_1432fb450,6,1);
+    FUN_1405122d0(param_1);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+FUNCTION 14050eea0 FUN_14050eea0 SIZE=155 (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+void FUN_14050eea0(undefined8 param_1,undefined8 param_2,longlong *param_3)
+
+{
+  undefined4 local_res18 [4];
+  undefined1 local_2d8 [16];
+  undefined8 local_2c8;
+  undefined1 local_2b8 [688];
+  
+  local_2c8 = 0xfffffffffffffffe;
+  if ((*(uint *)(param_3 + 1) & 0xffffff) != 0) {
+    local_res18[0] = 0;
+    FUN_140028cb0(local_2b8,param_2,*(undefined8 *)(*param_3 + 0x10));
+    FUN_1400296c0(local_2b8,local_2d8,"selectedIndex");
+    FUN_140029740(local_2b8,local_res18,local_2d8);
+    FUN_1401028e0(&DAT_1432fb450,local_res18[0],1);
+    FUN_1405122d0(param_1);
+    FUN_140028fd0(local_2b8);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+FUNCTION 14050f850 FUN_14050f850 SIZE=434 (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+void FUN_14050f850(longlong param_1)
+
+{
+  int iVar1;
+  
+  (**(code **)(*(longlong *)PTR_DAT_1422fcd70 + 0x278))
+            (PTR_DAT_1422fcd70,DAT_1432fb078,param_1 + 0x2c4,param_1 + 0x2c8,param_1 + 0x2cc);
+  FUN_140348bb0(PTR_DAT_1422fcd70);
+  *(bool *)(param_1 + 0x2d4) = DAT_1432fa908 != 0;
+  FUN_1401022d0(&DAT_1432fa8e0);
+  if ((bool)*(char *)(param_1 + 0x2d4) != (DAT_1432fa908 != 0)) {
+    *(undefined1 *)(param_1 + 0x234) = 1;
+  }
+  DAT_1432fa928 = DAT_1432fa928 & 0xfffbffff;
+  FUN_1401022d0(&DAT_1425b1e80);
+  FUN_1401022d0(&DAT_1425b1e00);
+  FUN_1401022d0(&DAT_1432fb1d0);
+  *(undefined4 *)(param_1 + 0x2d0) = DAT_1432fb1f8;
+  *(undefined2 *)(param_1 + 0x308) = 0x101;
+  FUN_1401022d0(&DAT_143937260);
+  FUN_1401022d0(&DAT_143983170);
+  FUN_1401022d0(&DAT_1432f88c0);
+  FUN_1401022d0(&DAT_14397c4c0);
+  FUN_1401028e0(&DAT_1432fa7e0,0,1);
+  FUN_1401022d0(&DAT_1432fa860);
+  FUN_1401022d0(&DAT_14397bec0);
+  FUN_1401022d0(&DAT_14397bf40);
+  FUN_1401028e0(&DAT_1432fb450,6,1);
+  FUN_1401022d0(&DAT_1439a40a0);
+  FUN_1401022d0(&DAT_1432ef770);
+  *(undefined1 *)(param_1 + 0x30b) = 1;
+  FUN_1405122d0(param_1);
+  FUN_1401022d0(&DAT_1439374e0);
+  FUN_1401022d0(&DAT_1432fb820);
+  iVar1 = FUN_140787900(DAT_1439a5290 + 0x1f6ec8);
+  if (iVar1 == 6) {
+    FUN_140102520(&DAT_1432f3d50,DAT_143983098 != 0,1);
+    return;
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+FUNCTION 1405122d0 FUN_1405122d0 SIZE=1243 (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+void FUN_1405122d0(longlong *param_1)
+
+{
+  char cVar1;
+  undefined8 *puVar2;
+  bool bVar3;
+  bool bVar4;
+  uint uVar5;
+  undefined8 *puVar6;
+  undefined4 uVar7;
+  undefined8 uVar8;
+  longlong lVar9;
+  longlong lVar10;
+  
+  uVar5 = DAT_1432fb478;
+  if (DAT_1432fb478 != 6) {
+    FUN_1401028e0(&DAT_143982cf0,DAT_1432fb478,1);
+    FUN_14050fd30(param_1,0xc,uVar5);
+    lVar10 = 0;
+    puVar2 = *(undefined8 **)(DAT_1432cdce8 + 0x10);
+    cVar1 = *(char *)*puVar2;
+    puVar6 = puVar2;
+    lVar9 = lVar10;
+    while ((cVar1 != '\0' && (puVar6[1] != 0xc))) {
+      lVar9 = lVar9 + 1;
+      puVar6 = puVar2 + lVar9 * 2;
+      cVar1 = *(char *)*puVar6;
+    }
+    FUN_14050f120(param_1,0xc,DAT_143982d18);
+    (**(code **)(*param_1 + 0x78))(param_1,0xc);
+    FUN_1401028e0(&DAT_143982d70,uVar5,1);
+    FUN_14050fd30(param_1,10,uVar5);
+    puVar2 = *(undefined8 **)(DAT_1432cdce8 + 0x10);
+    cVar1 = *(char *)*puVar2;
+    puVar6 = puVar2;
+    lVar9 = lVar10;
+    while ((cVar1 != '\0' && (puVar6[1] != 10))) {
+      lVar9 = lVar9 + 1;
+      puVar6 = puVar2 + lVar9 * 2;
+      cVar1 = *(char *)*puVar6;
+    }
+    FUN_14050f120(param_1,10,DAT_143982d98);
+    (**(code **)(*param_1 + 0x78))(param_1,10);
+    FUN_1401028e0(&DAT_143982df0,uVar5,1);
+    FUN_14050fd30(param_1,9,uVar5);
+    puVar2 = *(undefined8 **)(DAT_1432cdce8 + 0x10);
+    cVar1 = *(char *)*puVar2;
+    puVar6 = puVar2;
+    lVar9 = lVar10;
+    while ((cVar1 != '\0' && (puVar6[1] != 9))) {
+      lVar9 = lVar9 + 1;
+      puVar6 = puVar2 + lVar9 * 2;
+      cVar1 = *(char *)*puVar6;
+    }
+    FUN_14050f120(param_1,9,DAT_143982e18);
+    (**(code **)(*param_1 + 0x78))(param_1,9);
+    FUN_1401028e0(&DAT_143982f70,uVar5,1);
+    FUN_14050fd30(param_1,8,uVar5);
+    puVar2 = *(undefined8 **)(DAT_1432cdce8 + 0x10);
+    cVar1 = *(char *)*puVar2;
+    puVar6 = puVar2;
+    while ((cVar1 != '\0' && (puVar6[1] != 8))) {
+      lVar10 = lVar10 + 1;
+      puVar6 = puVar2 + lVar10 * 2;
+      cVar1 = *(char *)*puVar6;
+    }
+    FUN_14050f120(param_1,8,DAT_143982f98);
+    (**(code **)(*param_1 + 0x78))(param_1,8);
+    FUN_1401028e0(&DAT_143982ff0,uVar5,1);
+    FUN_14050fd30(param_1,0xd,uVar5);
+    FUN_140512dd0(param_1,0xd);
+    (**(code **)(*param_1 + 0x78))(param_1,0xd);
+    FUN_1401028e0(&DAT_143982e70,uVar5,1);
+    FUN_14050fd30(param_1,0xb,uVar5);
+    FUN_140512dd0(param_1,0xb);
+    (**(code **)(*param_1 + 0x78))(param_1,0xb);
+    if (uVar5 == 0) {
+      FUN_1401028e0(&DAT_143982ef0,1,1);
+      uVar7 = 1;
+    }
+    else if (uVar5 == 1) {
+      FUN_1401028e0(&DAT_143982ef0,2,1);
+      uVar7 = 2;
+    }
+    else {
+      FUN_1401028e0(&DAT_143982ef0,3,1);
+      uVar7 = 3;
+    }
+    FUN_14050fa10(param_1,uVar7);
+    FUN_140512dd0(param_1,0xf);
+    (**(code **)(*param_1 + 0x78))(param_1,0xf);
+    FUN_14050c200(param_1,0);
+    (**(code **)(*param_1 + 0x78))(param_1,0x10);
+    uVar8 = 1;
+    if (1 < uVar5) {
+      uVar8 = 3;
+    }
+    FUN_1401028e0(&DAT_1439830f0,uVar8,1);
+    FUN_1401028e0(&DAT_14397a750,1,1);
+    FUN_140512dd0(param_1,0xe);
+    (**(code **)(*param_1 + 0x78))(param_1,0xe);
+    (**(code **)(*param_1 + 0x78))(param_1,0xe);
+    bVar3 = (int)uVar5 < 3;
+    FUN_140102520(&DAT_1432f7f40,bVar3,1);
+    bVar4 = !bVar3;
+    FUN_14050f120(param_1,0x11,bVar4);
+    (**(code **)(*param_1 + 0x78))(param_1,0x11);
+    FUN_140102520(&DAT_1439a4220,bVar3,1);
+    FUN_14050f120(param_1,0x12,bVar4);
+    (**(code **)(*param_1 + 0x78))(param_1,0x12);
+    FUN_140102520(&DAT_1432f7fc0,bVar3,1);
+    FUN_14050f120(param_1,0x14,bVar4);
+    (**(code **)(*param_1 + 0x78))(param_1,0x14);
+    FUN_140102520(&DAT_14397ad50,bVar3,1);
+    FUN_140102520(&DAT_1432ef880,bVar3,1);
+    FUN_14050f120(param_1,0x15,bVar4);
+    (**(code **)(*param_1 + 0x78))(param_1,0x15);
+    FUN_140102520(&DAT_143983070,bVar3,1);
+    FUN_14050f120(param_1,0x13,bVar4);
+    (**(code **)(*param_1 + 0x78))(param_1,0x13);
+    FUN_140102520(&DAT_14398ca10,!bVar3,1);
+    FUN_14050f120(param_1,0x16,bVar4);
+    (**(code **)(*param_1 + 0x78))(param_1,0x16);
+    FUN_140102520(&DAT_14398ca90,!bVar3,1);
+    FUN_14050f120(param_1,0x17,bVar4);
+                    /* WARNING: Could not recover jumptable at 0x0001405127a7. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (**(code **)(*param_1 + 0x78))(param_1,0x17);
+    return;
+  }
+  FUN_14050ace0();
+  return;
+}
+
+ (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+FUNCTION 140513420 FUN_140513420 SIZE=178 (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+void FUN_140513420(longlong *param_1)
+
+{
+  undefined8 *puVar1;
+  char cVar2;
+  undefined8 *puVar3;
+  longlong lVar4;
+  longlong lVar5;
+  int iVar6;
+  
+  iVar6 = 0;
+  lVar5 = 0;
+  do {
+    lVar4 = 0;
+    puVar1 = *(undefined8 **)(DAT_1432cdce8 + 0x10);
+    cVar2 = *(char *)*puVar1;
+    puVar3 = puVar1;
+    while ((cVar2 != '\0' && (lVar5 != puVar3[1]))) {
+      lVar4 = lVar4 + 1;
+      puVar3 = puVar1 + lVar4 * 2;
+      cVar2 = *(char *)*puVar3;
+    }
+    cVar2 = (**(code **)(*param_1 + 0x68))(param_1);
+    if (cVar2 != '\0') {
+      FUN_140512dd0(param_1);
+    }
+    iVar6 = iVar6 + 1;
+    lVar5 = lVar5 + 1;
+  } while (iVar6 < 0x1f);
+  return;
+}
+
+ (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+FUNCTION 14050ace0 FUN_14050ace0 SIZE=1320 (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+void FUN_14050ace0(longlong *param_1)
+
+{
+  longlong lVar1;
+  undefined8 *puVar2;
+  bool bVar3;
+  float fVar4;
+  float fVar5;
+  float fVar6;
+  char cVar7;
+  int iVar8;
+  int iVar9;
+  undefined8 uVar10;
+  longlong lVar11;
+  undefined8 *puVar12;
+  undefined *puVar13;
+  undefined4 uVar14;
+  longlong lVar15;
+  longlong lVar16;
+  ulonglong uVar17;
+  uint uVar18;
+  longlong lVar19;
+  undefined7 uVar20;
+  int iVar21;
+  float fVar22;
+  float fVar23;
+  float fVar24;
+  
+  uVar10 = FUN_1400d0600();
+  iVar8 = FUN_14050b410(param_1,uVar10);
+  FUN_1400d0600();
+  iVar9 = FUN_14050b760(param_1);
+  fVar6 = DAT_141f697b0;
+  fVar5 = DAT_141ab3764;
+  fVar4 = DAT_141ab2294;
+  lVar1 = param_1[0xf];
+  iVar21 = 0;
+  lVar19 = 0;
+LAB_14050ad60:
+  lVar15 = 0;
+  puVar2 = *(undefined8 **)(DAT_1432cdce8 + 0x10);
+  cVar7 = *(char *)*puVar2;
+  puVar12 = puVar2;
+  while ((cVar7 != '\0' && (lVar19 != puVar12[1]))) {
+    lVar15 = lVar15 + 1;
+    puVar12 = puVar2 + lVar15 * 2;
+    cVar7 = *(char *)*puVar12;
+  }
+  cVar7 = (**(code **)(*param_1 + 0x68))(param_1);
+  if (cVar7 == '\0') goto switchD_14050ae85_caseD_10;
+  lVar15 = 0;
+  uVar17 = 0;
+  puVar2 = *(undefined8 **)(DAT_1432cdce8 + 0x10);
+  cVar7 = *(char *)*puVar2;
+  puVar12 = puVar2;
+  while (lVar16 = DAT_1439833e0, cVar7 != '\0') {
+    if (lVar19 == puVar12[1]) {
+      lVar16 = lVar1 + 0xa0 + (longlong)(int)uVar17 * 0x120;
+      break;
+    }
+    lVar15 = lVar15 + 1;
+    uVar17 = (ulonglong)((int)uVar17 + 1);
+    puVar12 = puVar2 + lVar15 * 2;
+    cVar7 = *(char *)*puVar12;
+  }
+  fVar22 = (float)iVar9;
+  fVar24 = (float)iVar8;
+  fVar23 = fVar22;
+  if ((float)(DAT_141ab22a0 & (uint)fVar22) <= fVar4) {
+    fVar23 = 0.0;
+  }
+  if ((float)(DAT_141ab22a0 & (uint)fVar24) <= fVar4) {
+    fVar24 = 0.0;
+  }
+  uVar18 = (uint)((fVar6 - *(float *)(lVar16 + 0x11c)) * fVar24 +
+                  fVar23 * *(float *)(lVar16 + 0x11c) + fVar5);
+  bVar3 = (int)uVar18 < 3;
+  uVar20 = (undefined7)(uVar17 >> 8);
+  switch(iVar21) {
+  case 8:
+    puVar13 = &DAT_143982f70;
+    break;
+  case 9:
+    puVar13 = &DAT_143982df0;
+    break;
+  case 10:
+    puVar13 = &DAT_143982d70;
+    break;
+  case 0xb:
+    puVar13 = &DAT_143982e70;
+    break;
+  case 0xc:
+    puVar13 = &DAT_143982cf0;
+    break;
+  case 0xd:
+    puVar13 = &DAT_143982ff0;
+    break;
+  case 0xe:
+    if (uVar18 < 2) {
+      FUN_1401028e0(&DAT_1439830f0,1,CONCAT71(uVar20,1));
+      FUN_1401028e0(&DAT_14397a750,1,1);
+      lVar15 = param_1[0xf];
+      puVar2 = *(undefined8 **)(DAT_1432cdce8 + 0x10);
+      lVar16 = 0;
+      uVar17 = 0;
+      cVar7 = *(char *)*puVar2;
+      puVar12 = puVar2;
+      while (lVar11 = DAT_1439833e0, cVar7 != '\0') {
+        if (puVar12[1] == 0xe) goto LAB_14050afa5;
+        lVar16 = lVar16 + 1;
+        uVar17 = (ulonglong)((int)uVar17 + 1);
+        puVar12 = puVar2 + lVar16 * 2;
+        cVar7 = *(char *)*puVar12;
+      }
+    }
+    else {
+      FUN_1401028e0(&DAT_1439830f0,3,CONCAT71(uVar20,1));
+      FUN_1401028e0(&DAT_14397a750,1,1);
+      lVar15 = param_1[0xf];
+      puVar2 = *(undefined8 **)(DAT_1432cdce8 + 0x10);
+      lVar16 = 0;
+      uVar17 = 0;
+      cVar7 = *(char *)*puVar2;
+      puVar12 = puVar2;
+      while (lVar11 = DAT_1439833e0, cVar7 != '\0') {
+        if (puVar12[1] == 0xe) goto LAB_14050afa5;
+        lVar16 = lVar16 + 1;
+        uVar17 = (ulonglong)((int)uVar17 + 1);
+        puVar12 = puVar2 + lVar16 * 2;
+        cVar7 = *(char *)*puVar12;
+      }
+    }
+    goto LAB_14050af86;
+  case 0xf:
+    if (uVar18 == 0) {
+      FUN_1401028e0(&DAT_143982ef0,1);
+      FUN_14050fa10(param_1);
+      lVar15 = 0;
+      puVar2 = *(undefined8 **)(DAT_1432cdce8 + 0x10);
+      cVar7 = *(char *)*puVar2;
+      puVar12 = puVar2;
+      while ((cVar7 != '\0' && (puVar12[1] != 0xf))) {
+        lVar15 = lVar15 + 1;
+        puVar12 = puVar2 + lVar15 * 2;
+        cVar7 = *(char *)*puVar12;
+      }
+      FUN_14050f120(param_1,0xf);
+    }
+    else {
+      if (uVar18 == 1) {
+        FUN_1401028e0(&DAT_143982ef0,2);
+        uVar14 = 2;
+      }
+      else {
+        FUN_1401028e0(&DAT_143982ef0,3);
+        uVar14 = 3;
+      }
+      FUN_14050fa10(param_1,uVar14);
+      FUN_140512dd0(param_1,0xf);
+    }
+    (**(code **)(*param_1 + 0x78))(param_1,0xf);
+    FUN_14050c200(param_1,0);
+    goto LAB_14050b1b9;
+  default:
+    goto switchD_14050ae85_caseD_10;
+  case 0x11:
+    uVar17 = (ulonglong)bVar3;
+    puVar13 = &DAT_1432f7f40;
+    goto LAB_14050b199;
+  case 0x12:
+    uVar17 = (ulonglong)bVar3;
+    puVar13 = &DAT_1439a4220;
+    goto LAB_14050b199;
+  case 0x13:
+    uVar17 = (ulonglong)bVar3;
+    puVar13 = &DAT_143983070;
+    goto LAB_14050b199;
+  case 0x14:
+    uVar17 = (ulonglong)bVar3;
+    puVar13 = &DAT_1432f7fc0;
+    goto LAB_14050b199;
+  case 0x15:
+    FUN_140102520(&DAT_14397ad50,fVar22,CONCAT71(uVar20,1));
+    uVar17 = (ulonglong)bVar3;
+    puVar13 = &DAT_1432ef880;
+    goto LAB_14050b199;
+  case 0x16:
+    puVar13 = &DAT_14398ca10;
+    goto LAB_14050b193;
+  case 0x17:
+    puVar13 = &DAT_14398ca90;
+LAB_14050b193:
+    uVar17 = CONCAT71((int7)((ulonglong)lVar15 >> 8),!bVar3);
+LAB_14050b199:
+    FUN_140102520(puVar13,uVar17,1);
+    FUN_14050f120(param_1,iVar21);
+    goto LAB_14050b1b9;
+  }
+  FUN_1401028e0(puVar13,uVar18,CONCAT71(uVar20,1));
+  FUN_14050fd30(param_1,iVar21);
+  FUN_140512dd0(param_1,iVar21);
+  goto LAB_14050b1b9;
+LAB_14050afa5:
+  lVar11 = lVar15 + 0xa0 + (longlong)(int)uVar17 * 0x120;
+LAB_14050af86:
+  FUN_1401028e0(&DAT_1439830f0,DAT_14397a778 == 1,CONCAT71((int7)(uVar17 >> 8),1));
+  FUN_140502970(param_1,lVar11 + 0x90,&DAT_1439830f0,0);
+  (**(code **)(*param_1 + 0x78))(param_1,0xe);
+  (**(code **)(*param_1 + 0x78))(param_1,0xe);
+LAB_14050b1b9:
+  (**(code **)(*param_1 + 0x78))(param_1);
+switchD_14050ae85_caseD_10:
+  iVar21 = iVar21 + 1;
+  lVar19 = lVar19 + 1;
+  if (0x1e < iVar21) {
+    return;
+  }
+  goto LAB_14050ad60;
+}
+
+ (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+FUNCTION 140512ca0 FUN_140512ca0 SIZE=303 (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+void FUN_140512ca0(longlong *param_1,longlong param_2,char param_3,undefined8 param_4)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  uint uVar3;
+  longlong local_20;
+  uint local_18;
+  uint local_14;
+  
+  if (param_3 == '\0') {
+    iVar1 = *(int *)(param_2 + 8);
+    FUN_1401028e0(&DAT_1432fa7e0,iVar1,1,param_4,0xfffffffffffffffe);
+    local_20 = 0;
+    FUN_1401548e0();
+    local_18 = 0x5000000;
+    local_14 = 0x3f;
+    uVar3 = 0x5000000;
+    if (local_20 != 0) {
+      FUN_1409c6ae0(local_20,0);
+      uVar3 = local_18;
+    }
+    local_20 = 0;
+    local_14 = local_14 & 0xff;
+    local_18 = uVar3 & 0xff000000;
+    (**(code **)(*(longlong *)PTR_DAT_1422fcd70 + 0x1a0))(PTR_DAT_1422fcd70,&local_20);
+    if (iVar1 < (int)(local_18 & 0xffffff)) {
+      uVar2 = FUN_1401d9090((longlong)iVar1 * 0x50 + local_20);
+      thunk_FUN_140102400(&DAT_1432fa860,uVar2,1);
+    }
+    if (((local_14 & 0x40) == 0) && (local_20 != 0)) {
+      FUN_1409c6ae0(local_20,local_14 >> 8);
+    }
+  }
+  else {
+    FUN_140502970(param_1,param_2,&DAT_1432fa7e0,0);
+    (**(code **)(*param_1 + 0x78))(param_1,6);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+FUNCTION 140512dd0 FUN_140512dd0 SIZE=1480 (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+void FUN_140512dd0(longlong *param_1,int param_2)
+
+{
+  undefined8 *puVar1;
+  int iVar2;
+  undefined4 uVar3;
+  int iVar4;
+  undefined8 *puVar5;
+  undefined8 uVar6;
+  longlong lVar7;
+  ulonglong uVar9;
+  undefined7 uVar10;
+  ulonglong uVar11;
+  undefined7 uVar12;
+  longlong lVar8;
+  
+  uVar9 = 0;
+  puVar1 = *(undefined8 **)(DAT_1432cdce8 + 0x10);
+  lVar8 = DAT_1439833e0;
+  uVar11 = uVar9;
+  if (*(char *)*puVar1 != '\0') {
+    puVar5 = puVar1;
+    do {
+      if ((longlong)param_2 == puVar5[1]) {
+        lVar8 = param_1[0xf] + 0xa0 + (longlong)(int)uVar11 * 0x120;
+        break;
+      }
+      uVar9 = uVar9 + 1;
+      uVar11 = (ulonglong)((int)uVar11 + 1);
+      puVar5 = puVar1 + uVar9 * 2;
+    } while (*(char *)*puVar5 != '\0');
+  }
+  lVar7 = lVar8 + 0x90;
+  uVar10 = (undefined7)(uVar9 >> 8);
+  uVar12 = (undefined7)(uVar11 >> 8);
+  switch(param_2) {
+  case 0:
+    FUN_140512990(param_1,lVar7,CONCAT71(uVar10,1));
+    return;
+  case 1:
+    uVar3 = (**(code **)(*(longlong *)PTR_DAT_1422fcd70 + 0x170))();
+    *(undefined4 *)(lVar8 + 0x98) = uVar3;
+                    /* WARNING: Could not recover jumptable at 0x000140512efc. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (**(code **)(*param_1 + 0x78))(param_1,1);
+    return;
+  case 2:
+    *(undefined4 *)(lVar8 + 0x98) = DAT_1432fb1f8;
+                    /* WARNING: Could not recover jumptable at 0x000140512f23. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (**(code **)(*param_1 + 0x78))(param_1,2);
+    return;
+  case 3:
+    FUN_140502970(param_1,lVar7,&DAT_1439374e0,0);
+    return;
+  case 4:
+    FUN_140502970(param_1,lVar7,&DAT_1439a40a0,0);
+    return;
+  case 5:
+    FUN_140502970(param_1,lVar7,&DAT_1432fb820,0);
+    return;
+  case 6:
+    FUN_140502970(param_1,lVar7,&DAT_1432fa7e0,0);
+                    /* WARNING: Could not recover jumptable at 0x000140512fbb. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (**(code **)(*param_1 + 0x78))(param_1,6);
+    return;
+  case 7:
+    FUN_140502970(param_1,lVar7,&DAT_1432fb450,0);
+    return;
+  case 8:
+    uVar6 = 8;
+    uVar3 = DAT_143982f98;
+    break;
+  case 9:
+    uVar6 = 9;
+    uVar3 = DAT_143982e18;
+    break;
+  case 10:
+    uVar6 = 10;
+    uVar3 = DAT_143982d98;
+    break;
+  case 0xb:
+    uVar6 = 0xb;
+    uVar3 = DAT_143982e98;
+    break;
+  case 0xc:
+    uVar6 = 0xc;
+    uVar3 = DAT_143982d18;
+    break;
+  case 0xd:
+    uVar6 = 0xd;
+    uVar3 = DAT_143983018;
+    break;
+  case 0xe:
+    FUN_1401028e0(&DAT_1439830f0,DAT_14397a778 == 1,CONCAT71(uVar10,1));
+    FUN_140502970(param_1,lVar7,&DAT_1439830f0,0);
+                    /* WARNING: Could not recover jumptable at 0x00014051334c. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (**(code **)(*param_1 + 0x78))(param_1,0xe);
+    return;
+  case 0xf:
+    uVar6 = 0xf;
+    uVar3 = DAT_143982f18;
+    break;
+  case 0x10:
+    FUN_140502970(param_1,lVar7,&DAT_1432f88c0,0);
+    return;
+  case 0x11:
+    FUN_140502970(param_1,lVar7,&DAT_1432f7f40,CONCAT71(uVar12,1));
+    return;
+  case 0x12:
+    FUN_140502970(param_1,lVar7,&DAT_1439a4220,CONCAT71(uVar12,1));
+    return;
+  case 0x13:
+    FUN_140502970(param_1,lVar7,&DAT_143983070,CONCAT71(uVar12,1));
+    return;
+  case 0x14:
+    FUN_140502970(param_1,lVar7,&DAT_1432f7fc0,CONCAT71(uVar12,1));
+    return;
+  case 0x15:
+    FUN_140502970(param_1,lVar7,&DAT_14397ad50,CONCAT71(uVar12,1));
+    return;
+  case 0x16:
+    FUN_140502970(param_1,lVar7,&DAT_14398ca10,0);
+    return;
+  case 0x17:
+    FUN_140502970(param_1,lVar7,&DAT_14398ca90,0);
+    return;
+  case 0x18:
+    FUN_140502970(param_1,lVar7,&DAT_143937260,0);
+    return;
+  case 0x19:
+    if (DAT_14397bee8 == 0) {
+      *(undefined4 *)(lVar8 + 0x98) = 0;
+                    /* WARNING: Could not recover jumptable at 0x000140513100. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+      (**(code **)(*param_1 + 0x78))(param_1,0x19);
+      return;
+    }
+    if (DAT_143983198 == 0) {
+      if (DAT_14397c4ec != DAT_141ab3828) {
+        *(undefined4 *)(lVar8 + 0x98) = 2;
+                    /* WARNING: Could not recover jumptable at 0x00014051318b. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+        (**(code **)(*param_1 + 0x78))(param_1,0x19);
+        return;
+      }
+      *(undefined4 *)(lVar8 + 0x98) = 3;
+                    /* WARNING: Could not recover jumptable at 0x000140513166. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+      (**(code **)(*param_1 + 0x78))(param_1,0x19);
+      return;
+    }
+    *(undefined4 *)(lVar8 + 0x98) = 1;
+                    /* WARNING: Could not recover jumptable at 0x00014051312e. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (**(code **)(*param_1 + 0x78))(param_1,0x19);
+    return;
+  case 0x1a:
+    if (DAT_14397c4ec == DAT_141ab3828) {
+      iVar4 = *(int *)(lVar8 + 0xa8);
+    }
+    else {
+      iVar2 = *(int *)(lVar8 + 0xa8);
+      if ((int)DAT_14397c4ec < *(int *)(lVar8 + 0xa8)) {
+        iVar2 = (int)DAT_14397c4ec;
+      }
+      iVar4 = *(int *)(lVar8 + 0xa4);
+      if (*(int *)(lVar8 + 0xa4) < iVar2) {
+        iVar4 = iVar2;
+      }
+    }
+    *(int *)(lVar8 + 0x98) = iVar4;
+                    /* WARNING: Could not recover jumptable at 0x000140513243. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (**(code **)(*param_1 + 0x78))(param_1,0x1a);
+    return;
+  case 0x1b:
+    if (DAT_141b1daac < DAT_14397bf6c) {
+      *(uint *)(lVar8 + 0x98) = (uint)(DAT_14397bf6c <= DAT_141ab3b18);
+                    /* WARNING: Could not recover jumptable at 0x0001405131f6. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+      (**(code **)(*param_1 + 0x78))(param_1,0x1b);
+      return;
+    }
+    *(undefined4 *)(lVar8 + 0x98) = 2;
+                    /* WARNING: Could not recover jumptable at 0x0001405131c5. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (**(code **)(*param_1 + 0x78))(param_1,0x1b);
+    return;
+  case 0x1c:
+    FUN_140512000(param_1,lVar7,CONCAT71(uVar10,1));
+    return;
+  case 0x1d:
+    FUN_140502970(param_1,lVar7,&DAT_1432fa8e0,0);
+    return;
+  case 0x1e:
+    FUN_140502970(param_1,lVar7,&DAT_1432ef770,0);
+    return;
+  default:
+    goto switchD_140512e51_default;
+  }
+  FUN_14050f120(param_1,uVar6,uVar3);
+switchD_140512e51_default:
+  return;
+}
+
+ (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+FUNCTION 140505560 FUN_140505560 SIZE=343 (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+void FUN_140505560(longlong param_1,int param_2)
+
+{
+  char cVar1;
+  undefined8 *puVar2;
+  undefined8 *puVar3;
+  longlong lVar4;
+  ulonglong uVar5;
+  ulonglong uVar6;
+  
+  uVar5 = 0;
+  puVar2 = *(undefined8 **)(DAT_1432cdd50 + 0x10);
+  cVar1 = *(char *)*puVar2;
+  puVar3 = puVar2;
+  uVar6 = uVar5;
+  do {
+    lVar4 = DAT_143982ad0;
+    if (cVar1 == '\0') {
+LAB_1405055b6:
+      lVar4 = lVar4 + 0x90;
+      switch(param_2) {
+      case 0:
+        FUN_140502970(param_1,lVar4,&DAT_142bfacd0,0);
+        return;
+      default:
+        return;
+      case 2:
+        FUN_140502970(param_1,lVar4,&DAT_142bfaa50,0);
+        return;
+      case 3:
+        FUN_140502970(param_1,lVar4,&DAT_142bfaad0,0);
+        return;
+      case 4:
+        FUN_140502970(param_1,lVar4,&DAT_142bfab50,0);
+        return;
+      case 5:
+        FUN_140502970(param_1,lVar4,&DAT_142bfabd0,0);
+        return;
+      case 6:
+        FUN_140502970(param_1,lVar4,&DAT_142bfac50,0);
+        return;
+      case 7:
+        FUN_140502970(param_1,lVar4,&DAT_142436b90,0);
+        return;
+      case 8:
+        FUN_140504a80(param_1);
+        return;
+      case 9:
+        FUN_140504b10(param_1,lVar4);
+        return;
+      }
+    }
+    if ((longlong)param_2 == puVar3[1]) {
+      lVar4 = *(longlong *)(param_1 + 0x78) + 0xa0 + (longlong)(int)uVar6 * 0x120;
+      goto LAB_1405055b6;
+    }
+    uVar5 = uVar5 + 1;
+    uVar6 = (ulonglong)((int)uVar6 + 1);
+    puVar3 = puVar2 + uVar5 * 2;
+    cVar1 = *(char *)*puVar3;
+  } while( true );
+}
+
+ (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+FUNCTION 1405096d0 FUN_1405096d0 SIZE=731 (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+void FUN_1405096d0(longlong param_1,int param_2)
+
+{
+  char cVar1;
+  undefined8 *puVar2;
+  undefined8 *puVar3;
+  longlong lVar4;
+  ulonglong uVar5;
+  ulonglong uVar6;
+  
+  uVar5 = 0;
+  puVar2 = *(undefined8 **)(DAT_1432cdd48 + 0x10);
+  cVar1 = *(char *)*puVar2;
+  puVar3 = puVar2;
+  uVar6 = uVar5;
+  do {
+    lVar4 = DAT_143982cd0;
+    if (cVar1 == '\0') {
+LAB_140509726:
+      lVar4 = lVar4 + 0x90;
+      switch(param_2) {
+      default:
+        return;
+      case 1:
+        FUN_140502970(param_1,lVar4,&DAT_143994e00,0);
+        return;
+      case 2:
+        FUN_140502970(param_1,lVar4,&DAT_14398ecc0,0);
+        return;
+      case 3:
+        FUN_140502970(param_1,lVar4,&DAT_143988250,0);
+        return;
+      case 4:
+        FUN_140502970(param_1,lVar4,&DAT_14398e200,0);
+        return;
+      case 5:
+        FUN_140502970(param_1,lVar4,&DAT_143981ed0,0);
+        return;
+      case 6:
+        FUN_140502970(param_1,lVar4,&DAT_143989f80,0);
+        return;
+      case 7:
+        FUN_140502970(param_1,lVar4,&DAT_14398a000,0);
+        return;
+      case 8:
+        FUN_140502970(param_1,lVar4,&DAT_14398ec30,0);
+        return;
+      case 9:
+        FUN_140502970(param_1,lVar4,&DAT_14397d300,0);
+        return;
+      case 10:
+        FUN_140502970(param_1,lVar4,&DAT_143989aa0,0);
+        return;
+      case 0xb:
+        FUN_140502970(param_1,lVar4,&DAT_14397f410,0);
+        return;
+      case 0xc:
+        FUN_140502970(param_1,lVar4,&DAT_14397b0d0,CONCAT71((int7)(uVar6 >> 8),1));
+        return;
+      case 0xd:
+        FUN_140502970(param_1,lVar4,&DAT_14398a080,0);
+        return;
+      case 0xe:
+        FUN_140502970(param_1,lVar4,&DAT_14397d380,0);
+        return;
+      case 0xf:
+        FUN_140502970(param_1,lVar4,&DAT_14397d0a0,0);
+        return;
+      case 0x10:
+        FUN_140502970(param_1,lVar4,&DAT_143989840,0);
+        return;
+      case 0x11:
+        FUN_140502970(param_1,lVar4,&DAT_143989b20,0);
+        return;
+      case 0x12:
+        FUN_140502970(param_1,lVar4,&DAT_143989c20,0);
+        return;
+      case 0x13:
+        FUN_140502970(param_1,lVar4,&DAT_143985bc0,0);
+        return;
+      case 0x14:
+        FUN_140502970(param_1,lVar4,&DAT_143995fc0,0);
+        return;
+      case 0x15:
+        FUN_140502970(param_1,lVar4,&DAT_14397d410,0);
+        return;
+      case 0x16:
+        FUN_140502970(param_1,lVar4,&DAT_14397f1a0,0);
+        return;
+      case 0x17:
+        FUN_140502970(param_1,lVar4,&DAT_14397f220,0);
+        return;
+      case 0x18:
+        FUN_140502970(param_1,lVar4,&DAT_143989ba0,0);
+        return;
+      case 0x19:
+        FUN_140502970(param_1,lVar4,&DAT_14397f680,0);
+        return;
+      }
+    }
+    if ((longlong)param_2 == puVar3[1]) {
+      lVar4 = *(longlong *)(param_1 + 0x78) + 0xa0 + (longlong)(int)uVar6 * 0x120;
+      goto LAB_140509726;
+    }
+    uVar5 = uVar5 + 1;
+    uVar6 = (ulonglong)((int)uVar6 + 1);
+    puVar3 = puVar2 + uVar5 * 2;
+    cVar1 = *(char *)*puVar3;
+  } while( true );
+}
+
+ (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+FUNCTION 140507f20 FUN_140507f20 SIZE=500 (GhidraScript)  
+INFO  TraceOptionsCallers.java> 
+void FUN_140507f20(longlong param_1,int param_2)
+
+{
+  char cVar1;
+  undefined8 *puVar2;
+  undefined8 *puVar3;
+  longlong lVar4;
+  ulonglong uVar5;
+  ulonglong uVar6;
+  
+  uVar5 = 0;
+  puVar2 = *(undefined8 **)(DAT_1432cdd30 + 0x10);
+  cVar1 = *(char *)*puVar2;
+  puVar3 = puVar2;
+  uVar6 = uVar5;
+  do {
+    lVar4 = DAT_143982bd0;
+    if (cVar1 == '\0') {
+LAB_140507f76:
+      lVar4 = lVar4 + 0x90;
+      switch(param_2) {
+      case 0:
+        FUN_140502970(param_1,lVar4,&DAT_143989030,0);
+        return;
+      case 1:
+        FUN_140502970(param_1,lVar4,&DAT_14398f470,0);
+        return;
+      case 2:
+        FUN_140502970(param_1,lVar4,&DAT_143991f30,0);
+        return;
+      case 3:
+        FUN_140502970(param_1,lVar4,&DAT_143991fb0,0);
+        return;
+      case 4:
+        FUN_140502970(param_1,lVar4,&DAT_143992030,0);
+        return;
+      case 5:
+        FUN_140502970(param_1,lVar4,&DAT_14397d6b0,0);
+        return;
+      case 6:
+        FUN_140502970(param_1,lVar4,&DAT_14397d730,0);
+        return;
+      default:
+        return;
+      case 8:
+      case 9:
+      case 10:
+      case 0xb:
+      case 0xc:
+      case 0xd:
+      case 0xe:
+      case 0xf:
+      case 0x10:
+      case 0x11:
+      case 0x12:
+      case 0x13:
+      case 0x14:
+      case 0x15:
+      case 0x16:
+      case 0x17:
+      case 0x18:
+      case 0x19:
+      case 0x1a:
+      case 0x1b:
+      case 0x1c:
+      case 0x1d:
+      case 0x1e:
+      case 0x1f:
+      case 0x20:
+      case 0x21:
+      case 0x22:
+      case 0x23:
+      case 0x24:
+      case 0x25:
+      case 0x26:
+      case 0x27:
+      case 0x28:
+        FUN_140502810(param_1);
+        return;
+      case 0x29:
+        FUN_140502970(param_1,lVar4,&DAT_143991eb0,0);
+        return;
+      case 0x2a:
+        FUN_140502970(param_1,lVar4,&DAT_143130c40,0);
+        return;
+      case 0x2b:
+        FUN_140502970(param_1,lVar4,&DAT_1439920b0,0);
+        return;
+      case 0x2c:
+        FUN_140502970(param_1,lVar4,&DAT_14397d7b0,0);
+        return;
+      case 0x2d:
+        FUN_140502970(param_1,lVar4,&DAT_14397d830,0);
+        return;
+      case 0x2e:
+        FUN_140502970(param_1,lVar4,&DAT_1439965b0,0);
+        return;
+      case 0x2f:
+        FUN_140502970(param_1,lVar4,&DAT_143995600,0);
+        return;
+      }
+    }
+    if ((longlong)param_2 == puVar3[1]) {
+      lVar4 = *(longlong *)(param_1 + 0x78) + 0xa0 + (longlong)(int)uVar6 * 0x120;
+      goto LAB_140507f76;
+    }
+    uVar5 = uVar5 + 1;
+    uVar6 = (ulonglong)((int)uVar6 + 1);
+    puVar3 = puVar2 + uVar5 * 2;
+    cVar1 = *(char *)*puVar3;
+  } while( true );
+}
+
+ (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /Dishonored2.exe (HeadlessAnalyzer)  

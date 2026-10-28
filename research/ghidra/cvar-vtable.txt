@@ -1,0 +1,294 @@
+INFO  Using log config file: jar:file:/F:/CE%20Projects/OutlawsLab/tooling/ghidra-12.1.4/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: F:\CE Projects\VoidCamera\research\ghidra\userhome\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: F:\CE Projects\VoidCamera\research\ghidra\userhome\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1241 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (8425 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    F:\CE Projects\VoidCamera\research\ghidra (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: F:\CE Projects\VoidCamera\research\ghidra\projects\D2Retail (HeadlessAnalyzer)  
+INFO  Opening project: F:\CE Projects\VoidCamera\research\ghidra\projects\D2Retail (HeadlessProject)  
+INFO  REPORT: Processing project file: /Dishonored2.exe (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: InspectCvarVtable.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: F:\CE Projects\VoidCamera\research\ghidra\InspectCvarVtable.java (HeadlessAnalyzer)  
+INFO  InspectCvarVtable.java> 
+SLOT 0 RVA=100b00 ENTRY=140100b00 SIZE=96
+
+undefined8 * FUN_140100b00(undefined8 *param_1,uint param_2)
+
+{
+  *param_1 = idCVarSystemLocal::vftable;
+  FUN_1400fe8b0(param_1 + 3);
+  FUN_14061a0a0(param_1 + 1);
+  *param_1 = idCVarSystem::vftable;
+  if ((param_2 & 1) != 0) {
+    FUN_1400f1520(param_1);
+  }
+  return param_1;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarVtable.java> 
+SLOT 2 RVA=101490 ENTRY=140101490 SIZE=12
+
+undefined8 FUN_140101490(longlong param_1,int param_2)
+
+{
+  return *(undefined8 *)(*(longlong *)(param_1 + 8) + (longlong)param_2 * 8);
+}
+
+ (GhidraScript)  
+INFO  InspectCvarVtable.java> 
+SLOT 3 RVA=1022f0 ENTRY=1401022f0 SIZE=42
+
+void FUN_1401022f0(longlong param_1,int param_2)
+
+{
+  longlong lVar1;
+  
+  lVar1 = *(longlong *)(*(longlong *)(param_1 + 8) + (longlong)param_2 * 8);
+  FUN_14013ff40(lVar1,*(undefined8 *)(lVar1 + 0x38));
+  FUN_140102cb0(lVar1);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarVtable.java> 
+SLOT 11 RVA=101610 ENTRY=140101610 SIZE=42
+
+undefined8 FUN_140101610(longlong *param_1,undefined8 param_2,undefined8 param_3)
+
+{
+  longlong lVar1;
+  undefined8 uVar2;
+  
+  lVar1 = (**(code **)(*param_1 + 0x20))();
+  if (lVar1 != 0) {
+    uVar2 = FUN_1401d9090(lVar1);
+    return uVar2;
+  }
+  return param_3;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarVtable.java> 
+SLOT 12 RVA=101570 ENTRY=140101570 SIZE=47
+
+bool FUN_140101570(longlong *param_1,undefined8 param_2,undefined1 param_3)
+
+{
+  longlong lVar1;
+  
+  lVar1 = (**(code **)(*param_1 + 0x20))();
+  if (lVar1 != 0) {
+    return *(int *)(lVar1 + 0x28) != 0;
+  }
+  return (bool)param_3;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarVtable.java> 
+SLOT 13 RVA=1015e0 ENTRY=1401015e0 SIZE=37
+
+undefined4 FUN_1401015e0(longlong *param_1,undefined8 param_2,undefined4 param_3)
+
+{
+  longlong lVar1;
+  
+  lVar1 = (**(code **)(*param_1 + 0x20))();
+  if (lVar1 != 0) {
+    return *(undefined4 *)(lVar1 + 0x28);
+  }
+  return param_3;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarVtable.java> 
+SLOT 14 RVA=1015a0 ENTRY=1401015a0 SIZE=51
+
+ulonglong FUN_1401015a0(longlong *param_1,undefined8 param_2,ulonglong param_3)
+
+{
+  longlong lVar1;
+  
+  lVar1 = (**(code **)(*param_1 + 0x20))();
+  if (lVar1 != 0) {
+    return (ulonglong)*(uint *)(lVar1 + 0x2c);
+  }
+  return param_3;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarVtable.java> 
+SLOT 18 RVA=f5f80 ENTRY=1400f5f80 SIZE=4
+
+undefined4 FUN_1400f5f80(longlong param_1)
+
+{
+  return *(undefined4 *)(param_1 + 0x40);
+}
+
+ (GhidraScript)  
+INFO  InspectCvarVtable.java> 
+SLOT 19 RVA=598e00 ENTRY=140598e00 SIZE=6
+
+void FUN_140598e00(longlong param_1,uint param_2)
+
+{
+  *(uint *)(param_1 + 0x40) = *(uint *)(param_1 + 0x40) & ~param_2;
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarVtable.java> 
+SLOT 20 RVA=102320 ENTRY=140102320 SIZE=223
+
+void FUN_140102320(undefined8 param_1,uint param_2)
+
+{
+  undefined8 uVar1;
+  longlong lVar2;
+  int iVar3;
+  longlong *plVar4;
+  
+  lVar2 = DAT_1431c04b0;
+  do {
+    if (lVar2 == 0) {
+      return;
+    }
+    if ((*(uint *)(lVar2 + 0x48) & param_2) != 0) {
+      uVar1 = *(undefined8 *)(lVar2 + 0x38);
+      iVar3 = FUN_1401435f0(lVar2,uVar1);
+      if (iVar3 != 0) {
+        plVar4 = (longlong *)FUN_1401548e0();
+        (**(code **)(*plVar4 + 0x48))(plVar4,0);
+        FUN_14013ff40(lVar2,uVar1);
+        plVar4 = (longlong *)FUN_1401548e0();
+        (**(code **)(*plVar4 + 0x50))(plVar4,0);
+        FUN_140102cb0(lVar2);
+        (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))
+                  (PTR_DAT_14228bae8,*(undefined4 *)(lVar2 + 0x48));
+        *(uint *)(lVar2 + 0x48) = *(uint *)(lVar2 + 0x48) | 0x80000;
+        if (((*(uint *)(lVar2 + 0x48) & 0x20000) != 0) && (DAT_1432c7ed4 == 3)) {
+                    /* WARNING: Subroutine does not return */
+          FUN_140166830("Archived CVar \'%s\' in production mode",*(undefined8 *)(lVar2 + 0x30));
+        }
+                    /* WARNING: Subroutine does not return */
+        FUN_140166830("Resetting cheat cvar: %s\n",*(undefined8 *)(lVar2 + 0x30));
+      }
+    }
+    lVar2 = *(longlong *)(lVar2 + 0x78);
+  } while( true );
+}
+
+ (GhidraScript)  
+INFO  InspectCvarVtable.java> 
+SLOT 21 RVA=102fc0 ENTRY=140102fc0 SIZE=118
+
+void FUN_140102fc0(undefined8 param_1,uint param_2,longlong *param_3)
+
+{
+  longlong lVar1;
+  undefined8 uVar2;
+  int iVar3;
+  
+  for (lVar1 = DAT_1431c04b0; lVar1 != 0; lVar1 = *(longlong *)(lVar1 + 0x78)) {
+    if ((*(uint *)(lVar1 + 0x48) & param_2) != 0) {
+      uVar2 = FUN_1401d9090(lVar1);
+      iVar3 = FUN_140143650(uVar2,*(undefined8 *)(lVar1 + 0x38));
+      if (iVar3 != 0) {
+        uVar2 = FUN_1401d9090(lVar1);
+        (**(code **)(*param_3 + 0x78))(param_3,"%s \"%s\"\n",*(undefined8 *)(lVar1 + 0x30),uVar2);
+      }
+    }
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectCvarVtable.java> 
+SLOT 26 RVA=1020a0 ENTRY=1401020a0 SIZE=367
+
+void FUN_1401020a0(longlong param_1)
+
+{
+  longlong lVar1;
+  longlong lVar2;
+  uint uVar3;
+  int iVar4;
+  uint uVar5;
+  longlong local_res10;
+  char local_418 [1024];
+  
+  DAT_1431c04b8 = 1;
+  lVar2 = DAT_1431c04b0;
+  while( true ) {
+    if (lVar2 == 0) {
+      return;
+    }
+    uVar5 = *(uint *)(param_1 + 0x34);
+    local_res10 = lVar2;
+    uVar3 = FUN_1401431d0(*(undefined8 *)(lVar2 + 0x30));
+    uVar3 = uVar3 & uVar5;
+    iVar4 = *(int *)(*(longlong *)(param_1 + 0x18) +
+                    (longlong)(int)(uVar5 & uVar3 & *(uint *)(param_1 + 0x38)) * 4);
+    if ((iVar4 != -1) &&
+       (iVar4 = FUN_140143650(*(undefined8 *)
+                               (*(longlong *)(*(longlong *)(param_1 + 8) + (longlong)iVar4 * 8) +
+                               0x30),*(undefined8 *)(lVar2 + 0x30)), iVar4 == 0)) break;
+    uVar5 = *(uint *)(param_1 + 0x10) & 0xffffff;
+    if (*(undefined **)(param_1 + 0x18) == &DAT_142289660) {
+      iVar4 = *(int *)(param_1 + 0x2c);
+      if (iVar4 <= (int)uVar5) {
+        iVar4 = uVar5 + 1;
+      }
+      FUN_1400fe7a0(param_1 + 0x18,*(undefined4 *)(param_1 + 0x28),iVar4);
+    }
+    else if (*(int *)(param_1 + 0x2c) <= (int)uVar5) {
+      FUN_1400fe970(param_1 + 0x18,uVar5 + 1);
+    }
+    lVar1 = (longlong)(int)(*(uint *)(param_1 + 0x34) & uVar3) * 4;
+    *(undefined4 *)(*(longlong *)(param_1 + 0x20) + (longlong)(int)uVar5 * 4) =
+         *(undefined4 *)(lVar1 + *(longlong *)(param_1 + 0x18));
+    *(uint *)(lVar1 + *(longlong *)(param_1 + 0x18)) = uVar5;
+    FUN_1408918f0(param_1 + 8,&local_res10);
+    lVar2 = *(longlong *)(lVar2 + 0x78);
+  }
+  sprintf(local_418,
+          "\n\n*******************************\n\nidCVarSystemLocal::RegisterStaticVars: \'%s\' was statically duplicated\n\n*******************************\n\n"
+          ,*(undefined8 *)(lVar2 + 0x30));
+  OutputDebugStringA(local_418);
+                    /* WARNING: Subroutine does not return */
+  ExitProcess(2);
+}
+
+ (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /Dishonored2.exe (HeadlessAnalyzer)  

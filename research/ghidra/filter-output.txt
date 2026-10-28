@@ -1,0 +1,1178 @@
+INFO  Using log config file: jar:file:/F:/CE%20Projects/OutlawsLab/tooling/ghidra-12.1.4/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: F:\CE Projects\VoidCamera\research\ghidra\userhome\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: F:\CE Projects\VoidCamera\research\ghidra\userhome\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1305 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (8478 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    F:\CE Projects\OutlawsLab\tooling\ghidra-12.1.4\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    F:\CE Projects\VoidCamera\research\ghidra (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: F:\CE Projects\VoidCamera\research\ghidra\projects\D2Retail (HeadlessAnalyzer)  
+INFO  Opening project: F:\CE Projects\VoidCamera\research\ghidra\projects\D2Retail (HeadlessProject)  
+INFO  REPORT: Processing project file: /Dishonored2.exe (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: FilterCvarConsumers.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: F:\CE Projects\VoidCamera\research\ghidra\FilterCvarConsumers.java (HeadlessAnalyzer)  
+INFO  FilterCvarConsumers.java> MANAGER_GLOBAL_REFERENCING_FUNCTIONS=51 (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 14003b780 FUN_14003b780 SIZE=522
+
+void FUN_14003b780(int *param_1,undefined4 param_2)
+
+{
+  char cVar1;
+  undefined *puVar2;
+  int iVar3;
+  int iVar4;
+  longlong *plVar5;
+  char *pcVar6;
+  undefined4 *puVar7;
+  int *piVar8;
+  longlong lVar9;
+  undefined1 *puVar10;
+  int iVar11;
+  longlong lVar12;
+  char cStack_429;
+  char local_428 [1040];
+  
+  iVar4 = *param_1;
+  if (iVar4 < 2) {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("arkBind <key> [command] : attach a command to a key\n");
+  }
+  if (iVar4 < 2) {
+    puVar10 = &DAT_141ab2848;
+  }
+  else {
+    puVar10 = *(undefined1 **)(param_1 + 4);
+  }
+  iVar3 = FUN_14003b4f0(puVar10);
+  if (iVar3 == 0) {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("\"%s\" isn\'t a valid key\n",puVar10);
+  }
+  if (iVar4 == 2) {
+    FUN_14003a640(PTR_DAT_142274340,iVar3);
+  }
+  else {
+    local_428[0] = '\0';
+    iVar11 = 2;
+    lVar12 = 2;
+    if (2 < (longlong)iVar4) {
+      piVar8 = param_1 + 6;
+      do {
+        if ((lVar12 < 0) || (*param_1 <= iVar11)) {
+          puVar10 = &DAT_141ab2848;
+        }
+        else {
+          puVar10 = *(undefined1 **)piVar8;
+        }
+        pcVar6 = &cStack_429;
+        do {
+          pcVar6 = pcVar6 + 1;
+        } while (*pcVar6 != '\0');
+        lVar9 = 0;
+        do {
+          cVar1 = puVar10[lVar9];
+          pcVar6[lVar9] = cVar1;
+          lVar9 = lVar9 + 1;
+        } while (cVar1 != '\0');
+        if (iVar11 != iVar4 + -1) {
+          pcVar6 = &cStack_429;
+          do {
+            pcVar6 = pcVar6 + 1;
+          } while (*pcVar6 != '\0');
+          *(undefined2 *)pcVar6 = DAT_141ab5fa4;
+        }
+        iVar11 = iVar11 + 1;
+        lVar12 = lVar12 + 1;
+        piVar8 = piVar8 + 2;
+      } while (lVar12 < iVar4);
+      if (local_428[0] != '\0') {
+        piVar8 = &DAT_141ac0d80;
+        puVar2 = PTR_s_INVALID_141ac0d88;
+        while (puVar2 != (undefined *)0x0) {
+          iVar4 = FUN_140143650(local_428,*(undefined8 *)(piVar8 + 2));
+          if (iVar4 == 0) {
+            if (*piVar8 != 0) {
+              FUN_140039380(PTR_DAT_142274340,iVar3,*piVar8,0,param_2);
+              goto LAB_14003b962;
+            }
+            break;
+          }
+          puVar2 = *(undefined **)(piVar8 + 8);
+          piVar8 = piVar8 + 6;
+        }
+      }
+    }
+    puVar2 = PTR_DAT_142274340;
+    plVar5 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar5 + 0x48))(plVar5,0);
+    puVar7 = (undefined4 *)((longlong)iVar3 * 0x30 + **(longlong **)(puVar2 + 8));
+    *puVar7 = param_2;
+    puVar7[1] = 0;
+    FUN_14013ff40(puVar7 + 2,local_428);
+    plVar5 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar5 + 0x50))(plVar5,0);
+LAB_14003b962:
+    (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))(PTR_DAT_14228bae8,0x20000);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 14003ba40 FUN_14003ba40 SIZE=42
+
+void FUN_14003ba40(void)
+
+{
+  FUN_1400396e0(PTR_DAT_142274340);
+                    /* WARNING: Could not recover jumptable at 0x00014003ba63. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))(PTR_DAT_14228bae8,0x20000);
+  return;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 14003ba70 FUN_14003ba70 SIZE=124
+
+void FUN_14003ba70(void)
+
+{
+  undefined4 *puVar1;
+  undefined4 *puVar2;
+  
+  puVar1 = (undefined4 *)**(undefined8 **)(PTR_DAT_142274340 + 8);
+  puVar2 = puVar1 + (ulonglong)(*(uint *)(*(undefined8 **)(PTR_DAT_142274340 + 8) + 1) & 0xffffff) *
+                    0xc;
+  for (; puVar1 != puVar2; puVar1 = puVar1 + 0xc) {
+    *puVar1 = 0;
+    puVar1[1] = 0;
+    FUN_140141390();
+  }
+                    /* WARNING: Could not recover jumptable at 0x00014003bae5. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))(PTR_DAT_14228bae8,0x20000);
+  return;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 14003baf0 FUN_14003baf0 SIZE=181
+
+void FUN_14003baf0(int *param_1)
+
+{
+  longlong lVar1;
+  undefined *puVar2;
+  longlong *plVar3;
+  longlong lVar4;
+  longlong lVar5;
+  
+  if (*param_1 != 1) {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("arkUnbindKeyboard : remove commands from a joypad buttons\n");
+  }
+  lVar5 = 0x2c10;
+  lVar4 = 0x15;
+  do {
+    puVar2 = PTR_DAT_142274340;
+    plVar3 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar3 + 0x48))(plVar3,0);
+    lVar1 = **(longlong **)(puVar2 + 8);
+    *(undefined8 *)(lVar5 + lVar1) = 0;
+    FUN_14013ff40(lVar1 + 8 + lVar5);
+    plVar3 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar3 + 0x50))(plVar3);
+    lVar5 = lVar5 + 0x30;
+    lVar4 = lVar4 + -1;
+  } while (lVar4 != 0);
+  (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))(PTR_DAT_14228bae8,0x20000);
+  return;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 14003bbb0 FUN_14003bbb0 SIZE=181
+
+void FUN_14003bbb0(int *param_1)
+
+{
+  longlong lVar1;
+  undefined *puVar2;
+  longlong *plVar3;
+  longlong lVar4;
+  longlong lVar5;
+  
+  if (*param_1 != 1) {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("arkUnbindKeyboard : remove commands from a keyboard keys\n");
+  }
+  lVar5 = 0x30;
+  lVar4 = 0xdf;
+  do {
+    puVar2 = PTR_DAT_142274340;
+    plVar3 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar3 + 0x48))(plVar3,0);
+    lVar1 = **(longlong **)(puVar2 + 8);
+    *(undefined8 *)(lVar5 + lVar1) = 0;
+    FUN_14013ff40(lVar1 + 8 + lVar5);
+    plVar3 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar3 + 0x50))(plVar3);
+    lVar5 = lVar5 + 0x30;
+    lVar4 = lVar4 + -1;
+  } while (lVar4 != 0);
+  (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))(PTR_DAT_14228bae8,0x20000);
+  return;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 14003bc70 FUN_14003bc70 SIZE=181
+
+void FUN_14003bc70(int *param_1)
+
+{
+  longlong lVar1;
+  undefined *puVar2;
+  longlong *plVar3;
+  longlong lVar4;
+  longlong lVar5;
+  
+  if (*param_1 != 1) {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("arkUnbindKeyboard : remove commands from the mouse\n");
+  }
+  lVar5 = 0x210;
+  lVar4 = 0xe0;
+  do {
+    puVar2 = PTR_DAT_142274340;
+    plVar3 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar3 + 0x48))(plVar3,0);
+    lVar1 = **(longlong **)(puVar2 + 8);
+    *(undefined8 *)(lVar5 + lVar1) = 0;
+    FUN_14013ff40(lVar1 + 8 + lVar5);
+    plVar3 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar3 + 0x50))(plVar3);
+    lVar5 = lVar5 + 0x30;
+    lVar4 = lVar4 + -1;
+  } while (lVar4 != 0);
+  (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))(PTR_DAT_14228bae8,0x20000);
+  return;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 14003bd30 FUN_14003bd30 SIZE=193
+
+/* WARNING: Removing unreachable block (ram,0x00014003bd67) */
+
+void FUN_14003bd30(int *param_1)
+
+{
+  undefined8 uVar1;
+  undefined *puVar2;
+  int iVar3;
+  longlong *plVar4;
+  undefined8 *puVar5;
+  
+  if (*param_1 != 2) {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("unbind <key> : remove commands from a key\n");
+  }
+  uVar1 = *(undefined8 *)(param_1 + 4);
+  iVar3 = FUN_14003b4f0(uVar1);
+  puVar2 = PTR_DAT_142274340;
+  if (iVar3 != 0) {
+    plVar4 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar4 + 0x48))(plVar4,0);
+    puVar5 = (undefined8 *)((longlong)iVar3 * 0x30 + **(longlong **)(puVar2 + 8));
+    *puVar5 = 0;
+    FUN_14013ff40(puVar5 + 1,0);
+    plVar4 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar4 + 0x50))(plVar4,0);
+    (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))(PTR_DAT_14228bae8,0x20000);
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  FUN_140166830("\"%s\" isn\'t a valid key\n",uVar1);
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 140102400 FUN_140102400 SIZE=257
+
+undefined8 FUN_140102400(longlong param_1,longlong param_2,char param_3)
+
+{
+  uint uVar1;
+  int iVar2;
+  longlong *plVar3;
+  
+  if (param_3 == '\0') {
+    uVar1 = *(uint *)(param_1 + 0x48);
+    if ((uVar1 >> 0xe & 1) != 0) {
+                    /* WARNING: Subroutine does not return */
+      FUN_140166830("%s can only be set on the command line\n",*(undefined8 *)(param_1 + 0x30));
+    }
+    if ((uVar1 >> 0xf & 1) != 0) {
+                    /* WARNING: Subroutine does not return */
+      FUN_140166830("%s is read only\n",*(undefined8 *)(param_1 + 0x30));
+    }
+    if ((DAT_1432cd1c8 == 0) && ((uVar1 & 0x10) == 0)) {
+                    /* WARNING: Subroutine does not return */
+      FUN_140166830("%s CANNOT be set in retail!\n",*(undefined8 *)(param_1 + 0x30));
+    }
+  }
+  if (param_2 == 0) {
+    param_2 = *(longlong *)(param_1 + 0x38);
+  }
+  iVar2 = FUN_1401435f0(param_1,param_2);
+  if (iVar2 != 0) {
+    plVar3 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar3 + 0x48))(plVar3,0);
+    FUN_14013ff40(param_1,param_2);
+    plVar3 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar3 + 0x50))(plVar3,0);
+    FUN_140102cb0(param_1);
+    (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))
+              (PTR_DAT_14228bae8,*(undefined4 *)(param_1 + 0x48));
+    *(uint *)(param_1 + 0x48) = *(uint *)(param_1 + 0x48) | 0x80000;
+    if (((*(uint *)(param_1 + 0x48) & 0x20000) != 0) && (DAT_1432c7ed4 == 3)) {
+                    /* WARNING: Subroutine does not return */
+      FUN_140166830("Archived CVar \'%s\' in production mode",*(undefined8 *)(param_1 + 0x30));
+    }
+    return 1;
+  }
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 14004b720 FUN_14004b720 SIZE=199
+
+/* WARNING: Function: __chkstk replaced with injection: alloca_probe */
+
+undefined8 FUN_14004b720(longlong *param_1)
+
+{
+  char cVar1;
+  longlong lVar2;
+  longlong *plVar3;
+  undefined8 uVar4;
+  undefined4 local_1418 [1282];
+  undefined8 uStack_10;
+  
+  uStack_10 = 0x14004b72c;
+  lVar2 = (**(code **)(*param_1 + 400))();
+  if (lVar2 == 0) {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("RestartMap only works if a game exist!\n");
+  }
+  plVar3 = (longlong *)(**(code **)(*param_1 + 400))(param_1);
+  cVar1 = (**(code **)(*plVar3 + 0x40))(plVar3);
+  if (cVar1 == '\0') {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("RestartMap only works if a map is running!");
+  }
+  (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x40))(PTR_DAT_14228bae8,"g_stopTime",0,0);
+  local_1418[0] = 0;
+  FUN_1401323e0(local_1418,&DAT_141ab3ac8);
+  plVar3 = (longlong *)(**(code **)(*param_1 + 400))(param_1);
+  lVar2 = (**(code **)(*plVar3 + 0x88))(plVar3);
+  uVar4 = FUN_1401d9090(lVar2 + 0x10);
+  FUN_1401323e0(local_1418,uVar4);
+  FUN_14004a9f0(local_1418);
+  return 1;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 1400d2fc0 FUN_1400d2fc0 SIZE=186
+
+void FUN_1400d2fc0(longlong *param_1)
+
+{
+  uint uVar1;
+  longlong lVar2;
+  
+  lVar2 = (**(code **)(*param_1 + 0x88))();
+  (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))(PTR_DAT_14228bae8,0x10000);
+  uVar1 = (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x90))();
+  if ((uVar1 >> 0x10 & 1) != 0) {
+    (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x98))(PTR_DAT_14228bae8,0x10000);
+    (**(code **)(*(longlong *)PTR_DAT_142274420 + 0x98))
+              (PTR_DAT_142274420,"dishonored2Config.cfg",2,0x10000,0);
+  }
+  if (lVar2 != 0) {
+    *(undefined1 *)(lVar2 + 8) = 1;
+    lVar2 = (**(code **)(*param_1 + 0x88))(param_1);
+    if ((lVar2 != 0) && (*(char *)(lVar2 + 8) != '\0')) {
+      *(undefined1 *)(lVar2 + 8) = 0;
+      FUN_1400d3bd0(param_1 + 2);
+    }
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 140100f20 FUN_140100f20 SIZE=341
+
+undefined8 FUN_140100f20(longlong *param_1,int *param_2)
+
+{
+  uint uVar1;
+  int iVar2;
+  longlong lVar3;
+  undefined8 uVar4;
+  longlong lVar5;
+  longlong *plVar6;
+  char *pcVar7;
+  undefined1 *puVar8;
+  
+  if (*param_2 < 1) {
+    puVar8 = &DAT_141ab2848;
+  }
+  else {
+    puVar8 = *(undefined1 **)(param_2 + 2);
+  }
+  lVar3 = (**(code **)(*param_1 + 0x20))(param_1,puVar8);
+  if (lVar3 == 0) {
+    return 0;
+  }
+  if (*param_2 == 1) {
+    uVar4 = FUN_1401d9090(lVar3);
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("\"%s\" is:\"%s\"^7 default:\"%s\"\n",*(undefined8 *)(lVar3 + 0x30),uVar4,
+                  *(undefined8 *)(lVar3 + 0x38));
+  }
+  lVar5 = FUN_140132470(param_2,1,0xffffffff,0,0);
+  uVar1 = *(uint *)(lVar3 + 0x48);
+  if ((uVar1 >> 0xe & 1) != 0) {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("%s can only be set on the command line\n",*(undefined8 *)(lVar3 + 0x30));
+  }
+  if ((uVar1 >> 0xf & 1) != 0) {
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830("%s is read only\n",*(undefined8 *)(lVar3 + 0x30));
+  }
+  if ((DAT_1432cd1c8 == 0) && ((uVar1 & 0x10) == 0)) {
+    pcVar7 = "%s CANNOT be set in retail!\n";
+LAB_1401010a7:
+                    /* WARNING: Subroutine does not return */
+    FUN_140166830(pcVar7,*(undefined8 *)(lVar3 + 0x30));
+  }
+  if (lVar5 == 0) {
+    lVar5 = *(longlong *)(lVar3 + 0x38);
+  }
+  iVar2 = FUN_1401435f0(lVar3,lVar5);
+  if (iVar2 != 0) {
+    plVar6 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar6 + 0x48))(plVar6,0);
+    FUN_14013ff40(lVar3,lVar5);
+    plVar6 = (longlong *)FUN_1401548e0();
+    (**(code **)(*plVar6 + 0x50))(plVar6,0);
+    FUN_140102cb0(lVar3);
+    (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))
+              (PTR_DAT_14228bae8,*(undefined4 *)(lVar3 + 0x48));
+    *(uint *)(lVar3 + 0x48) = *(uint *)(lVar3 + 0x48) | 0x80000;
+    if (((*(uint *)(lVar3 + 0x48) & 0x20000) != 0) && (DAT_1432c7ed4 == 3)) {
+      pcVar7 = "Archived CVar \'%s\' in production mode";
+      goto LAB_1401010a7;
+    }
+  }
+  return 1;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 140102320 FUN_140102320 SIZE=223
+
+void FUN_140102320(undefined8 param_1,uint param_2)
+
+{
+  undefined8 uVar1;
+  longlong lVar2;
+  int iVar3;
+  longlong *plVar4;
+  
+  lVar2 = DAT_1431c04b0;
+  do {
+    if (lVar2 == 0) {
+      return;
+    }
+    if ((*(uint *)(lVar2 + 0x48) & param_2) != 0) {
+      uVar1 = *(undefined8 *)(lVar2 + 0x38);
+      iVar3 = FUN_1401435f0(lVar2,uVar1);
+      if (iVar3 != 0) {
+        plVar4 = (longlong *)FUN_1401548e0();
+        (**(code **)(*plVar4 + 0x48))(plVar4,0);
+        FUN_14013ff40(lVar2,uVar1);
+        plVar4 = (longlong *)FUN_1401548e0();
+        (**(code **)(*plVar4 + 0x50))(plVar4,0);
+        FUN_140102cb0(lVar2);
+        (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))
+                  (PTR_DAT_14228bae8,*(undefined4 *)(lVar2 + 0x48));
+        *(uint *)(lVar2 + 0x48) = *(uint *)(lVar2 + 0x48) | 0x80000;
+        if (((*(uint *)(lVar2 + 0x48) & 0x20000) != 0) && (DAT_1432c7ed4 == 3)) {
+                    /* WARNING: Subroutine does not return */
+          FUN_140166830("Archived CVar \'%s\' in production mode",*(undefined8 *)(lVar2 + 0x30));
+        }
+                    /* WARNING: Subroutine does not return */
+        FUN_140166830("Resetting cheat cvar: %s\n",*(undefined8 *)(lVar2 + 0x30));
+      }
+    }
+    lVar2 = *(longlong *)(lVar2 + 0x78);
+  } while( true );
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 140102700 FUN_140102700 SIZE=373
+
+void FUN_140102700(longlong *param_1,longlong *param_2)
+
+{
+  uint uVar1;
+  int iVar2;
+  undefined8 uVar3;
+  longlong lVar4;
+  longlong *plVar5;
+  char *pcVar6;
+  int iVar7;
+  longlong lVar8;
+  
+  iVar7 = 0;
+  uVar1 = *(uint *)(param_2 + 1) & 0xffffff;
+  if (uVar1 != 0) {
+    do {
+      if ((iVar7 < 0) || ((int)uVar1 <= iVar7)) {
+        lVar8 = 0;
+      }
+      else {
+        lVar8 = (longlong)iVar7 * 0x50 + *param_2;
+      }
+      lVar4 = *param_1;
+      uVar3 = FUN_1401d9090(lVar8);
+      lVar4 = (**(code **)(lVar4 + 0x20))(param_1,uVar3);
+      if (lVar4 != 0) {
+        lVar8 = FUN_1401d9090(lVar8 + 0x28);
+        uVar1 = *(uint *)(lVar4 + 0x48);
+        if ((uVar1 >> 0xe & 1) != 0) {
+                    /* WARNING: Subroutine does not return */
+          FUN_140166830("%s can only be set on the command line\n",*(undefined8 *)(lVar4 + 0x30));
+        }
+        if ((uVar1 >> 0xf & 1) != 0) {
+                    /* WARNING: Subroutine does not return */
+          FUN_140166830("%s is read only\n",*(undefined8 *)(lVar4 + 0x30));
+        }
+        if ((DAT_1432cd1c8 == 0) && ((uVar1 & 0x10) == 0)) {
+          pcVar6 = "%s CANNOT be set in retail!\n";
+LAB_140102849:
+                    /* WARNING: Subroutine does not return */
+          FUN_140166830(pcVar6,*(undefined8 *)(lVar4 + 0x30));
+        }
+        if (lVar8 == 0) {
+          lVar8 = *(longlong *)(lVar4 + 0x38);
+        }
+        iVar2 = FUN_1401435f0(lVar4,lVar8);
+        if (iVar2 != 0) {
+          plVar5 = (longlong *)FUN_1401548e0();
+          (**(code **)(*plVar5 + 0x48))(plVar5,0);
+          FUN_14013ff40(lVar4,lVar8);
+          plVar5 = (longlong *)FUN_1401548e0();
+          (**(code **)(*plVar5 + 0x50))(plVar5,0);
+          FUN_140102cb0(lVar4);
+          (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x88))
+                    (PTR_DAT_14228bae8,*(undefined4 *)(lVar4 + 0x48));
+          *(uint *)(lVar4 + 0x48) = *(uint *)(lVar4 + 0x48) | 0x80000;
+          if (((*(uint *)(lVar4 + 0x48) & 0x20000) != 0) && (DAT_1432c7ed4 == 3)) {
+            pcVar6 = "Archived CVar \'%s\' in production mode";
+            goto LAB_140102849;
+          }
+        }
+      }
+      iVar7 = iVar7 + 1;
+      uVar1 = *(uint *)(param_2 + 1) & 0xffffff;
+    } while (iVar7 < (int)uVar1);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 140502030 FUN_140502030 SIZE=1427
+
+void FUN_140502030(longlong *param_1,undefined8 param_2,longlong param_3,undefined4 param_4,
+                  int param_5,undefined4 *param_6,undefined1 param_7,undefined8 param_8,
+                  undefined1 param_9)
+
+{
+  undefined4 *puVar1;
+  char cVar2;
+  undefined4 uVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  longlong lVar6;
+  undefined4 local_res20 [2];
+  undefined1 local_50 [40];
+  
+  puVar1 = param_6;
+  local_res20[0] = param_4;
+  cVar2 = FUN_140143bb0(param_6 + 0xe);
+  if (cVar2 == '\0') {
+    uVar4 = FUN_1408832b0(param_3 + 0x308);
+    uVar5 = FUN_1401d9090(puVar1 + 0xe);
+    FUN_14002a720(uVar4,uVar5,param_3 + 0x308);
+  }
+  else {
+    if (PTR_DAT_14228bae8 == (undefined *)0x0) {
+LAB_1405020d7:
+      uVar3 = *puVar1;
+    }
+    else {
+      lVar6 = *(longlong *)PTR_DAT_14228bae8;
+      uVar4 = FUN_1401d9090(puVar1 + 4);
+      lVar6 = (**(code **)(lVar6 + 0x20))(PTR_DAT_14228bae8,uVar4);
+      if ((lVar6 == 0) || (*(int *)(lVar6 + 0x28) == 0)) goto LAB_1405020d7;
+      uVar3 = puVar1[2];
+    }
+    param_6 = (undefined4 *)CONCAT44(param_6._4_4_,uVar3);
+    uVar4 = FUN_1408832b0(param_3 + 0x2f0);
+    FUN_14002a530(uVar4,&param_6,param_3 + 0x2f0);
+  }
+  *(undefined1 *)(puVar1 + 0x3e) = param_9;
+  if (puVar1[0x22] != 0) {
+    uVar4 = FUN_1408832b0(param_3 + 800);
+    FUN_14002a530(uVar4,puVar1 + 0x22,param_3 + 800);
+  }
+  uVar4 = FUN_1408832b0(param_3 + 0x338);
+  FUN_14002a1f0(uVar4,puVar1 + 0x23,param_3 + 0x338);
+  switch(puVar1[0x24]) {
+  case 0:
+    FUN_14013fb30(local_50);
+    FUN_140142e50(local_50,"optionsData.currentSection.settings.data[%d].optionStepper",
+                  local_res20[0]);
+    lVar6 = FUN_1400f1450(0x378,0x1e);
+    param_6 = (undefined4 *)lVar6;
+    if (lVar6 == 0) {
+      uVar4 = 0;
+    }
+    else {
+      uVar4 = FUN_1401d9090(local_50);
+      uVar4 = FUN_1405012d0(lVar6,param_2,uVar4);
+    }
+    FUN_140502720(param_1,uVar4,puVar1 + 0x24,param_7,param_8);
+    *(undefined8 *)(param_1[0x12] + (longlong)param_5 * 8) = uVar4;
+    break;
+  case 1:
+    FUN_14013fb30(local_50);
+    FUN_140142e50(local_50,"optionsData.currentSection.settings.data[%d].optionStepperBoolean",
+                  local_res20[0]);
+    lVar6 = FUN_1400f1450(0x378,0x1e);
+    param_6 = (undefined4 *)lVar6;
+    if (lVar6 == 0) {
+      uVar4 = 0;
+    }
+    else {
+      uVar4 = FUN_1401d9090(local_50);
+      uVar4 = FUN_1405012d0(lVar6,param_2,uVar4);
+    }
+    FUN_140502720(param_1,uVar4,puVar1 + 0x24,param_7,param_8);
+    *(undefined8 *)(param_1[0x12] + (longlong)param_5 * 8) = uVar4;
+    break;
+  case 2:
+    FUN_14013fb30(local_50);
+    FUN_140142e50(local_50,"optionsData.currentSection.settings.data[%d].slider",local_res20[0]);
+    lVar6 = FUN_1400f1450(0x3a8,0x1e);
+    param_6 = (undefined4 *)lVar6;
+    if (lVar6 == 0) {
+      uVar4 = 0;
+    }
+    else {
+      uVar4 = FUN_1401d9090(local_50);
+      uVar4 = FUN_1405013c0(lVar6,param_2,uVar4);
+    }
+    FUN_1405025f0(param_1,uVar4,puVar1 + 0x24,param_7,param_8);
+    *(undefined8 *)(param_1[0x12] + (longlong)param_5 * 8) = uVar4;
+    break;
+  case 3:
+    FUN_14013fb30(local_50);
+    FUN_140142e50(local_50,"optionsData.currentSection.settings.data[%d].dropBox",local_res20[0]);
+    lVar6 = FUN_1400f1450(0x378,0x1e);
+    param_6 = (undefined4 *)lVar6;
+    if (lVar6 == 0) {
+      uVar4 = 0;
+    }
+    else {
+      uVar4 = FUN_1401d9090(local_50);
+      uVar4 = FUN_140500ff0(lVar6,param_2,uVar4);
+    }
+    FUN_140502720(param_1,uVar4,puVar1 + 0x24,param_7,param_8);
+    *(undefined8 *)(param_1[0x12] + (longlong)param_5 * 8) = uVar4;
+    break;
+  case 4:
+    FUN_14013fb30(local_50);
+    FUN_140142e50(local_50,"optionsData.currentSection.settings.data[%d].keyboardBinding",
+                  local_res20[0]);
+    lVar6 = FUN_1400f1450(0x3a8,0x1e);
+    param_6 = (undefined4 *)lVar6;
+    if (lVar6 == 0) {
+      lVar6 = 0;
+    }
+    else {
+      uVar4 = FUN_1401d9090(local_50);
+      lVar6 = FUN_1405010e0(lVar6,param_2,uVar4);
+    }
+    uVar4 = FUN_1408832b0(lVar6 + 0x348);
+    FUN_14002a640(uVar4,&param_7,lVar6 + 0x348);
+    uVar4 = FUN_1408832b0(lVar6 + 0x390);
+    FUN_14002a640(uVar4,&param_9,lVar6 + 0x390);
+    uVar4 = FUN_1408832b0(lVar6 + 0x318);
+    FUN_14002a1f0(uVar4,local_res20,lVar6 + 0x318);
+    uVar4 = FUN_140039d60(puVar1[0x28]);
+    uVar5 = FUN_1408832b0(lVar6 + 0x2d0);
+    FUN_14002a720(uVar5,uVar4,lVar6 + 0x2d0);
+    FUN_140500bf0(lVar6 + 0x300,puVar1 + 0x28);
+    uVar4 = FUN_140039d60(puVar1[0x27]);
+    uVar5 = FUN_1408832b0(lVar6 + 0x2b8);
+    FUN_14002a720(uVar5,uVar4,lVar6 + 0x2b8);
+    FUN_140500bf0(lVar6 + 0x2e8,puVar1 + 0x27);
+    *(longlong *)(param_1[0x12] + (longlong)param_5 * 8) = lVar6;
+    break;
+  case 5:
+  case 6:
+  case 7:
+    FUN_14013fb30(local_50);
+    FUN_140142e50(local_50,"optionsData.currentSection.settings.data[%d].link",local_res20[0]);
+    lVar6 = FUN_1400f1450(0x348,0x1e);
+    param_6 = (undefined4 *)lVar6;
+    if (lVar6 == 0) {
+      lVar6 = 0;
+    }
+    else {
+      uVar4 = FUN_1401d9090(local_50);
+      lVar6 = FUN_140501200(lVar6,param_2,uVar4);
+    }
+    uVar4 = FUN_1408832b0(lVar6 + 0x2b8);
+    FUN_14002a530(uVar4,puVar1 + 0x25,lVar6 + 0x2b8);
+    (**(code **)(*param_1 + 0x90))(param_1,param_2,lVar6,local_res20[0],puVar1);
+    *(longlong *)(param_1[0x12] + (longlong)param_5 * 8) = lVar6;
+    break;
+  default:
+    goto switchD_140502176_default;
+  }
+  FUN_14013fd10(local_50);
+switchD_140502176_default:
+  return;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 140898560 FUN_140898560 SIZE=1157
+
+void FUN_140898560(longlong param_1,longlong param_2,longlong param_3,char param_4)
+
+{
+  longlong lVar1;
+  byte bVar2;
+  uint uVar3;
+  longlong lVar4;
+  longlong lVar5;
+  undefined4 uVar6;
+  char cVar7;
+  int iVar8;
+  int iVar9;
+  undefined8 uVar10;
+  undefined8 uVar11;
+  longlong *plVar12;
+  char *pcVar13;
+  longlong lVar14;
+  int iVar15;
+  longlong lVar16;
+  bool bVar17;
+  char local_210 [4];
+  char local_20c [4];
+  undefined8 local_208;
+  undefined1 *local_1f8;
+  uint local_1f0;
+  uint uStack_1ec;
+  undefined1 local_1e8 [424];
+  
+  local_208 = 0xfffffffffffffffe;
+  lVar1 = param_1 + 0x50;
+  cVar7 = FUN_1401401e0(lVar1,&DAT_141ab2848);
+  if (cVar7 != '\0') {
+    uVar10 = FUN_1401d9090(lVar1);
+    uVar11 = FUN_1408a26f0(param_2);
+    FUN_1408a15d0(uVar11,"    | Filter: \'%s\'",uVar10);
+    uVar10 = FUN_1401d9090(lVar1);
+    *(undefined8 *)(param_2 + 0x10) = uVar10;
+  }
+  uVar6 = DAT_141f697b0;
+  bVar2 = *(byte *)(param_1 + 0x90);
+  iVar15 = 0;
+  if (0 < *(int *)(param_3 + 0x68)) {
+    lVar16 = 0;
+    do {
+      lVar4 = *(longlong *)(param_3 + 0x60);
+      lVar14 = lVar16 + 0xc + lVar4;
+      uVar10 = FUN_1401d9090(lVar14);
+      uVar11 = FUN_1401d9090(lVar1);
+      cVar7 = FUN_140142910(uVar10,uVar11);
+      if (cVar7 != '\0') {
+        uVar10 = FUN_1408a26f0(param_2);
+        if ((*(byte *)(lVar4 + 4 + lVar16) & 1) == 0) {
+          uVar11 = FUN_1401d9090(lVar4 + lVar16 + 0x34);
+          iVar8 = FUN_140039c80(PTR_DAT_142274340,uVar11);
+          if (iVar8 == 0) {
+LAB_14089870c:
+            uVar11 = FUN_1401d9090(lVar14);
+            FUN_1408a15d0(uVar10,uVar11);
+          }
+          else {
+            plVar12 = (longlong *)(**(code **)(*(longlong *)PTR_PTR_142286cf8 + 0xb0))();
+            cVar7 = (**(code **)(*plVar12 + 0x40))(plVar12,iVar8,local_20c);
+            if (cVar7 == '\0') {
+              pcVar13 = (char *)FUN_140039e20(iVar8);
+              if (((*pcVar13 == 'K') && (pcVar13[1] == 'P')) && (pcVar13[2] == '_')) {
+                pcVar13 = pcVar13 + 3;
+              }
+              if (pcVar13 == (char *)0x0) goto LAB_14089870c;
+            }
+            else {
+              iVar8 = toupper((int)local_20c[0]);
+              local_210[0] = (char)iVar8;
+              local_210[1] = 0;
+              pcVar13 = local_210;
+            }
+            uVar11 = FUN_1401d9090(lVar14);
+            FUN_1408a15d0(uVar10,"%s <%s>",uVar11,pcVar13);
+          }
+          if (*(longlong *)(lVar4 + 0x84 + lVar16) == 0) {
+            uVar11 = FUN_1401d9090(lVar4 + lVar16 + 0x34);
+            FUN_1408a0590(uVar10,uVar11,~bVar2 & 1);
+            lVar14 = lVar16 + 0x5c + lVar4;
+            iVar8 = FUN_140143ff0(lVar14);
+            if (iVar8 != 0) {
+              iVar8 = FUN_140142610(lVar14,0x20,0,0xffffffff);
+              if (iVar8 == -1) {
+                lVar5 = *(longlong *)PTR_DAT_14228bae8;
+                uVar11 = FUN_1401d9090(lVar14);
+                lVar14 = (**(code **)(lVar5 + 0x20))(PTR_DAT_14228bae8,uVar11);
+                if (lVar14 != 0) {
+                  uVar3 = *(uint *)(lVar14 + 0x48);
+                  if ((uVar3 & 1) == 0) {
+                    if ((uVar3 & 2) == 0) {
+                      if ((uVar3 & 4) == 0) {
+                        if ((uVar3 & 0x40) != 0) {
+                          uVar11 = FUN_1401d9090(lVar14);
+                          FUN_1408a15d0(uVar10,"[%.4s]",uVar11);
+                        }
+                      }
+                      else {
+                        FUN_1408a15d0(uVar10,"[%1.1f]",(double)*(float *)(lVar14 + 0x2c));
+                      }
+                    }
+                    else {
+                      FUN_1408a15d0(uVar10,"[%1d]",*(undefined4 *)(lVar14 + 0x28));
+                    }
+                  }
+                  else {
+                    bVar17 = *(int *)(lVar14 + 0x28) != 0;
+                    if ((*(byte *)(lVar4 + 4 + lVar16) & 2) != 0) {
+                      bVar17 = !bVar17;
+                    }
+                    FUN_1408a10f0(uVar10,bVar17);
+                  }
+                }
+              }
+              else {
+                local_1f0 = 0x5000000;
+                local_1f8 = local_1e8;
+                uStack_1ec = 0xa40;
+                _eh_vector_constructor_iterator_(local_1e8,0x28,10,FUN_14013fb30,FUN_14013fd10);
+                uVar11 = FUN_1401d9090(lVar14);
+                FUN_140001860(&local_1f8,uVar11,&DAT_141ab5fa4);
+                if ((local_1f0 & 0xffffff) == 2) {
+                  lVar14 = *(longlong *)PTR_DAT_14228bae8;
+                  uVar11 = FUN_1401d9090(local_1f8);
+                  iVar8 = (**(code **)(lVar14 + 0x68))(PTR_DAT_14228bae8,uVar11,0);
+                  uVar11 = FUN_1401d9090(local_1f8 + 0x28);
+                  iVar9 = FUN_1411ada38(uVar11);
+                  bVar17 = iVar9 == iVar8;
+                  if ((*(byte *)(lVar4 + 4 + lVar16) & 2) != 0) {
+                    bVar17 = !bVar17;
+                  }
+                  FUN_1408a10f0(uVar10,bVar17);
+                }
+                _eh_vector_destructor_iterator_(local_1e8,0x28,10,FUN_14013fd10);
+                if (((uStack_1ec & 0x40) == 0) && (local_1f8 != (undefined1 *)0x0)) {
+                  FUN_1401b9780(local_1f8,uStack_1ec >> 8);
+                }
+              }
+            }
+          }
+          else if (param_4 == '\0') {
+            FUN_1408a15d0(uVar10,"SUB-SUB-MENU DISABLED");
+          }
+          else {
+            uVar10 = FUN_1408a15d0(uVar10,&DAT_141ab5fa4);
+            FUN_1408a2750(uVar10,lVar14,param_1);
+          }
+        }
+        else {
+          FUN_1408a06e0(uVar10,uVar6);
+        }
+      }
+      iVar15 = iVar15 + 1;
+      lVar16 = lVar16 + 0x8c;
+    } while (iVar15 < *(int *)(param_3 + 0x68));
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 1408a0080 FUN_1408a0080 SIZE=395
+
+longlong FUN_1408a0080(longlong param_1,undefined8 param_2,undefined4 param_3,undefined4 param_4,
+                      undefined4 param_5,undefined8 param_6,undefined8 param_7,char param_8)
+
+{
+  longlong lVar1;
+  char cVar2;
+  int iVar3;
+  longlong lVar4;
+  int iVar5;
+  undefined1 in_R8B;
+  longlong local_res8;
+  undefined1 local_50 [56];
+  
+  if ((*(byte *)(param_1 + 8) & 4) == 0) {
+    if ((*(uint *)(param_1 + 200) & 0xffffff) == 0) {
+      FUN_14089ec60(local_50,param_2,in_R8B,param_4,0xfffffffffffffffe);
+      FUN_14089f400(param_1 + 0xc0,local_50);
+      FUN_14061a0a0(local_50);
+    }
+    iVar5 = (*(uint *)(param_1 + 200) & 0xffffff) - 1;
+    lVar1 = *(longlong *)(param_1 + 0xc0);
+    local_res8 = FUN_1400f1450(0x98,3);
+    if (local_res8 == 0) {
+      lVar4 = 0;
+    }
+    else {
+      lVar4 = FUN_14089ee00(local_res8,param_1);
+    }
+    FUN_14013ff40(lVar4 + 0x50,param_2);
+    *(undefined4 *)(lVar4 + 0x78) = param_3;
+    *(undefined4 *)(lVar4 + 0x7c) = param_4;
+    *(undefined4 *)(lVar4 + 0x80) = param_5;
+    *(undefined8 *)(lVar4 + 0x88) = param_6;
+    if (param_8 != '\0') {
+      cVar2 = (**(code **)(*(longlong *)PTR_DAT_14228bae8 + 0x28))(PTR_DAT_14228bae8,param_2,1);
+      if (cVar2 == '\0') {
+        *(undefined4 *)(lVar4 + 0xc) = *(undefined4 *)(param_1 + 0xb0);
+        *(undefined4 *)(lVar4 + 0x10) = *(undefined4 *)(param_1 + 0xb4);
+        *(undefined4 *)(lVar4 + 0x14) = *(undefined4 *)(param_1 + 0xb8);
+        *(undefined4 *)(lVar4 + 0x18) = *(undefined4 *)(param_1 + 0xbc);
+                    /* WARNING: Subroutine does not return */
+        FUN_140166830("idGuiListBox::ChangeCvar - Cvar %s no longer exists! Please have a programmer fix ASAP!\n"
+                      ,param_2);
+      }
+    }
+    local_res8 = lVar4;
+    iVar3 = FUN_1408918f0((longlong)iVar5 * 0x10 + lVar1,&local_res8);
+    *(bool *)(lVar4 + 8) = *(int *)(param_1 + 0x1c) == iVar5;
+    *(bool *)(lVar4 + 9) = *(int *)(param_1 + 0x20) == iVar3;
+  }
+  return param_1;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 1408a0af0 FUN_1408a0af0 SIZE=672
+
+undefined8 FUN_1408a0af0(longlong param_1,longlong param_2)
+
+{
+  float fVar1;
+  longlong lVar2;
+  char cVar3;
+  int iVar4;
+  longlong *plVar5;
+  undefined8 uVar6;
+  ulonglong uVar7;
+  int iVar8;
+  ulonglong uVar9;
+  longlong *plVar10;
+  float fVar11;
+  
+  uVar7 = 0;
+  plVar10 = (longlong *)
+            ((longlong)*(int *)(*(longlong *)(param_1 + 0x20) + 0x1c) * 0x10 +
+            *(longlong *)(*(longlong *)(param_1 + 0x20) + 0xc0));
+  iVar4 = (*(uint *)(plVar10 + 1) & 0xffffff) - 1;
+  if (-1 < iVar4) {
+    plVar10 = (longlong *)*plVar10;
+    plVar5 = plVar10;
+    uVar9 = uVar7;
+    do {
+      iVar8 = (int)uVar9;
+      if (*plVar5 == param_1) {
+        if (iVar8 < 0) {
+          return 0;
+        }
+        if (plVar10 + iVar8 == (longlong *)0x0) {
+          return 0;
+        }
+        if (*(int *)(param_2 + 8) == 0) {
+          return 0;
+        }
+        cVar3 = FUN_14089ebe0(*(undefined4 *)(param_2 + 4));
+        if (cVar3 != '\0') {
+          lVar2 = *(longlong *)PTR_DAT_14228bae8;
+          uVar6 = FUN_1401d9090(param_1 + 0x50);
+          fVar11 = (float)(**(code **)(lVar2 + 0x70))(PTR_DAT_14228bae8,uVar6,0);
+          fVar1 = *(float *)(param_1 + 0x7c);
+          if ((float)((uint)(fVar11 - fVar1) & DAT_141ab22a0) < DAT_141ae8a78) {
+            *(byte *)(param_1 + 0x90) = *(byte *)(param_1 + 0x90) & 0xfe;
+            *(byte *)(param_1 + 0x90) = *(byte *)(param_1 + 0x90) | 2;
+            goto LAB_1408a0bea;
+          }
+          if (fVar11 < fVar1) {
+            *(byte *)(param_1 + 0x90) = *(byte *)(param_1 + 0x90) & 0xfc;
+            fVar11 = fVar11 + *(float *)(param_1 + 0x80);
+            if (fVar1 < fVar11) {
+              *(byte *)(param_1 + 0x90) = *(byte *)(param_1 + 0x90) | 2;
+              fVar11 = fVar1;
+            }
+            lVar2 = *(longlong *)PTR_DAT_14228bae8;
+            uVar6 = FUN_1401d9090(param_1 + 0x50);
+            (**(code **)(lVar2 + 0x50))(PTR_DAT_14228bae8,uVar6,fVar11,0);
+            uVar6 = FUN_1401d9090(param_1 + 0x50);
+                    /* WARNING: Subroutine does not return */
+            FUN_140166830("DevGUI Command: %s %.1f\n",uVar6,(double)fVar11);
+          }
+        }
+        if (*(int *)(param_2 + 8) == 0) {
+          return 0;
+        }
+        cVar3 = FUN_14089eb60(*(undefined4 *)(param_2 + 4));
+        if (cVar3 == '\0') {
+          return 0;
+        }
+        lVar2 = *(longlong *)PTR_DAT_14228bae8;
+        uVar6 = FUN_1401d9090(param_1 + 0x50);
+        fVar11 = (float)(**(code **)(lVar2 + 0x70))(PTR_DAT_14228bae8,uVar6,0);
+        fVar1 = *(float *)(param_1 + 0x78);
+        if (DAT_141ae8a78 <= (float)((uint)(fVar11 - fVar1) & DAT_141ab22a0)) {
+          if (fVar11 <= fVar1) {
+            return 0;
+          }
+          *(byte *)(param_1 + 0x90) = *(byte *)(param_1 + 0x90) & 0xfc;
+          fVar11 = fVar11 - *(float *)(param_1 + 0x80);
+          if (fVar11 < fVar1) {
+            *(byte *)(param_1 + 0x90) = *(byte *)(param_1 + 0x90) | 1;
+            fVar11 = fVar1;
+          }
+          lVar2 = *(longlong *)PTR_DAT_14228bae8;
+          uVar6 = FUN_1401d9090(param_1 + 0x50);
+          (**(code **)(lVar2 + 0x50))(PTR_DAT_14228bae8,uVar6,fVar11,0);
+          uVar6 = FUN_1401d9090(param_1 + 0x50);
+                    /* WARNING: Subroutine does not return */
+          FUN_140166830("DevGUI Command: %s %.1f\n",uVar6,(double)fVar11);
+        }
+        *(byte *)(param_1 + 0x90) = *(byte *)(param_1 + 0x90) & 0xfd | 1;
+LAB_1408a0bea:
+        if (*(code **)(param_1 + 0x88) == (code *)0x0) {
+          return 0;
+        }
+        (**(code **)(param_1 + 0x88))(1);
+        return 0;
+      }
+      uVar7 = uVar7 + 1;
+      uVar9 = (ulonglong)(iVar8 + 1);
+      plVar5 = plVar5 + 1;
+    } while ((longlong)uVar7 <= (longlong)iVar4);
+  }
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> 
+CANDIDATE 1408a28d0 FUN_1408a28d0 SIZE=220
+
+void FUN_1408a28d0(longlong param_1)
+
+{
+  longlong lVar1;
+  undefined8 uVar2;
+  longlong lVar3;
+  char *pcVar4;
+  double dVar5;
+  
+  lVar3 = *(longlong *)PTR_DAT_14228bae8;
+  uVar2 = FUN_1401d9090(param_1 + 0x50);
+  lVar3 = (**(code **)(lVar3 + 0x20))(PTR_DAT_14228bae8,uVar2);
+  if (lVar3 != 0) {
+    if ((*(byte *)(lVar3 + 0x48) & 4) != 0) {
+      lVar1 = param_1 + 0x28;
+      dVar5 = (double)*(float *)(lVar3 + 0x2c);
+      if ((*(byte *)(param_1 + 0x90) & 2) != 0) {
+        FUN_140142e50(lVar1,"-o  [%1.1f]",dVar5);
+        return;
+      }
+      if ((*(byte *)(param_1 + 0x90) & 1) != 0) {
+        FUN_140142e50(lVar1," o+ [%1.1f]",dVar5);
+        return;
+      }
+      FUN_140142e50(lVar1,"-o+ [%1.1f]",dVar5);
+      return;
+    }
+    if ((*(byte *)(param_1 + 0x90) & 2) == 0) {
+      pcVar4 = " /+ [%d]";
+      if ((*(byte *)(param_1 + 0x90) & 1) == 0) {
+        pcVar4 = "-/+ [%d]";
+      }
+    }
+    else {
+      pcVar4 = "-/  [%d]";
+    }
+    FUN_140142e50(param_1 + 0x28,pcVar4,*(undefined4 *)(lVar3 + 0x28));
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  FilterCvarConsumers.java> FILTERED_CANDIDATES=18 (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /Dishonored2.exe (HeadlessAnalyzer)  
