@@ -21,6 +21,7 @@ ID3D11Device* device;ID3D11DeviceContext* context;IDXGISwapChain* active;
 HWND window;WNDPROC previous;
 std::recursive_mutex renderMutex;
 constexpr UINT WM_VOIDCAMERA_APPLY_HOTSAMPLE=WM_APP+0x451;
+constexpr UINT WM_VOIDCAMERA_SET_SUBTITLE_LEVEL=WM_APP+0x452;
 LONG pendingHotsampleWidth=0,pendingHotsampleHeight=0,hotsampleApplyResult=0;
 LONG requestedHotsampleWidth=0,requestedHotsampleHeight=0;
 int clientWidth=0,clientHeight=0,renderWidth=0,renderHeight=0,targetWidth=0,targetHeight=0,defaultWidth=0,defaultHeight=0;
@@ -62,6 +63,7 @@ LRESULT CALLBACK proc(HWND h,UINT m,WPARAM w,LPARAM l){
  if((m==WM_KEYDOWN||m==WM_SYSKEYDOWN)&&w==VK_F10&&!(l&(1LL<<30))){status->overlay=!status->overlay;if(status->overlay&&originalClip)originalClip(nullptr);return 0;}
  if((m==WM_KEYUP||m==WM_SYSKEYUP)&&w==VK_F10)return 0;
  if(m==WM_VOIDCAMERA_APPLY_HOTSAMPLE){int width=InterlockedExchange(&pendingHotsampleWidth,0),height=InterlockedExchange(&pendingHotsampleHeight,0);bool ok=resizeClientArea(h,width,height);if(ok){InterlockedExchange(&requestedHotsampleWidth,width);InterlockedExchange(&requestedHotsampleHeight,height);InterlockedIncrement(&successfulResizeSequence);}InterlockedExchange(&hotsampleApplyResult,ok?2:-1);return 0;}
+ if(m==WM_VOIDCAMERA_SET_SUBTITLE_LEVEL){cameraApplyCutsceneSubtitleLevel(static_cast<int>(w));return 0;}
  if(m==WM_GETMINMAXINFO){LRESULT result=CallWindowProcW(previous,h,m,w,l);auto info=reinterpret_cast<MINMAXINFO*>(l);if(info){info->ptMaxTrackSize.x=std::max<LONG>(info->ptMaxTrackSize.x,16384);info->ptMaxTrackSize.y=std::max<LONG>(info->ptMaxTrackSize.y,16384);}return result;}
  std::lock_guard<std::recursive_mutex> lock(renderMutex);
  ImGui_ImplWin32_WndProcHandler(h,m,w,l);
@@ -119,8 +121,9 @@ void cameraTab(){
  ImGui::Spacing();ImGui::TextUnformatted("TIME");ImGui::Separator();
  ImGui::BeginDisabled(!timeStopReady);bool stopped=timeStopped;if(ImGui::Checkbox("Time stop (Numpad 0)",&stopped))timeStopToggle();ImGui::EndDisabled();helpMarker("Pauses or resumes game simulation using the verified retail time control.");
  if(!timeStopReady){ImGui::SameLine();ImGui::TextDisabled("Retail CVar check failed");}
- ImGui::SameLine();ImGui::BeginDisabled(!hudReady);bool hidden=hudHidden;if(ImGui::Checkbox("Hide game UI + markers (Delete)",&hidden))hudToggle();ImGui::EndDisabled();helpMarker("Hides or restores the HUD and world markers. Some menu or mission elements may use separate render paths.");
+ ImGui::SameLine();ImGui::BeginDisabled(!hudReady&&!cutsceneSubtitleReady);bool hidden=hudHidden;if(ImGui::Checkbox("Hide game UI + markers + subtitles (Delete)",&hidden))hudToggle();ImGui::EndDisabled();helpMarker("Hides or restores the HUD, world markers and cutscene subtitles. Cinematic black bars and Skip prompts are not controlled here; use Shader Toggler for those.");
  if(!hudReady){ImGui::SameLine();ImGui::TextDisabled("HUD control unavailable");}
+ if(cutsceneSubtitleReady)ImGui::TextDisabled("Cutscene subtitle control: ready");else ImGui::TextDisabled("Cutscene subtitle control: unavailable");
  ImGui::BeginDisabled(!cameraEnabled);
  bool changed=false;float fine=ImGui::GetIO().KeyAlt?.01f:1.f;
  ImGui::SetNextItemWidth(400);changed|=ImGui::DragFloat3("Position XYZ",pose.xyz,.1f*fine,0,0,"%.3f");helpMarker("World-space camera position on the X, Y and Z axes. Hold Alt while dragging for fine adjustment.");
@@ -156,7 +159,7 @@ void lodTab(){
 }
 void panel(){std::lock_guard<std::recursive_mutex> g(cameraMutex);
  ImGui::SetNextWindowSize(ImVec2(620,530),ImGuiCond_FirstUseEver);
- ImGui::Begin("Dishonored 2 | Void Camera 1.48 | F10 to hide");
+ ImGui::Begin("Dishonored 2 | Void Camera 1.48.1 | F10 to hide");
  if(ImGui::BeginTabBar("VoidCameraTabs")){
   if(ImGui::BeginTabItem("Camera")){ImGui::BeginChild("CameraTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);cameraTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("Post-process")){ImGui::BeginChild("PostProcessTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);postProcessTab();ImGui::EndChild();ImGui::EndTabItem();}
@@ -183,6 +186,7 @@ void draw(IDXGISwapChain* chain){
 HRESULT WINAPI present(IDXGISwapChain* s,UINT sync,UINT flags){if(!(flags&DXGI_PRESENT_TEST)){std::lock_guard<std::recursive_mutex> g(renderMutex);_configthreadlocale(_ENABLE_PER_THREAD_LOCALE);setlocale(LC_NUMERIC,"C");draw(s);}return originalPresent(s,sync,flags);}
 HRESULT WINAPI resize(IDXGISwapChain* s,UINT count,UINT w,UINT h,DXGI_FORMAT fmt,UINT flags){std::lock_guard<std::recursive_mutex> g(renderMutex);return originalResize(s,count,w,h,fmt,flags);}
 }
+void queueCutsceneSubtitleLevel(int level){if(window&&cutsceneSubtitleReady&&level>=0&&level<=2)PostMessageW(window,WM_VOIDCAMERA_SET_SUBTITLE_LEVEL,static_cast<WPARAM>(level),0);}
 bool overlayInstall(){WNDCLASSW wc{};wc.lpfnWndProc=DefWindowProcW;wc.hInstance=GetModuleHandleW(nullptr);wc.lpszClassName=L"VoidCameraBootstrap";RegisterClassW(&wc);HWND temp=CreateWindowW(wc.lpszClassName,L"",WS_OVERLAPPEDWINDOW,0,0,32,32,nullptr,nullptr,wc.hInstance,nullptr);if(!temp)return false;
  DXGI_SWAP_CHAIN_DESC d{};d.BufferCount=1;d.BufferDesc.Format=DXGI_FORMAT_R8G8B8A8_UNORM;d.BufferUsage=DXGI_USAGE_RENDER_TARGET_OUTPUT;d.OutputWindow=temp;d.SampleDesc.Count=1;d.Windowed=TRUE;d.SwapEffect=DXGI_SWAP_EFFECT_DISCARD;
  IDXGISwapChain* s=nullptr;ID3D11Device* dev=nullptr;ID3D11DeviceContext* ctx=nullptr;auto hr=D3D11CreateDeviceAndSwapChain(nullptr,D3D_DRIVER_TYPE_HARDWARE,nullptr,0,nullptr,0,D3D11_SDK_VERSION,&d,&s,&dev,nullptr,&ctx);

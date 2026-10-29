@@ -1,4 +1,4 @@
-# Void Camera 1.48 — Dishonored 2 camera, render controls and time stop
+# Void Camera 1.48.1 — Dishonored 2 camera, render controls and time stop
 
 Native x64 camera tool for Dishonored 2 retail 1.77.9.0.
 
@@ -6,7 +6,7 @@ Native x64 camera tool for Dishonored 2 retail 1.77.9.0.
 1. Start Dishonored 2 and stay at the main menu.
 2. Run `VoidCameraInjector.exe` beside `VoidCamera.dll`; set shadow-buffer options before loading a save so the level can build them with the new values.
 3. Load a save.
-4. F10 shows/hides the in-game panel and mouse cursor. Insert enables/disables the camera. Delete hides/restores the HUD.
+4. F10 shows/hides the in-game panel and mouse cursor. Insert enables/disables the camera. Delete hides/restores the HUD and, when available, cutscene subtitles.
 5. Use the Post-process, Environment, LOD and Hotsampling tabs for render controls and custom window sizes. A control is enabled only after its retail CVar name is verified. Restore initial render settings returns exposed values to their state at injection.
 6. Hide the panel to use movement keys; enable Num Lock.
 7. Choose Keyboard or Gamepad in the panel before enabling the camera; the choice is saved in `%LOCALAPPDATA%\VoidCamera\settings.ini`. Press Home to lock/unlock camera input before switching focus or resizing.
@@ -24,6 +24,7 @@ game exit. A different DLL build requires a game restart.
 - Gamepad (XInput, first controller): left stick moves, right stick looks, triggers change height, D-pad adjusts roll/FOV, A is faster, X is slower, B resets FOV.
 - Numpad 0 or the panel checkbox: toggle time stop.
 - Delete or the panel checkbox: hide/restore the HUD, Arkane UI elements and world markers (objectives, awareness, interactions, contextual icons, notices and related gauges).
+- Delete also hides/restores cutscene subtitles through Dishonored 2's runtime subtitle control. Cinematic black bars and Skip prompts are not controlled by Void Camera; use Shader Toggler for those.
 - The DLL disables the game's pause-on-focus-loss behavior automatically when injected, so the game keeps running while you use another window.
 - Camera movement and pose publishing remain enabled during time stop; hide the panel to use the selected control device.
 - Shift: 5× speed; Ctrl: 0.1× speed; Alt: 0.01× speed.
@@ -43,7 +44,10 @@ Home pose lock, coherent last-pose cache from CE v0.6, time stop through the ret
 `ark_show_ui`, `g_showHud`, `g_showGuis`, and the live-resolved `ark_ui_show_*` visibility CVars (integer and float caches); focus-loss behavior is enabled automatically at
 injection. The DLL verifies each HUD CVar name in the supported executable
 before enabling the control and synchronizes/restores its inline value string,
-integer cache, and float cache when toggled.
+integer cache, and float cache when toggled. Delete also hides/restores cutscene
+subtitles through the supported retail runtime subtitle-level setter; the Camera
+tab reports whether that runtime control resolved successfully. Cinematic black
+bars and Skip prompts remain Shader Toggler effects and are not changed by this DLL.
 The world-simulation effect was previously tested by the user in a loaded save.
 
 Post-process: auto exposure, exposure adaptation freeze, additive custom EV,
@@ -97,7 +101,7 @@ cmake -S . -B build -A x64 -T "v143,version=14.44.35207"
 cmake --build build --config Release
 ```
 
-Output: `bin/v1.48/Release`. Distribution: `dist/VoidCamera_1.48`.
+Output: `bin/v1.48.1/Release`. Distribution: `dist/VoidCamera_1.48.1`.
 
 ## Sources
 Camera baseline supplied by the user: `research/Dishonored2_Camera_v0.6.lua`.
