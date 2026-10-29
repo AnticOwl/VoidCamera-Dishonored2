@@ -1,4 +1,5 @@
 #include "camera.h"
+#include "camera_path.h"
 #include <d3d11.h>
 #include <dxgi.h>
 #include <MinHook.h>
@@ -134,6 +135,38 @@ void cameraTab(){
  if(ImGui::Button("Reset roll")){pose.pyr[2]=0;changed=true;}helpMarker("Sets roll to zero without changing position, pitch or yaw.");if(changed)cameraPublish();
  ImGui::EndDisabled();ImGui::Spacing();ImGui::Separator();
 }
+void cameraPathTab(){
+ ImGui::TextUnformatted("CAMERA PATH");ImGui::Separator();
+ ImGui::TextWrapped("Place the free camera at each shot and add a node. Playback interpolates position, rotation and FOV between nodes.");
+ const unsigned count=cameraPathNodeCount();const bool playing=cameraPathIsPlaying();
+ ImGui::BeginDisabled(!cameraEnabled);
+ if(ImGui::Button("Add current pose"))cameraPathAddNode();ImGui::SameLine();
+ if(ImGui::Button("Insert after selected"))cameraPathInsertAfterSelected();
+ ImGui::BeginDisabled(count==0);if(ImGui::Button("Move earlier"))cameraPathMoveSelected(-1);ImGui::SameLine();if(ImGui::Button("Move later"))cameraPathMoveSelected(1);ImGui::EndDisabled();
+ ImGui::BeginDisabled(count==0);if(ImGui::Button("Update selected"))cameraPathUpdateNode();ImGui::EndDisabled();
+ ImGui::EndDisabled();
+ ImGui::Text("Path nodes: %u",count);
+ const int selected=cameraPathSelectedNode();
+ if(ImGui::BeginListBox("##cameraPathNodes",ImVec2(-FLT_MIN,ImGui::GetTextLineHeightWithSpacing()*5))){
+  for(unsigned i=0;i<count;++i){char label[48]{};sprintf_s(label,"Node %02u",i+1);if(ImGui::Selectable(label,selected==static_cast<int>(i)))cameraPathSelectNode(static_cast<int>(i));}
+  ImGui::EndListBox();
+ }
+ Pose nodePose{};float duration=2.0f;const bool hasNode=count&&cameraPathGetNode(static_cast<unsigned>(std::max(0,selected)),nodePose,duration);
+ ImGui::BeginDisabled(!hasNode);
+ ImGui::SetNextItemWidth(260);if(ImGui::DragFloat("Seconds to next node",&duration,.05f,.1f,3600.0f,"%.2f s"))cameraPathSetDuration(duration);
+ if(ImGui::Button("Go to selected"))cameraPathGoToSelected();ImGui::SameLine();if(ImGui::Button("Delete selected"))cameraPathDeleteSelected();
+ ImGui::EndDisabled();
+ bool loop=cameraPathLoop();if(ImGui::Checkbox("Loop path",&loop))cameraPathSetLoop(loop);ImGui::SameLine();
+ bool smooth=cameraPathSmooth();if(ImGui::Checkbox("Smooth interpolation",&smooth))cameraPathSetSmooth(smooth);
+ ImGui::BeginDisabled(playing||count<2||!cameraEnabled);if(ImGui::Button("Play from start"))cameraPathPlay();ImGui::EndDisabled();
+ if(playing){ImGui::SameLine();if(ImGui::Button("Stop playback"))cameraPathStop();}
+ else{ImGui::SameLine();ImGui::BeginDisabled(!cameraEnabled||count==0);if(ImGui::Button("Go to first node"))cameraPathGoToStart();ImGui::EndDisabled();}
+ if(ImGui::Button("Save path"))cameraPathSave();ImGui::SameLine();if(ImGui::Button("Load path"))cameraPathLoad();ImGui::SameLine();ImGui::BeginDisabled(count==0);if(ImGui::Button("Clear path"))cameraPathClear();ImGui::EndDisabled();
+ if(!cameraEnabled)ImGui::TextDisabled("Enable Free camera before adding nodes or playing a path.");
+ ImGui::TextWrapped("Hotkeys while the overlay is hidden: F6 add node, Shift+F6 insert after selected, F7 delete selected, Ctrl+Page Up/Down move the selected node, F8 play from start, F9 stop.");
+ ImGui::TextWrapped("%s",cameraPathStatus().c_str());
+ ImGui::TextDisabled("Path file: %%LOCALAPPDATA%%\\VoidCamera\\Dishonored2_CameraPath.vcp");
+}
 void postProcessTab(){
  ImGui::TextUnformatted("POST-PROCESS");ImGui::Separator();
  if(ImGui::BeginTable("PostProcessColumns",2,ImGuiTableFlags_SizingStretchSame)){
@@ -159,9 +192,10 @@ void lodTab(){
 }
 void panel(){std::lock_guard<std::recursive_mutex> g(cameraMutex);
  ImGui::SetNextWindowSize(ImVec2(620,530),ImGuiCond_FirstUseEver);
- ImGui::Begin("Dishonored 2 | Void Camera 1.48.1 | F10 to hide");
+ ImGui::Begin("Dishonored 2 | Void Camera 1.48.7 | F10 to hide");
  if(ImGui::BeginTabBar("VoidCameraTabs")){
   if(ImGui::BeginTabItem("Camera")){ImGui::BeginChild("CameraTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);cameraTab();ImGui::EndChild();ImGui::EndTabItem();}
+  if(ImGui::BeginTabItem("Camera path")){ImGui::BeginChild("CameraPathTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);cameraPathTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("Post-process")){ImGui::BeginChild("PostProcessTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);postProcessTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("Environment")){ImGui::BeginChild("EnvironmentTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);environmentTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("LOD")){ImGui::BeginChild("LodTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);lodTab();ImGui::EndChild();ImGui::EndTabItem();}

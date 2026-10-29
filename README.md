@@ -1,4 +1,4 @@
-# Void Camera 1.48.1 — Dishonored 2 camera, render controls and time stop
+# Void Camera 1.48.7 — Dishonored 2 camera, render controls, camera path and time stop
 
 Native x64 camera tool for Dishonored 2 retail 1.77.9.0.
 
@@ -101,7 +101,20 @@ cmake -S . -B build -A x64 -T "v143,version=14.44.35207"
 cmake --build build --config Release
 ```
 
-Output: `bin/v1.48.1/Release`. Distribution: `dist/VoidCamera_1.48.1`.
+Output: `bin/v1.48.7/Release`. Distribution: `dist/VoidCamera_1.48.7`.
+
+## Camera Path
+
+Enable the free camera, place it at a shot, and choose **Add current pose** to
+store a path node. Add at least two nodes, set the travel time on each segment,
+then play the path. Position, rotation, and FOV are interpolated; the path can
+loop or use smooth Catmull-Rom interpolation. Save and load use
+`%LOCALAPPDATA%\VoidCamera\Dishonored2_CameraPath.vcp`.
+
+With the overlay hidden, the path hotkeys are **F6** add, **Shift+F6** insert
+after the selected node, **F7** delete, **Ctrl+Page Up/Down** move the selected
+node, **F8** play from the start, and **F9** stop. Select a node in the Camera
+Path tab before hiding the overlay to target insert, delete, or move commands.
 
 ## Sources
 Camera baseline supplied by the user: `research/Dishonored2_Camera_v0.6.lua`.
