@@ -1,4 +1,4 @@
-# Void Camera 1.48.7 — Dishonored 2 camera, render controls, camera path and time stop
+# Void Camera 1.49.0 — Dishonored 2 camera, render controls, camera path and time stop
 
 Native x64 camera tool for Dishonored 2 retail 1.77.9.0.
 
@@ -7,9 +7,11 @@ Native x64 camera tool for Dishonored 2 retail 1.77.9.0.
 2. Run `VoidCameraInjector.exe` beside `VoidCamera.dll`; set shadow-buffer options before loading a save so the level can build them with the new values.
 3. Load a save.
 4. F10 shows/hides the in-game panel and mouse cursor. Insert enables/disables the camera. Delete hides/restores the HUD and, when available, cutscene subtitles.
-5. Use the Post-process, Environment, LOD and Hotsampling tabs for render controls and custom window sizes. A control is enabled only after its retail CVar name is verified. Restore initial render settings returns exposed values to their state at injection.
+5. Use the Post-process, Environment and LOD tabs for render controls. Use SRWE to resize the game window for custom aspect ratios and capture sizes. A control is enabled only after its retail CVar name is verified. Restore initial render settings returns exposed values to their state at injection.
 6. Hide the panel to use movement keys; enable Num Lock.
 7. Choose Keyboard or Gamepad in the panel before enabling the camera; the choice is saved in `%LOCALAPPDATA%\VoidCamera\settings.ini`. Press Home to lock/unlock camera input before switching focus or resizing.
+
+For step-by-step instructions, see the [French usage guide](docs/USAGE.fr.md).
 
 Do not enable another camera hook simultaneously. An occupied hook is rejected;
 restart the game to clear a leftover CE prototype. The DLL remains loaded until
@@ -30,7 +32,7 @@ game exit. A different DLL build requires a game restart.
 - Shift: 5× speed; Ctrl: 0.1× speed; Alt: 0.01× speed.
 - Panel: Alt + drag for fine adjustments; Ctrl + click for numeric input.
 
-Hotsampling is available from the in-game Hotsampling tab. Previously applied render resolutions are saved beside the DLL and can be selected from the list to reapply them. `Use default res` selects the render resolution detected at injection. Enter a target width and height, then apply; the camera can be locked or unlocked. A normal titled game window is accepted even if DXGI reports fullscreen; if needed, applying switches the swap chain to windowed mode. Client-area sizing accounts for DPI; the window's maximum tracking size is raised to allow sampling dimensions larger than the desktop, and the resulting render size is checked. Dishonored 2's existing camera projection calculation is preserved: the live render ratio, including portrait ratios, feeds the game's original horizontal-FOV conversion, while vertical FOV remains unchanged. Dishonored 2: Death of the Outsider does not support this hotsampling workflow. Resolution scaling and integrated HQScreenShot capture are not included.
+For custom aspect ratios and capture sizes, resize the game window with SRWE. Void Camera continues to track the live render aspect ratio, including portrait ratios, and recalculates horizontal FOV using Dishonored 2's original projection calculation; vertical FOV remains unchanged.
 
 Panel uses the Deus Ex measurements: 13 px font, 620×530 initial size,
 WindowPadding 8×8, FramePadding 4×3, ItemSpacing 8×4, roundings 4/2.
@@ -101,7 +103,7 @@ cmake -S . -B build -A x64 -T "v143,version=14.44.35207"
 cmake --build build --config Release
 ```
 
-Output: `bin/v1.48.7/Release`. Distribution: `dist/VoidCamera_1.48.7`.
+Output: `bin/v1.49.0/Release`. Distribution: `dist/VoidCamera_1.49.0`.
 
 ## Camera Path
 

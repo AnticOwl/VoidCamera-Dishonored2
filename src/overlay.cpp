@@ -116,9 +116,9 @@ void hotsamplingTab(){
 void cameraTab(){
  ImGui::TextUnformatted("CAMERA");ImGui::Separator();
  bool enabled=cameraEnabled;if(ImGui::Checkbox("Free camera (Insert)",&enabled))cameraToggle();helpMarker("Enables or disables the free camera. The view must be detected before it can be enabled.");
- ImGui::SetNextItemWidth(170);if(ImGui::Combo("Control device",&controlMode,"Keyboard\0Gamepad\0"))saveControlMode();helpMarker("Selects keyboard or XInput gamepad controls for free camera movement. The choice is saved and applies before the camera is enabled.");ImGui::SameLine();ImGui::BeginDisabled(!cameraEnabled);ImGui::Checkbox("Lock camera (Home)",&cameraLocked);ImGui::EndDisabled();helpMarker("Locks the camera pose so window resizing for hotsampling does not move the view. Press Home again to unlock.");
+ ImGui::SetNextItemWidth(170);if(ImGui::Combo("Control device",&controlMode,"Keyboard\0Gamepad\0"))saveControlMode();helpMarker("Selects keyboard or XInput gamepad controls for free camera movement. The choice is saved and applies before the camera is enabled.");ImGui::SameLine();ImGui::BeginDisabled(!cameraEnabled);ImGui::Checkbox("Lock camera (Home)",&cameraLocked);ImGui::EndDisabled();helpMarker("Locks the camera pose so resizing with SRWE does not move the view. Press Home again to unlock.");
  if(controlMode==1)ImGui::TextDisabled(gamepadConnected?"XInput controller connected":"No XInput controller detected");
- if(cameraLocked)ImGui::TextDisabled("Camera pose locked. Resize the window for hotsampling, then press Home to unlock.");
+ if(cameraLocked)ImGui::TextDisabled("Camera pose locked. Resize with SRWE, then press Home to unlock.");
  ImGui::Spacing();ImGui::TextUnformatted("TIME");ImGui::Separator();
  ImGui::BeginDisabled(!timeStopReady);bool stopped=timeStopped;if(ImGui::Checkbox("Time stop (Numpad 0)",&stopped))timeStopToggle();ImGui::EndDisabled();helpMarker("Pauses or resumes game simulation using the verified retail time control.");
  if(!timeStopReady){ImGui::SameLine();ImGui::TextDisabled("Retail CVar check failed");}
@@ -192,14 +192,14 @@ void lodTab(){
 }
 void panel(){std::lock_guard<std::recursive_mutex> g(cameraMutex);
  ImGui::SetNextWindowSize(ImVec2(620,530),ImGuiCond_FirstUseEver);
- ImGui::Begin("Dishonored 2 | Void Camera 1.48.7 | F10 to hide");
+ ImGui::Begin("Dishonored 2 | Void Camera 1.49.0 | F10 to hide");
  if(ImGui::BeginTabBar("VoidCameraTabs")){
   if(ImGui::BeginTabItem("Camera")){ImGui::BeginChild("CameraTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);cameraTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("Camera path")){ImGui::BeginChild("CameraPathTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);cameraPathTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("Post-process")){ImGui::BeginChild("PostProcessTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);postProcessTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("Environment")){ImGui::BeginChild("EnvironmentTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);environmentTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("LOD")){ImGui::BeginChild("LodTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);lodTab();ImGui::EndChild();ImGui::EndTabItem();}
-  if(ImGui::BeginTabItem("Hotsampling")){ImGui::BeginChild("HotsamplingTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);hotsamplingTab();ImGui::EndChild();ImGui::EndTabItem();}
+  // Hotsampling is handled through SRWE for this game; aspect/FOV tracking remains active.
   ImGui::EndTabBar();
  }
  ImGui::End();
