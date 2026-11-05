@@ -1,4 +1,4 @@
-# Void Camera 1.49.0 — Dishonored 2 camera, render controls, camera path and time stop
+# Void Camera 1.49.8 — Dishonored 2 camera, render controls, camera path and time stop
 
 Native x64 camera tool for Dishonored 2 retail 1.77.9.0.
 
@@ -7,11 +7,11 @@ Native x64 camera tool for Dishonored 2 retail 1.77.9.0.
 2. Run `VoidCameraInjector.exe` beside `VoidCamera.dll`; set shadow-buffer options before loading a save so the level can build them with the new values.
 3. Load a save.
 4. F10 shows/hides the in-game panel and mouse cursor. Insert enables/disables the camera. Delete hides/restores the HUD and, when available, cutscene subtitles.
-5. Use the Post-process, Environment and LOD tabs for render controls. Use SRWE to resize the game window for custom aspect ratios and capture sizes. A control is enabled only after its retail CVar name is verified. Restore initial render settings returns exposed values to their state at injection.
+5. Use the Post-process, Environment, LOD and Shadows tabs for render controls. Use SRWE to resize the game window for custom aspect ratios and capture sizes. A control is enabled only after its retail CVar name is verified. Restore initial render settings returns exposed values to their state at injection.
 6. Hide the panel to use movement keys; enable Num Lock.
 7. Choose Keyboard or Gamepad in the panel before enabling the camera; the choice is saved in `%LOCALAPPDATA%\VoidCamera\settings.ini`. Press Home to lock/unlock camera input before switching focus or resizing.
 
-For step-by-step instructions, see the [French usage guide](docs/USAGE.fr.md).
+For step-by-step instructions, see the [English usage guide](https://anticowl.github.io/2026/11/10/Dishonored2-Void-Camera/).
 
 Do not enable another camera hook simultaneously. An occupied hook is rejected;
 restart the game to clear a leftover CE prototype. The DLL remains loaded until
@@ -23,12 +23,14 @@ game exit. A different DLL build requires a game restart.
 - PYR rotation speed: adjustable in the Camera tab and saved to `settings.ini`.
 - Numpad +/-: vertical FOV.
 - Home: lock/unlock camera input while preserving the current pose.
-- Gamepad (XInput, first controller): left stick moves, right stick looks, triggers change height, D-pad adjusts roll/FOV, A is faster, X is slower, B resets FOV.
+- Gamepad (XInput, first controller): left stick moves, right stick looks, triggers change height, D-pad adjusts roll/FOV, hold Y for 5× speed, hold X for 0.1× speed, and press B to reset FOV.
 - Numpad 0 or the panel checkbox: toggle time stop.
+- PgUp or the Camera panel button: advance one engine frame while time stop is active. This refreshes the rendered view while the pause controls remain enabled.
 - Delete or the panel checkbox: hide/restore the HUD, Arkane UI elements and world markers (objectives, awareness, interactions, contextual icons, notices and related gauges).
 - Delete also hides/restores cutscene subtitles through Dishonored 2's runtime subtitle control. Cinematic black bars and Skip prompts are not controlled by Void Camera; use Shader Toggler for those.
 - The DLL disables the game's pause-on-focus-loss behavior automatically when injected, so the game keeps running while you use another window.
 - Camera movement and pose publishing remain enabled during time stop; hide the panel to use the selected control device.
+- A stepped frame lets the game refresh rendering while paused. Game logic receives one frame tick; `g_freezeTime` stays enabled to hold simulation state.
 - Shift: 5× speed; Ctrl: 0.1× speed; Alt: 0.01× speed.
 - Panel: Alt + drag for fine adjustments; Ctrl + click for numeric input.
 
@@ -47,10 +49,14 @@ Home pose lock, coherent last-pose cache from CE v0.6, time stop through the ret
 injection. The DLL verifies each HUD CVar name in the supported executable
 before enabling the control and synchronizes/restores its inline value string,
 integer cache, and float cache when toggled. Delete also hides/restores cutscene
-subtitles through the supported retail runtime subtitle-level setter; the Camera
+subtitles through the supported retail runtime subtitle-level setter; native single-frame
+advance requests use the registered `g_runFrames` CVar and are available only when that
+CVar and the verified retail setter resolve. The Camera
 tab reports whether that runtime control resolved successfully. Cinematic black
 bars and Skip prompts remain Shader Toggler effects and are not changed by this DLL.
-The world-simulation effect was previously tested by the user in a loaded save.
+The world-simulation pause was previously tested by the user in a loaded save; the new
+single-frame refresh still needs in-game confirmation, including whether characters
+remain visually stationary during the step.
 
 Post-process: auto exposure, exposure adaptation freeze, additive custom EV,
 bloom, lens flares, color grading, depth of field (focal distance, focus range,
@@ -59,7 +65,7 @@ rays, fog light scattering and sky. Render CVar names are checked against the
 supported retail image at runtime. Current values are saved at injection, can be
 adjusted live, and can be restored with the tab button.
 
-LOD tab: world LOD detail scale (lower retains more static-mesh detail) and model shadow culling distance. The unfinished view-distance/Spyglass diagnostic controls have been removed from the interface. The retail build has no verified `r_forceLOD`, `lod_debug_force_value` or `r_disableStaticWorldLOD` CVar.
+LOD tab: world LOD detail scale (lower retains more static-mesh detail). Shadows tab: NVIDIA HBAO+ toggle, model-shadow culling distance, directional shadow slice size, partial cascade updates and all four directional cascade far distances. HBAO+ is ambient occlusion, not shadow-map resolution. The shadow slice size should be set at the main menu before loading a save so the level can recreate its shadow resources. These controls use the engine's native CVar apply path; their visual effect still needs an in-game comparison. The unfinished view-distance/Spyglass diagnostic controls have been removed from the interface. The retail build has no verified `r_forceLOD`, `lod_debug_force_value` or `r_disableStaticWorldLOD` CVar.
 
 The retail `com_timeScaler` CVar was investigated, but changing it through the native setter did not alter its runtime value in the live test. The nonfunctional slomo control has been removed; findings and limits are recorded in `research/Dishonored2_TimeScaler.md`.
 
@@ -103,7 +109,7 @@ cmake -S . -B build -A x64 -T "v143,version=14.44.35207"
 cmake --build build --config Release
 ```
 
-Output: `bin/v1.49.0/Release`. Distribution: `dist/VoidCamera_1.49.0`.
+Output: `bin/v1.49.8/Release`. Distribution: `dist/VoidCamera_1.49.8`.
 
 ## Camera Path
 

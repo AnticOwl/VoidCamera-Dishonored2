@@ -117,12 +117,14 @@ void cameraTab(){
  ImGui::TextUnformatted("CAMERA");ImGui::Separator();
  bool enabled=cameraEnabled;if(ImGui::Checkbox("Free camera (Insert)",&enabled))cameraToggle();helpMarker("Enables or disables the free camera. The view must be detected before it can be enabled.");
  ImGui::SetNextItemWidth(170);if(ImGui::Combo("Control device",&controlMode,"Keyboard\0Gamepad\0"))saveControlMode();helpMarker("Selects keyboard or XInput gamepad controls for free camera movement. The choice is saved and applies before the camera is enabled.");ImGui::SameLine();ImGui::BeginDisabled(!cameraEnabled);ImGui::Checkbox("Lock camera (Home)",&cameraLocked);ImGui::EndDisabled();helpMarker("Locks the camera pose so resizing with SRWE does not move the view. Press Home again to unlock.");
- if(controlMode==1)ImGui::TextDisabled(gamepadConnected?"XInput controller connected":"No XInput controller detected");
+ if(controlMode==1){ImGui::TextDisabled(gamepadConnected?"XInput controller connected":"No XInput controller detected");ImGui::TextDisabled("Hold X for 0.1x speed; hold Y for 5x speed (movement, rotation and FOV).");}
  if(cameraLocked)ImGui::TextDisabled("Camera pose locked. Resize with SRWE, then press Home to unlock.");
  ImGui::Spacing();ImGui::TextUnformatted("TIME");ImGui::Separator();
  ImGui::BeginDisabled(!timeStopReady);bool stopped=timeStopped;if(ImGui::Checkbox("Time stop (Numpad 0)",&stopped))timeStopToggle();ImGui::EndDisabled();helpMarker("Pauses or resumes game simulation using the verified retail time control.");
  if(!timeStopReady){ImGui::SameLine();ImGui::TextDisabled("Retail CVar check failed");}
- ImGui::SameLine();ImGui::BeginDisabled(!hudReady&&!cutsceneSubtitleReady);bool hidden=hudHidden;if(ImGui::Checkbox("Hide game UI + markers + subtitles (Delete)",&hidden))hudToggle();ImGui::EndDisabled();helpMarker("Hides or restores the HUD, world markers and cutscene subtitles. Cinematic black bars and Skip prompts are not controlled here; use Shader Toggler for those.");
+ ImGui::BeginDisabled(!timeStopped||!frameStepReady);if(ImGui::Button("Advance one frame (PgUp)"))timeStopStepFrame();ImGui::EndDisabled();
+ if(!frameStepReady)ImGui::TextDisabled("Single-frame advance unavailable: g_runFrames was not found.");else ImGui::TextDisabled("Requests one native frame step; both pause CVars remain enabled.");
+ ImGui::BeginDisabled(!hudReady&&!cutsceneSubtitleReady);bool hidden=hudHidden;if(ImGui::Checkbox("Hide game UI + markers + subtitles (Delete)",&hidden))hudToggle();ImGui::EndDisabled();helpMarker("Hides or restores the HUD, world markers and cutscene subtitles. Cinematic black bars and Skip prompts are not controlled here; use Shader Toggler for those.");
  if(!hudReady){ImGui::SameLine();ImGui::TextDisabled("HUD control unavailable");}
  if(cutsceneSubtitleReady)ImGui::TextDisabled("Cutscene subtitle control: ready");else ImGui::TextDisabled("Cutscene subtitle control: unavailable");
  ImGui::BeginDisabled(!cameraEnabled);
@@ -185,20 +187,32 @@ void lodTab(){
  ImGui::TextUnformatted("LEVEL OF DETAIL");ImGui::Separator();
  ImGui::SeparatorText("World detail");
  renderFloat("World LOD detail scale (lower = more detail)",RenderControl::StaticLodZoomMultiplier,.001f,.001f,100,"%.3f","Native CVar: r_lodZoomMultiplicator. Applies to static world geometry, not entity distances or camera FOV. Lower values favor finer static-mesh detail at the same view; 0.001 is available for testing but has not been visually tested. Extreme values may cost performance.");
- ImGui::SeparatorText("Shadows");
- ImGui::TextWrapped("Model shadow distance controls model-shadow culling. Cascade distance controls directional sun shadows separately.");
- renderFloat("Model shadow distance",RenderControl::ShadowDistance,.5f,0,100000,"%.1f","Retail CVar: r_shadowCullDistance. Maximum distance for model shadows; this is the model-shadow culling range. It does not change directional sun-shadow cascades.");
+ ImGui::Spacing();if(ImGui::Button("Restore initial render settings"))renderControlRestore();helpMarker("Restores render and environment CVar values captured when the tool was injected.");
+}
+void shadowsTab(){
+ ImGui::TextUnformatted("SHADOWS");ImGui::Separator();
+ if(renderControlReady(RenderControl::ShadowQualityPreset))ImGui::Text("Shadow quality: %.0f / 5",renderControlValue(RenderControl::ShadowQualityPreset));
+ renderToggle("NVIDIA HBAO+",RenderControl::Hbao,"");
+ renderToggle("Partial cascade updates",RenderControl::ShadowPartialCascadeUpdate,"");
+ renderFloat("Directional shadow slice size",RenderControl::ShadowParallelSliceSize,64,512,8192,"%.0f px","");
+ ImGui::SeparatorText("Cascade distances");
+ int distances[4]{};bool readable=shadowCascadeGetFars(distances);bool editable=shadowCascadeReady();
+ if(!readable)ImGui::TextDisabled("Cascade distances unavailable.");
+ else{if(!editable)ImGui::TextDisabled("Cascade distances are read-only.");ImGui::BeginDisabled(!editable);for(unsigned i=0;i<4;++i){char label[32]{};sprintf_s(label,"Cascade %u far distance",i+1);int value=distances[i];ImGui::SetNextItemWidth(210);if(ImGui::InputInt(label,&value,1,10)){value=std::clamp(value,1,999);if(!shadowCascadeSetFarDistanceAt(i,value))ImGui::TextColored(ImVec4(1.f,.55f,.35f,1.f),"Distances must increase.");}}ImGui::EndDisabled();}
+ ImGui::SeparatorText("Model shadows");
+ renderFloat("Model shadow distance",RenderControl::ShadowDistance,.5f,0,100000,"%.1f","");
  ImGui::Spacing();if(ImGui::Button("Restore initial render settings"))renderControlRestore();helpMarker("Restores render and environment CVar values captured when the tool was injected.");
 }
 void panel(){std::lock_guard<std::recursive_mutex> g(cameraMutex);
  ImGui::SetNextWindowSize(ImVec2(620,530),ImGuiCond_FirstUseEver);
- ImGui::Begin("Dishonored 2 | Void Camera 1.49.0 | F10 to hide");
+ ImGui::Begin("Dishonored 2 | Void Camera 1.49.8 | F10 to hide");
  if(ImGui::BeginTabBar("VoidCameraTabs")){
   if(ImGui::BeginTabItem("Camera")){ImGui::BeginChild("CameraTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);cameraTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("Camera path")){ImGui::BeginChild("CameraPathTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);cameraPathTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("Post-process")){ImGui::BeginChild("PostProcessTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);postProcessTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("Environment")){ImGui::BeginChild("EnvironmentTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);environmentTab();ImGui::EndChild();ImGui::EndTabItem();}
   if(ImGui::BeginTabItem("LOD")){ImGui::BeginChild("LodTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);lodTab();ImGui::EndChild();ImGui::EndTabItem();}
+  if(ImGui::BeginTabItem("Shadows")){ImGui::BeginChild("ShadowsTabBody",ImVec2(0,0),false,ImGuiWindowFlags_AlwaysVerticalScrollbar);shadowsTab();ImGui::EndChild();ImGui::EndTabItem();}
   // Hotsampling is handled through SRWE for this game; aspect/FOV tracking remains active.
   ImGui::EndTabBar();
  }
